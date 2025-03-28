@@ -23,6 +23,29 @@ namespace Bank2.Controllers
         {
             return View();
         }
+
+        public IActionResult Notifications()
+        {
+            return View();
+        }
+
+        public IActionResult BillingAndPayments()
+        {
+            return View();
+        }
+
+        public IActionResult AccountManagement()
+        {
+            return View();
+        }
+        public IActionResult SecurityAndPrivacy()
+        {
+            return View();
+        }
+        public IActionResult Profile()
+        {
+            return View();
+        }
         public async Task<IActionResult> Dashboard()
         {
            var userId = HttpContext.Session.GetInt32("UserId");
@@ -32,6 +55,7 @@ namespace Bank2.Controllers
                     .Include(a => a.Accounts).ThenInclude(t => t.Transactions)
                     .Include(b => b.Branch)
                     .FirstOrDefaultAsync(x => x.Id == userId.Value);
+                TempData["DStatus"] = "dash";
                 return View(user);
            }
             return RedirectToAction("LoginPage");

@@ -215,7 +215,7 @@ body::-webkit-scrollbar{
 
 /* --- Login Page Start --- */
 /* 0. Navigation Bar */
-nav {
+.navi {
     display: flex;
     box-sizing: border-box;
     padding: 0px var(--px8);

@@ -219,6 +219,6 @@ C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.csproj.Assembl
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.csproj.Up2Date
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\ic6h1ofjri-0wp9njeobq.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\jouqp2clok-0wp9njeobq.gz
-C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\486agt9ki1-dyjx89twm7.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\e108juxnei-aguzu4lwuy.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.sourcelink.json
+C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\486agt9ki1-pely8nhgvk.gz

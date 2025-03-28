@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QYki0UFBWqNL+3aQJsaAoeebdX3STSOLQz4tRKnuvqU=",
+  "Hash": "uvbpyxE9DHkNefWFSskjLP5a+HQcRUCnowKIlqeghUQ=",
   "Source": "Bank2",
   "BasePath": "_content/Bank2",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-dyjx89twm7.gz",
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-pely8nhgvk.gz",
       "SourceId": "Bank2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Bank2",
-      "RelativePath": "css/Forms#[.{fingerprint=dyjx89twm7}]?.css.gz",
+      "RelativePath": "css/Forms#[.{fingerprint=pely8nhgvk}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\Forms.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4sb36b4tv5",
-      "Integrity": "nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=",
+      "Fingerprint": "2adzf76trr",
+      "Integrity": "+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\Forms.css"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dyjx89twm7",
-      "Integrity": "u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=",
+      "Fingerprint": "pely8nhgvk",
+      "Integrity": "4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Forms.css"
@@ -3493,12 +3493,12 @@
     },
     {
       "Route": "css/Forms.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-dyjx89twm7.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-pely8nhgvk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.028571428571"
+          "Quality": "0.002222222222"
         }
       ],
       "ResponseHeaders": [
@@ -3508,15 +3508,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "34"
+          "Value": "449"
         },
         {
           "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
+          "Value": "\"+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 16:08:50 GMT"
+          "Value": "Fri, 28 Mar 2025 15:53:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3536,13 +3536,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "W/\"4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g="
         }
       ]
     },
@@ -3557,7 +3557,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14"
+          "Value": "1033"
         },
         {
           "Name": "Content-Type",
@@ -3565,11 +3565,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "\"4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 16:08:50 GMT"
+          "Value": "Fri, 28 Mar 2025 15:53:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3579,13 +3579,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g="
         }
       ]
     },
     {
       "Route": "css/Forms.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-dyjx89twm7.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-pely8nhgvk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3594,7 +3594,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "34"
+          "Value": "449"
         },
         {
           "Name": "Content-Type",
@@ -3602,11 +3602,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
+          "Value": "\"+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 16:08:50 GMT"
+          "Value": "Fri, 28 Mar 2025 15:53:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3624,18 +3624,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y="
+          "Value": "sha256-+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0="
         }
       ]
     },
     {
-      "Route": "css/Forms.dyjx89twm7.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-dyjx89twm7.gz",
+      "Route": "css/Forms.pely8nhgvk.css",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-pely8nhgvk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.028571428571"
+          "Quality": "0.002222222222"
         }
       ],
       "ResponseHeaders": [
@@ -3645,15 +3645,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "34"
+          "Value": "449"
         },
         {
           "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
+          "Value": "\"+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 16:08:50 GMT"
+          "Value": "Fri, 28 Mar 2025 15:53:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3673,13 +3673,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "W/\"4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dyjx89twm7"
+          "Value": "pely8nhgvk"
         },
         {
           "Name": "label",
@@ -3687,12 +3687,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g="
         }
       ]
     },
     {
-      "Route": "css/Forms.dyjx89twm7.css",
+      "Route": "css/Forms.pely8nhgvk.css",
       "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\Forms.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3702,7 +3702,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14"
+          "Value": "1033"
         },
         {
           "Name": "Content-Type",
@@ -3710,11 +3710,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "\"4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 16:08:50 GMT"
+          "Value": "Fri, 28 Mar 2025 15:53:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3724,7 +3724,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dyjx89twm7"
+          "Value": "pely8nhgvk"
         },
         {
           "Name": "label",
@@ -3732,13 +3732,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-4XRtOt/KDVczwcFtrZh3JnBQ7WXLmrtzy7lzDetnp5g="
         }
       ]
     },
     {
-      "Route": "css/Forms.dyjx89twm7.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-dyjx89twm7.gz",
+      "Route": "css/Forms.pely8nhgvk.css.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\486agt9ki1-pely8nhgvk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3747,7 +3747,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "34"
+          "Value": "449"
         },
         {
           "Name": "Content-Type",
@@ -3755,11 +3755,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y=\""
+          "Value": "\"+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 16:08:50 GMT"
+          "Value": "Fri, 28 Mar 2025 15:53:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3777,7 +3777,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dyjx89twm7"
+          "Value": "pely8nhgvk"
         },
         {
           "Name": "label",
@@ -3785,7 +3785,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nE8yPTtJd6+tlaH04X/GP2xItoqCQnNLkJVCmQHXS+Y="
+          "Value": "sha256-+rgyU0kekIJRturSOkFo7L/D7jfslhMqQwdEi7LfVI0="
         }
       ]
     },
