@@ -37,6 +37,7 @@ namespace Bank2.Controllers
             return RedirectToAction("LoginPage");
         }
 
+
         [Route("User/CheckLogin")]
         [HttpPost]
         public async Task<IActionResult> CheckLogin([Bind("Username, Password")] User user)
@@ -76,14 +77,15 @@ namespace Bank2.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 _context.Users.Add(users);
                 await _context.SaveChangesAsync();
 
                 var account = new Account();
                 account.UserId = users.Id;
-                account.AccountNo = "A/C-0000-" + users.Id + "-" + users.Branch?.IFSCCode;
+                account.AccountNo = "A/C-0000-" + users.Id;
                 account.AccountBalance = 0;
-                account.CreatedAt = DateTime.UtcNow;
+                account.CreatedAt = DateTime.Now;
                 account.AccountType = "Savings";
 
                  _context.Accounts.Add(account);

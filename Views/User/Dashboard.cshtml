@@ -13,17 +13,6 @@
 </head>
 <body class="selectedBody">
     <h1>Hello @Username</h1>
-
-    <form asp-action="CreateAccount" method="post">
-        <h2>Account Creation</h2>
-        <div>
-            <label>Account Type</label>
-            <select>
-                <option value="savings">Savings</option>
-                <option value="current">Current</option>
-            </select>
-        </div>
-    </form>
     <div class="formControl">
         <h2>Branch Details</h2> 
         <p>Branch Name : @Model.Branch?.Name</p>
@@ -67,15 +56,19 @@
                 </tr>
             </thead>
             <tbody>
+                <tr>
+
+                
                 @foreach (var account in Model.Accounts)
                 {
-                    <tr>@account.Id</tr>
-                    <tr>@account.AccountNo</tr>
-                    <tr>@account.AccountBalance</tr>
-                    <tr>@account.AccountType</tr>
-                    <tr>@account.AccountStatus</tr>
-                    <tr>@account.CreatedAt</tr>
+                    <td>@account.Id</td>
+                    <td>@account.AccountNo</td>
+                    <td>@account.AccountBalance</td>
+                    <td>@account.AccountType</td>
+                    <td>@account.AccountStatus</td>
+                    <td>@account.CreatedAt</td>
                 }
+                </tr>
             </tbody>
         </table>
     </div>
@@ -104,7 +97,6 @@
                         <tr>@t.Balance</tr>   
                         <tr>@t.Description</tr>   
                     }
-                    
                 }
             </tbody>
         </table>
