@@ -1,0 +1,170 @@
+﻿@model Bank2.Models.User
+@{
+	var username = Context.Session.GetString("Username");
+	var userid = Context.Session.GetInt32("ID");
+	ViewData["Title"] = "Login";
+}
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
+</head>
+<body class="selectedBody">
+	
+	<form asp-action="CheckLogin" method="post">
+		<div id="loginForm" class="loginBackground" style="display: none">
+			<div class="loginBox">
+				<div class="loginButtons">
+					<h2 class="headCenter">Login</h2>
+					<a id="closeBtn" class="closeBtn" asp-action="">X</a>
+				</div>
+				<div class="loginItems">
+					<label for="Username">Username / Email</label>
+					<input required class="inputEdit" asp-for="Username" type="text" />
+				</div>
+				<div class="loginItems">
+					<label for="Password">Password</label>
+					<input required class="inputEdit" asp-for="Password" type="password" />
+				</div>
+				<div class="loginItems">
+					<button type="submit" class="sqrLoginBtn">Login</button>
+				</div>
+				<div class="loginItems">
+					<a class="loginLinks" asp-action="CreateAccount">Create Account.</a><br />
+					<a class="loginLinks" asp-action="">Forgot Password.</a>
+				</div>
+			</div>
+
+			<div id="loginError" class="loginBackground" style="display: none; background-color: red">
+				<h2>Invalid Crednetials</h2>
+			</div>
+		</div>
+	</form>
+
+	<header>
+	<nav>
+		<h1 class="navIcon">DevBank</h1>
+		<ul class="expandNav">
+			<li><p><a class="navItems" asp-action="Transactions">Personal</a></p></li>
+			<li><p><a class="navItems" asp-action="">Business</a></p></li>
+			<li><p><a class="navItems" asp-action="">Commercial</a></p></li>
+			<li><p><a class="navItems" asp-action="">Services</a></p></li>
+			<li><p><a class="navItems" asp-action="">Contact Us</a></p></li>
+		</ul>
+		<div>
+			<a id="loginBtn" asp-action="" class="loginBtn">Login</a>
+			<select id="logoutBtn" class="inputEdit" style="display: none" onchange="handleSelect(this)">
+				<option hidden id="user" selected></option>
+				<option value="/User/Dashboard"><a>Dashboard</a></option>
+				<option value="/User/Profile"><a>Profile</a></option>
+				<option value="/User/Transactions"><a>Transactions</a></option>
+				<option value="/User/Logout"><a>Logout</a></option>
+			</select>
+		</div>
+	</nav>
+	</header>
+
+	<section class="intro">
+		<p class="introItems">A Bank Trusted By</p>
+		<p class="introItems"> More Than <b>10 Million</b> Users.</p>
+		<p class="introItems">Its not we who speak, but out millions of customers.</p>
+		<a asp-action="CreateUser" class="btnRndLink1">Create Account</a>
+		
+	</section> 
+
+	<section class="dashboard">
+		<img src="~/rsc/phobe.png" alt="Alternate Text" />
+		<p>Manage your <b>Finance</b> with our easy to use <b>Dashboard</b></p>
+	</section>
+
+	<section class="features">
+		<div class="featureItems">
+			<p class="featureHead"><b>Digital Banking</b> in<br />your hand.</p>
+			<p class="featParagrah">
+				Now access and manage your accounts without coming to bank.<br />
+				Get easy access to all your needs on our web app.
+			</p>
+			<a asp-action="" class="btnRndLink2">Learn More</a>
+		</div>
+		<div class="featureItems">
+			<img class="displayImages" src="~/rsc/ss.png" alt="Alternate Text" />
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="featureItems">
+			<p class="featureHead">Select the <b>Card</b> of<br />your choice.</p>
+			<p class="featParagrah">
+				Now access and manage your accounts without coming to bank.<br />
+				Get easy access to all your needs on our web app.
+			</p>
+			<a asp-action="" class="btnRndLink2">Learn More</a>
+		</div>
+		<div class="featureItems">
+			<img class="displayImages" src="~/rsc/ss.png" alt="Alternate Text" />
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="featureItems">
+			<p class="featureHead">No fee, <b>hassle-free.</b></p>
+			<p class="featParagrah">
+				No minimum balance. No monthly fees. No foreign transaction fees.<br />
+				Open an account now for free.
+			</p>
+			<div class="doubleBtn">
+				<a asp-action="" class="btnRndLink2">Learn More</a>
+				<a asp-action="CreateUser" class="btnRndLink1">Create Account</a>
+			</div>
+		</div>
+		<div class="featureItems">
+			<img class="displayImages" src="~/rsc/ss.png" alt="Alternate Text" />
+		</div>
+	</section>
+
+	<script>
+		const StatusError = "@TempData["Error"]";
+		const Username = "@Context.Session.GetString("Username")";
+
+		const loginForm = document.getElementById("loginForm");
+		const loginError = document.getElementById("loginError");
+		const display = document.querySelector(".selectedBody");
+		const loginBtn = document.getElementById("loginBtn");
+		const logoutBtn = document.getElementById("logoutBtn");
+		const user = document.getElementById("user");
+
+		function handleSelect(select){
+			if(select.value == "/User/Logout"){
+				window.location.href = select.value;
+			}
+			else{
+				window.location.href = select.value;
+				logoutBtn.selectedIndex = 0;
+			}
+		}
+
+		if(StatusError == "error"){
+			loginForm.style.display = "flex";
+			loginError.style.display = "flex";
+		}
+
+		//Opens Login Box
+		document.getElementById("loginBtn").addEventListener("click", function(event)
+		{
+			event.preventDefault();
+			loginForm.style.display = "flex";
+			display.style.overflow = "hidden";
+		});
+
+		//Set username once login verified
+		if(Username && Username.trim().toLowerCase() !== null)
+		{
+			loginBtn.style.display = "none";
+			logoutBtn.style.display = "block";
+			user.innerText = Username;
+		}
+
+	</script>
+</body>
+</html>

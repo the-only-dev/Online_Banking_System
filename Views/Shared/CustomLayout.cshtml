@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>@ViewData["Title"]</title>
+	<style>
+		html {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.baseLayout{
+			height: 100vh;
+			display: flex;
+			flex: 1;
+		}
+
+		.sidebar{
+			border-right: 1px solid black;
+			background-color: white;
+			width: 20%;
+			height: 100%;
+			font-size: 24px;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+			display: flex;
+			flex-direction: column;
+			padding: 16px;
+			box-sizing: border-box;
+		}
+
+		ul{
+			padding: 0px;
+		}
+
+		li{
+			list-style-type: none;
+			margin: 25px 0px 25px 0px;
+		}
+
+		a{
+			color: black;
+			text-decoration: none;
+		}
+
+		.navik{
+			display: flex;
+			flex-direction: column;
+			flex: 1; /* Allows content to expand */
+			padding: 8px;
+		}
+
+		.search {
+			padding: 8px 12px;
+			width: 100%;
+			height: 32px;
+			border: 1px solid black;
+			border-radius: 20px;
+			box-sizing: border-box;
+		}
+
+		.signOut{
+			margin-top: auto; /* Pushes it to the bottom */
+			padding: 8px 16px;
+			background-color: #A6B2FF;
+
+			color: black;
+			font-weight: bold;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+			border: none;
+			cursor: pointer;
+			border-radius: 4px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.container{
+			padding: 8px;
+		}
+		
+		li{
+			transition: ease-in-out 0.2s;
+		}
+	</style>
+</head>
+<body>
+	<div class="baseLayout">
+		<div class="sidebar">
+			<nav class="navik">
+				<input type="text" placeholder="Search Settings" class="search">
+				<ul>
+					<li class="cll"><a asp-area="" asp-controller="User" asp-action="Dashboard">Create Account</a></li>
+					<li class="cll"><a asp-area="" asp-controller="User" asp-action="Transactions">Account List</a></li>
+					@{/*<li class="cll"><a asp-area="" asp-controller="User" asp-action="Notifications">Notifications</a></li>
+					<li class="cll"><a asp-area="" asp-controller="User" asp-action="BillingAndPayments">Billing and Payment</a></li>
+					<li class="cll"><a asp-area="" asp-controller="User" asp-action="AccountManagement">Account Management</a></li>
+					<li class="cll"><a asp-area="" asp-controller="User" asp-action="SecurityAndPrivacy">Security and Privacy</a></li>
+					<li class="cll"><a asp-area="" asp-controller="User" asp-action="Profile">Profile</a></li>*/}
+				</ul>
+				<button class="signOut">Sign Out</button>
+			</nav>
+		</div>
+
+		<div class="container">
+			<main>
+				@RenderBody()
+			</main>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			let items = document.querySelectorAll(".cll");
+
+			items.forEach(item => {
+				item.addEventListener("mouseover", function() {
+					this.style.backgroundColor = "#A6B2FF";
+				});
+
+				item.addEventListener("mouseout", function() {
+					this.style.backgroundColor = "#FFFFFF";
+				});
+			});
+		});
+	</script>
+</body>
+</html>

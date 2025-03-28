@@ -1,0 +1,87 @@
+﻿@model List<Bank2.Models.User>
+@{
+    ViewData["Title"] = "User";
+}
+<head>
+    <style>
+
+        :root{
+            --primary: hsla(0,0%,100%,1);
+            --secondary: hsla(30,100%,91%,1);
+            --tertiary: hsla(196,31%,49%,1);
+            --accent: hsla(189,56%,62%,1);
+            --dark: hsla(21,23%,41%,1);
+            --shade: hsla(0,0%,0%,1);
+        }
+        body{
+            font-family: Arial;
+            font-size: 16px;
+        }
+       thead{
+           color: var(--tertiary);
+           background-color: var(--secondary);
+       }
+       tbody{
+           color: var(--primary);
+           background-color: var(--dark);
+       }
+       a{
+           text-decoration: none;
+           color: var(--secondary);
+       }
+       th{
+           border-bottom: 2px solid black;
+       }
+    </style>
+</head>
+
+<h1>User Tables</h1>
+<hr />
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Full Name</th>
+            <th>Busniess Name</th>
+            <th>Business Type</th>
+            <th>Tax Id</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Pin</th>
+            <th>Job</th>
+            <th>Account Count</th>
+            <th>Customer Type</th>
+            <th>IFSC Code</th>
+            <th>Account Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Username</td>
+                <td>@user.Password</td>
+                <td>@user.FullName</td>
+                <td>@user.BusinessName</td>
+                <td>@user.BusinessType</td>
+                <td>@user.TaxId</td>
+                <td>@user.Email</td>
+                <td>@user.Address</td>
+                <td>@user.Pin</td>
+                <td>@user.Job</td>
+                <td>@user.AccountCount</td>
+                <td>@user.CustomerType</td>
+                <td>@user.Branch?.IFSCCode</td>
+                <td>
+                    <a asp-action="EditAccount" asp-route-id="@user.Id">Edit</a>
+                    <a asp-action="DeleteAccount" asp-route-id="@user.Id">Delete</a>
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>

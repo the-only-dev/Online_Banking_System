@@ -1,0 +1,550 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    /* Default Font */
+    font-family: 'Inter';
+/*    font-size: 8px;*/
+}
+:root {
+    /* Color Styles */
+    --primary: hsla(0,0%,100%,1);
+    --secondary: hsla(30,100%,91%,1);
+    --tertiary: hsla(196,31%,49%,1);
+    --accent: hsla(189,56%,62%,1);
+    --dark: hsla(21,23%,41%,1);
+    --shade: hsla(0,0%,0%,0.2);
+
+    /* Font Family */
+    --mainfont: 'Inter';
+
+    /* Font Size */
+    --big: 4.5rem;          /* 72px / 16 */
+    --mainHead: 3rem;       /* 48px / 16 */
+    --subHead: 2.25rem;     /* 36px / 16 */
+    --subHead2: 1.75rem;    /* 28px / 16 */
+    --subHead3: 1.5rem;     /* 24px / 16 */
+    --paragraph: 1.25rem;   /* 20px / 16 */
+    --text: 1rem;           /* 16px / 16 */
+    --text2: 0.75rem;       /* 12px / 16 */
+
+    /* Font Weights */
+    --thin: 100;
+    --extraLight: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semiBold: 600;
+    --bold: 700;
+    --extraBold: 800;
+    --black: 900;
+
+    /* General Use for Spacing */
+    --px1: 0.0625rem;
+    --px2: 0.125rem;
+    --px4: 0.25rem;
+    --px8: 0.5rem;
+    --px16: 1rem;
+    --px20: 1.25rem;
+    --px24: 1.5rem;
+    --px25: 1.5625rem;
+    --px32: 2rem;
+
+    /* Mainly Used For Buttons Height */
+    --px40: 2.5rem;
+    --px50: 3.125rem;
+
+    /* Heavy Padding or Margins */
+    --px72: 4.5rem;
+    --px80: 5rem;
+    --px128: 8rem;
+
+    /* Mainly Used for Button Width*/
+    --px160: 10rem;
+    --px200: 12.5rem;
+    --px280: 17.5rem;
+}
+
+/* Global Element Changes */
+b {
+    font-weight: var(--semiBold);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+/* Global custom class for items */
+.selectedBody {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    font-family: var(--mainfont);
+    text-align: center;
+    color: var(--secondary);
+    background: linear-gradient(to bottom, var(--accent), var(--secondary)), var(--shade);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+/* Link Button Styles*/
+.loginBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--px160);
+    height: var(--px40);
+    border: 1px solid var(--secondary); /* Adjust */
+    border-radius: var(--px8);
+    box-sizing: border-box;
+    color: var(--secondary);
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--text );
+    font-weight: var(--semiBold);
+}
+
+.btnRndLink1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--px280);
+    height: var(--px50);
+    border-radius: var(--px25);
+    box-sizing: border-box;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--paragraph);
+    font-weight: var(--semiBold);
+}
+
+.btnRndLink2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--px200);
+    height: var(--px50);
+    border-radius: var(--px25);
+    box-sizing: border-box;
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+}
+
+/* Button styles */
+.sqrLoginBtn {
+    width: var(--px160);
+    height: var(--px40);
+    color: var(--secondary);
+    font-size: var(--text);
+    font-weight: var(--regular);
+    border: 1px solid var(--secondary);
+    border-radius: var(--px8);
+    background: none;
+}
+
+.btnRnd1 {
+    padding: 0px var(--px20);
+    width: var(--px280);
+    height: var(--px50);
+    color: var(--secondary);
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px25);
+    background-color: var(--tertiary);
+}
+
+.btnRnd2 {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: var(--tertiary);
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px25);
+    background-color: var(--secondary);
+}
+
+.deleteBtn {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: white;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px8);
+    background: linear-gradient(to bottom, red, darkred);
+    background-color: red;
+}
+
+.updateBtn {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: white;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px8);
+    background: linear-gradient(to bottom, blue, darkblue);
+    background-color: red;
+}
+
+.cancelBtn {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: white;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px8);
+    background: linear-gradient(to bottom, green, darkgreen);
+    background-color: red;
+}
+/* -- End of custom class -- */
+
+
+/* --- Login Page Start --- */
+/* 0. Navigation Bar */
+nav {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px var(--px8);
+    align-items: center;
+    border-bottom: 1px solid var(--secondary);
+}
+
+/* Temprorary Used Text As Icon in nav bar*/
+.navIcon {
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--subHead2); /* Adjust */
+}
+
+.expandNav {
+    display: flex;
+    flex: 1;
+    gap: var(--px72);
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.navItems{
+    margin: 0px;
+    padding: 0px;
+    color: var(--secondary);
+    font-size: var(--text);
+    font-weight: var(--light);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.expandNav li:last-child .navItems{
+    font-weight: var(--semiBold);
+}
+
+/* Remove it once fixed*/
+.item {
+    flex: 1;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* 1. Hero Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    /*border: 12px solid black;*/
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.introItems{
+    margin: 0px;
+    font-weight: var(--light);
+    font-size: var(--big);
+}
+
+.intro p:nth-child(2) {
+    margin-bottom: 8px;      
+}
+
+.intro p:nth-child(3){
+    margin-bottom: 8px;
+    font-size: var(--paragraph);
+}
+
+/* 2. Dashboard Screen */
+.dashboard {
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.dashboard img {
+    margin: 0px;
+    padding: 0px;
+    height: 80%;
+    border-radius: 48px;
+}
+
+.dashboard p{
+    font-size: var(--subHead);
+    font-weight: var(--light);
+    margin: 0px;
+}
+
+
+/* Features Section */
+.features {
+    height: 100vh;
+    padding: var(--px128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.featureItems{
+    flex: 1;
+}
+
+.featureHead{
+    font-size: var(--big);
+    font-weight: var(--light);
+    margin: 0px;
+}
+
+.featParagrah{
+    font-size: var(--paragraph);
+    font-weight: var(--light);
+    text-align: left;
+}
+
+.doubleBtn{
+    display: flex;
+    gap: var(--px16);
+}
+
+.displayImages{
+    width: 100%;
+    border-radius: var(--px24);
+}
+
+/* Footer (not made yet) */
+
+.footerSec{
+    display: flex;
+    border-top: var(--px2) solid var(--secondary);
+/*    background-color: var(--tertiary);*/
+    align-items: center;
+    justify-content: center;
+}
+
+.footerText{
+    color: black;
+    font-weight: var(--semiBold);
+    margin: 0px;
+    padding: var(--px8);
+}
+/* - End of Login Page - */
+
+/* --- Create Account Page --- */
+
+.overlay {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background: hsla(196,31%,49%,1);
+    background-blend-mode: multiply;
+    color: var(--secondary);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 1px hsla(0,0%,100%,0.4);
+    backdrop-filter: blur(24px)
+}
+
+.formControl {
+    margin: 4vh 40vh;
+    padding: 4vh;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    background: var(--shade);
+    position: relative;
+}
+
+.formSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-size: var(--subHead2);
+    font-weight: var(--semiBold);
+}
+
+.spanCol {
+    margin: 0px;
+    padding: 0px;
+    grid-column: span 2;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.span {
+    grid-column: span 2; 
+    font-size: var(--text); 
+    margin: 0px;
+    font-weight: var(--semiBold);
+}
+.formInput {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    padding: 0rem 2rem;
+    font-size: var(--paragraph);
+    font-weight: var(--light);
+}
+
+.inputEdit {
+    padding: 8px;
+    color: black;
+    background-color: var(--secondary);
+    border: 1px solid var(--dark);
+    border-radius: 0.5rem;
+    font-size: var(--text);
+    font-weight: var(--bold);
+}
+
+.frmPad{
+    margin: 0rem 2rem;
+}
+/* - End of Create Account Page - */
+
+/* --- Delete Account Page --- */
+
+.deleteAccount {
+    margin: 15vh 25vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid red;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.deleteId {
+    margin: 0px;
+    padding: 8px;
+    color: red;
+    background-color: var(--secondary);
+    border: 1px solid var(--dark);
+    border-radius: 0.5rem;
+    font-size: var(--text);
+    font-weight: var(--bold);
+}
+
+/* Delete End */
+
+/* Login Page */
+
+.loginBackground {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: left;
+    width: 480px;
+    height: 440px;
+    /*    background-color: var(--tertiary);*/
+    background: linear-gradient(transparent, var(--tertiary)), var(--shade);
+    background-blend-mode: multiply;
+    border: 2px solid var(--secondary);
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.loginItems {
+    color: var(--secondary);
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.loginButtons {
+    color: var(--secondary);
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    left: 440px;
+    width: var(--px20);
+    height: var(--px20);
+    padding: var(--px4);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: var(--px20);
+    text-align: center;
+    text-decoration: none;
+}
+
+.headCenter {
+    flex: 1;
+    padding: var(--px8);
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.loginLinks {
+    display:contents;
+    margin: 0px 0px;
+    padding: 0px;
+    color: var(--secondary);
+    font-size: var(--text);
+    font-weight: var(--light);
+    text-decoration: none;
+    box-sizing: border-box;
+}
