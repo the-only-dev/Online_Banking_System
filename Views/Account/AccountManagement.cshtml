@@ -27,17 +27,17 @@
                 <tbody>
                     @foreach (var accounts in Model.Account)
                     {
-                        <tr>
-                            <td>@accounts.AccountNo</td>
-                            <td>@accounts.AccountType</td>
-                            <td>@accounts.AccountBalance</td>
-                            <td>@accounts.AccountStatus</td>
-                            <td>@accounts.CreatedAt</td>
-                            <td>
-                                <a asp-action="DeleteAccount" asp-route-id="@accounts.Id">Delete</a>
-                            </td>
-                        </tr>
-                    }
+                    <tr>
+                        <td>@accounts.AccountNo</td>
+                        <td>@accounts.AccountType</td>
+                        <td>@accounts.AccountBalance</td>
+                        <td>@accounts.AccountStatus</td>
+                        <td>@accounts.CreatedAt</td>
+                        <td>
+                            <a asp-action="DeleteAccount" asp-route-id="@accounts.Id">Delete</a>
+                        </td>
+                    </tr>
+                    }   
                 </tbody>
             </table>
         </div>
@@ -48,14 +48,17 @@
         <form asp-controller="Account" asp-action="NewAccount" method="post">
             <p>Open a new account with our one click account open</p>
             <p>Just Select Type and Press Create Account</p>
+            <p>This will create a account with 0 Balance</p>
             <select asp-for="accountType">
                 <option value="Savings">Savings</option>
                 <option value="Current">Current</option>
                 <option value="Business">Business</option>
             </select>
+            <label>Add Money In Account</label>
+            <input type="number" asp-for="amount" />
             <button type="submit">Create Account</button>
         </form>
     </section>
-    
+   
 </body>
 

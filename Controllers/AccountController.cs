@@ -29,7 +29,7 @@ namespace Bank2.Controllers
 
         [Route("/Account/NewAccount")]
         [HttpPost]
-        public async Task<IActionResult> NewAccount(int id, [Bind("accountType")] SharedData data)
+        public async Task<IActionResult> NewAccount(int id, [Bind("accountType, amount")] SharedData data)
         {
             var userId = HttpContext.Session.GetInt32("UserId");
 
@@ -39,13 +39,14 @@ namespace Bank2.Controllers
             }
             var account = new Account();
             account.UserId = userId.Value;
+            account.AccountBalance = data.amount;
             account.AccountNo = "A/C-0000-" + userId;
-            account.AccountBalance = 0;
             account.CreatedAt = DateTime.Now;
             account.AccountStatus = "Active";
             account.AccountType = data.accountType;
 
             _context.Accounts.Add(account);
+
             await _context.SaveChangesAsync();
             return RedirectToAction("AccountManagement", "Account");
         }
