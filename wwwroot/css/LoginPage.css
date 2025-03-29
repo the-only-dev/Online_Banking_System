@@ -64,6 +64,11 @@
 }
 
 /* Global Element Changes */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 b {
     font-weight: var(--semiBold);
 }

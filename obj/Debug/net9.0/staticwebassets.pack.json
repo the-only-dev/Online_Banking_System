@@ -5,8 +5,12 @@
       "PackagePath": "staticwebassets\\Bank2.0wp9njeobq.bundle.scp.css"
     },
     {
-      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\Forms.css",
-      "PackagePath": "staticwebassets\\css\\Forms.css"
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Dashboard.css"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\DashboardLayout.css",
+      "PackagePath": "staticwebassets\\css\\DashboardLayout.css"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",

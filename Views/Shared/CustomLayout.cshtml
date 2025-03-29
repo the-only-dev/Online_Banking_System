@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
 	<title>@ViewData["Title"]</title>
-	<link rel="stylesheet" href="~/css/Forms.css"/>
+	<link rel="stylesheet" href="~/css/DashboardLayout.css"/>
 	<link rel="stylesheet" href="~/css/LoginPage.css"/>
 </head>
 <body>
 	<div class="setBody">
 		<nav class="sidebar">
 			<div class="dashItems">
-				<a class="navLinks" asp-action="Dashboard">Dashboard</a>
-				<a class="navLinks" asp-action="CreateUser">Create Account</a>
-				<a class="navLinks" asp-action="Notifications">Notifications</a>
-				<a class="navLinks" asp-action="BillingAndPayments">Billing and Payment</a>
-				<a class="navLinks" asp-action="AccountManagement">Account Management</a>
-				<a class="navLinks" asp-action="SecurityAndPrivacy">Security and Privacy</a>
-				<a class="navLinks" asp-action="LoginPage">Profile</a>
+				<a class="navLinks" asp-controller="User" asp-action="Dashboard">Dashboard</a>
+				<a class="navLinks" asp-controller="User" asp-action="CreateUser">Create Account</a>
+				<a class="navLinks" asp-controller="User" asp-action="Notifications">Notifications</a>
+				<a class="navLinks" asp-controller="User" asp-action="BillingAndPayments">Billing and Payment</a>
+				<a class="navLinks" asp-controller="Account" asp-action="AccountManagement">Account Management</a>
+				<a class="navLinks" asp-controller="User" asp-action="SecurityAndPrivacy">Security and Privacy</a>
+				<a class="navLinks" asp-controller="User" asp-action="LoginPage">Profile</a>
 			</div>
 			<div class="signOut">
 				<button class="btnRnd1" onclick="logout()">Sign Out</button>

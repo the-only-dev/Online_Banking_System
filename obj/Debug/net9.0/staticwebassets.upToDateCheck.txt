@@ -3,7 +3,6 @@ C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\css\site.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\css\Forms.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\jquery\dist\jquery.min.map
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
@@ -14,6 +13,7 @@ C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\js\bootstr
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\css\Dashboard.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
@@ -54,6 +54,7 @@ C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootst
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\css\DashboardLayout.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
@@ -62,7 +63,8 @@ C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootst
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\jquery-validation\LICENSE.md
 C:\!Study Data\Visual Basic Practice\Bank2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-wwwroot\css\Forms.css
+wwwroot\css\Dashboard.css
+wwwroot\css\DashboardLayout.css
 wwwroot\css\LoginPage.css
 wwwroot\css\site.css
 wwwroot\favicon.ico

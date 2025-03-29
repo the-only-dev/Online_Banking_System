@@ -39,7 +39,7 @@
         <p>Pin : @Model.Pin</p>
         <p>Phone : @Model.Phone</p>
         <p>Job : @Model.Job</p>
-        <p>AccountCount : @Model.AccountCount</p>
+        <p>AccountCount : @Model.Accounts?.Count</p>
         <p>CustomerType : @Model.CustomerType</p>
     </div>
     <div class="formControl">
@@ -56,19 +56,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
 
-                
                 @foreach (var account in Model.Accounts)
                 {
+                    <tr>
                     <td>@account.Id</td>
                     <td>@account.AccountNo</td>
                     <td>@account.AccountBalance</td>
                     <td>@account.AccountType</td>
                     <td>@account.AccountStatus</td>
                     <td>@account.CreatedAt</td>
+                    </tr>
                 }
-                </tr>
+                
             </tbody>
         </table>
     </div>
