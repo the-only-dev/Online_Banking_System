@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="~/css/LoginPage.css" />
 </head>
 <body class="dashboardBody">
-    <section>
+    <header class="baseSection">
         <h1 class="">Account Management</h1>
-        <hr />
+    </header>
+    <section class="baseSection">
         <div>
-            <p>Accounts Owned : @Model.Account?.Count</p>
-            <p>All Account are linked to user</p>
+            <div>
+                <h2>Accounts Owned : @Model.Account?.Count</h2>
+            </div>
+
             <table>
                 <thead>
                     <tr>
@@ -24,6 +27,7 @@
                         <th>Action</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     @foreach (var accounts in Model.Account)
                     {
@@ -37,28 +41,41 @@
                             <a asp-action="DeleteAccount" asp-route-id="@accounts.Id">Delete</a>
                         </td>
                     </tr>
-                    }   
+                    }
                 </tbody>
             </table>
         </div>
-        
     </section>
-    <section>
+
+    <section class="baseSection">
         <h2>Create New Account</h2>
-        <form asp-controller="Account" asp-action="NewAccount" method="post">
-            <p>Open a new account with our one click account open</p>
-            <p>Just Select Type and Press Create Account</p>
-            <p>This will create a account with 0 Balance</p>
-            <select asp-for="accountType">
-                <option value="Savings">Savings</option>
-                <option value="Current">Current</option>
-                <option value="Business">Business</option>
-            </select>
-            <label>Add Money In Account</label>
-            <input type="number" asp-for="amount" />
-            <button type="submit">Create Account</button>
+        <form class="accountManagement" asp-controller="Account" asp-action="NewAccount" method="post">
+            <div class="bigSection">
+                <h3>User Information</h3>
+                <div class="smallSection">
+                    <p class="sectionContent">Full Name : @Model.User?.FullName</p>
+                    <p class="sectionContent">Email : @Model.User?.Email</p>
+                    <p class="sectionContent">Phone : @Model.User?.Phone</p>
+                    <p class="sectionContent">Address : @Model.User?.Address</p>
+                    <p class="sectionContent">Branch Name : @Model.User?.Branch?.Name</p>
+                    <p class="sectionContent">Branch Code : @Model.User?.Branch?.IFSCCode</p>
+                </div>
+            </div>
+
+            <div class="smallSection">
+                <label class="sectionContent">Select Account Type</label>
+                <select class="accBtnSelect" asp-for="accountType">
+                    <option value="Savings">Savings</option>
+                    <option value="Current">Current</option>
+                    <option value="Business">Business</option>
+                </select>
+            </div>
+            <div class="smallSection">
+                <label class="sectionContent">Amount</label>
+                <input class="amountIn" type="number" asp-for="amount" />
+            </div>
+            <button class="createAccBtn" type="submit">Create Account</button>
         </form>
     </section>
-   
 </body>
 

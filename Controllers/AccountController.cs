@@ -1,6 +1,7 @@
 ﻿using Bank2.Data;
 using Bank2.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bank2.Controllers
@@ -32,6 +33,12 @@ namespace Bank2.Controllers
         public async Task<IActionResult> NewAccount(int id, [Bind("accountType, amount")] SharedData data)
         {
             var userId = HttpContext.Session.GetInt32("UserId");
+            var accounts = await _context.Accounts.Where(x => x.UserId == userId.Value).ToListAsync();
+            if (accounts.Count > 2)
+            {
+                ViewData["MaxAccount"] = "You Have Reached Max Account Limit. Contact Support for more informaton.";
+                return RedirectToAction("AccountManagement", "Account");
+            }
 
             if (!userId.HasValue)
             {
@@ -45,6 +52,7 @@ namespace Bank2.Controllers
             account.AccountStatus = "Active";
             account.AccountType = data.accountType;
 
+            
             _context.Accounts.Add(account);
 
             await _context.SaveChangesAsync();
@@ -59,6 +67,7 @@ namespace Bank2.Controllers
             {
                 return RedirectToAction("LoginPage", "User");
             }
+            var branch = await _context.Branchs.ToListAsync();
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userid.Value);
             var accounts = await _context.Accounts.Where(x => x.UserId == userid.Value).ToListAsync();
             var accountIds = accounts.Select(a => a.Id).ToList();
@@ -71,11 +80,13 @@ namespace Bank2.Controllers
 
             var sharedInfo = new SharedData
             {
+                Branch = branch,
                 User = user,
                 Account = accounts,
                 Transactions = transactions
             };
 
+            //ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
             return View(sharedInfo);
         }
     }
