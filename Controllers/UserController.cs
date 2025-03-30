@@ -19,6 +19,11 @@ namespace Bank2.Controllers
             return RedirectToAction("LoginPage");
         }
 
+        //public IActionResult Home()
+        //{
+        //    HttpContext.Session.SetString("LogStatus", "log");
+        //    return RedirectToAction("LoginPage");
+        //}
         public IActionResult LoginPage()
         {
             return View();
@@ -51,7 +56,10 @@ namespace Bank2.Controllers
                     .Include(a => a.Accounts).ThenInclude(t => t.Transactions)
                     .Include(b => b.Branch)
                     .FirstOrDefaultAsync(x => x.Id == userId.Value);
-                TempData["DStatus"] = "dash";
+                HttpContext.Session.SetString("LogStatus", "dash");
+                string? logStatus = HttpContext.Session.GetString("LogStatus");
+                Console.WriteLine($"Before: {logStatus}");
+                Console.WriteLine("Hello");
                 return View(user);
            }
             return RedirectToAction("LoginPage");

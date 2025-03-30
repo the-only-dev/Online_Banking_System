@@ -1,7 +1,22 @@
 ﻿@{
-    
+
+    if (Context.Session.GetString("LogStatus") == "dash")
+    {
         Layout = "CustomLayout";
-    
-    // Layout = "LoginLayout";
+    }
+
+    if (Context.Session.GetString("LogStatus") == "log")
+    {
+        Layout = "LoginLayout";
+    }
+    // Layout = Context.Session.GetString("LogStatus") == "dash" ? "CustomLayout" : "LoginLayout";
+    // {
+    //     Layout = "CustomLayout";
+
+    // }
+    // else
+    // {
+    //     Layout = "LoginLayout";
+    // }
     // Layout = "_Layout";
 }
