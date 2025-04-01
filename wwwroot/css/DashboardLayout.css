@@ -36,7 +36,7 @@
     list-style: none;
 }
 
-.navLinks {
+.dashLinks {
     padding-left: var(--px8);
     height: var(--px40);
     background-color: var(--dark);

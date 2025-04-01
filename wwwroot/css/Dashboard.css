@@ -29,6 +29,11 @@ td {
     text-align: left;
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 /* Global Custom Classes */
 
 .dashboardBody {
@@ -87,10 +92,6 @@ td {
     font-weight: var(--semiBold);
 }
 
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
 .createAccBtn {
     margin: var(--px4) 0px;

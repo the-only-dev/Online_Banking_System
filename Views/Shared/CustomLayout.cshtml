@@ -9,13 +9,13 @@
 	<div class="setBody">
 		<nav class="sidebar">
 			<div class="dashItems">
-				<a class="navLinks" asp-controller="User" asp-action="Dashboard">Dashboard</a>
-				<a class="navLinks" asp-controller="User" asp-action="CreateUser">Create Account</a>
-				<a class="navLinks" asp-controller="User" asp-action="Notifications">Notifications</a>
-				<a class="navLinks" asp-controller="User" asp-action="BillingAndPayments">Billing and Payment</a>
-				<a class="navLinks" asp-controller="Account" asp-action="AccountManagement">Account Management</a>
-				<a class="navLinks" asp-controller="User" asp-action="SecurityAndPrivacy">Security and Privacy</a>
-				<a class="navLinks" asp-controller="User" asp-action="Profile">Profile</a>
+				<a class="dashLinks" asp-controller="User" asp-action="Dashboard">Dashboard</a>
+				<a class="dashLinks" asp-controller="User" asp-action="CreateUser">Create Account</a>
+				<a class="dashLinks" asp-controller="User" asp-action="Notifications">Notifications</a>
+				<a class="dashLinks" asp-controller="User" asp-action="BillingAndPayments">Billing and Payment</a>
+				<a class="dashLinks" asp-controller="Account" asp-action="AccountManagement">Account Management</a>
+				<a class="dashLinks" asp-controller="User" asp-action="SecurityAndPrivacy">Security and Privacy</a>
+				<a class="dashLinks" asp-controller="User" asp-action="Profile">Profile</a>
 				@* <a class="navLinks" asp-controller="User" asp-action="Home">Home</a> *@
 			</div>
 			<div class="signOut">
@@ -34,7 +34,7 @@
 			window.location.href = "/User/Logout";
 		}
 		document.addEventListener("DOMContentLoaded", function() {
-			let items = document.querySelectorAll(".navLinks");
+			let items = document.querySelectorAll(".dashLinks");
 
 			items.forEach(item => {
 				item.addEventListener("mouseover", function() {
