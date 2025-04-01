@@ -5,97 +5,95 @@
 <html>
 <head>
 	<title></title>
+    <link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/Dashboard.css" asp-append-version="true" />
 </head>
-<body class="selectedBody">
-    <h1>Account Creation</h1>
-	<div>
-		<form asp-action="CreateUser" method="post" class="formControl">
+<body class="CUBody">
+    <main class="mainBody">
+        <form asp-action="CreateUser" method="post">
+            <h1>New User Account Creation</h1>
+            <section class="userSection">
+                <h2>Select Account and Branch</h2>
+                <div class="userInnerSection">
+                    <div class="userContent">
+                        <label for="CustomerType">Account Type</label>
+                        <select class="inputEdit" id="CustomerType" asp-for="CustomerType">
+                            <option selected value="Personal">Personal</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
 
-        <div id="overlay" class="overlay">
-            <h1>
-                Your Account Has Been Created Successfully.
-                Returning You To Login Page.
-            </h1>
-        </div>
+                    <div class="userContent">
+                        <label for="BranchId">Select Branch</label>
+                        <select class="inputEdit" asp-for="BranchId" asp-items="ViewBag.Branches"></select>
+                    </div>
+                </div>
 
-        <div class="formSection">
-            <p class="spanCol">Select Account Type</p>
+            </section>
 
-            <div class="formInput">
-                <label for="CustomerType">Account Type</label>
-                <select class="inputEdit" id="CustomerType" asp-for="CustomerType" >
-                    <option selected value="Personal">Personal</option>
-                    <option value="Business">Business</option>
-                </select>
-            </div>
+            <section class="userSection">
+                <h2 class="spanCol">Enter Personal Details</h2>
+                <div class="userInnerSection">
+                    <div class="userContent">
+                    <label for="Username">Username*</label>
+                    <input required class="inputEdit" type="text" id="Username" asp-for="Username">
+                    </div>
+                    <div class="userContent">
+                        <label for="Password">Password*</label>
+                        <input required class="inputEdit" type="text" id="Password" asp-for="Password">
+                    </div>
+                    <div class="userContent">
+                        <label for="FullName">Full Name</label>
+                        <input class="inputEdit" type="text" id="FullName" asp-for="FullName">
+                    </div>
+                    <div class="userContent">
+                        <label for="Email">Email*</label>
+                        <input required class="inputEdit" type="email" id="Email" asp-for="Email">
+                    </div>
+                    <div class="userContent">
+                        <label for="Phone">Phone</label>
+                        <input class="inputEdit" type="text" id="Phone" asp-for="Phone">
+                    </div>
+                    <div class="userContent">
+                        <label for="Address">Enter Address</label>
+                        <input class="inputEdit" type="text" id="Address" asp-for="Address">
+                    </div>
+                    <div class="userContent">
+                        <label for="PuserContentin">Pincode</label>
+                        <input class="inputEdit" type="text" id="Pin" asp-for="Pin">
+                    </div>
+                    <div class="userContent">
+                        <label for="Job">Job</label>
+                        <input class="inputEdit" type="text" id="Job" asp-for="Job">
+                    </div>
+                </div>
+            </section>
 
-            <div class="formInput">
-                <label for="BranchId">Select Branch</label>
-                    <select class="inputEdit" asp-for="BranchId" asp-items="ViewBag.Branches"></select>
-            </div>
-        </div>
+            <section class="userSection">
+                <div class="userInnerSection">                
+                    <h2 class="spanCol">Enter Business Details</h2>
 
-            
-        <div id="PersonalDetails" class="formSection">
-            <p class="spanCol">Enter Personal Details</p>
-            <div class="formInput">
-                <label for="Username">Username*</label>
-                    <input required class="inputEdit"  type="text" id="Username" asp-for="Username">
-            </div>
-            <div class="formInput">
-                <label for="Password">Password*</label>
-                <input required class="inputEdit" type="text" id="Password" asp-for="Password">
-            </div>
-            <div class="formInput">
-                <label for="FullName">Full Name</label>
-                <input class="inputEdit" type="text" id="FullName" asp-for="FullName">
-            </div>
-            <div class="formInput">
-                <label for="Email">Email*</label>
-                <input required class="inputEdit" type="email" id="Email" asp-for="Email">
-            </div>
-            <div class="formInput">
-                <label for="Phone">Phone</label>
-                <input class="inputEdit" type="text" id="Phone" asp-for="Phone">
-            </div>
-            <div class="formInput">
-                <label for="Address">Enter Address</label>
-                <input class="inputEdit" type="text" id="Address" asp-for="Address">
-            </div>
-            <div class="formInput">
-                <label for="Pin">Pincode</label>
-                <input class="inputEdit" type="text" id="Pin" asp-for="Pin">
-            </div>
-            <div class="formInput">
-                <label for="Job">Job</label>
-                    <input class="inputEdit" type="text" id="Job" asp-for="Job">
-            </div>
-        </div>
+                <div class="userContent">
+                    <label for="BusinessName">Business Name</label>
+                    <input class="inputEdit" type="text" id="BusinessName" asp-for="BusinessName">
+                </div>
 
-        <div id="BusinessDetails" style="display: none" class="formSection">
-            <p class="spanCol">Enter Business Details</p>
+                <div class="userContent">
+                    <label for="BusinessType">Business Type</label>
+                    <input class="inputEdit" type="text" id="BusinessType" asp-for="BusinessType">
+                </div>
 
-            <div class="formInput">
-                <label for="BusinessName">Business Name</label>
-                <input class="inputEdit" type="text" id="BusinessName" asp-for="BusinessName">
-            </div>
+                <div class="userContent">
+                    <label for="TaxId">TaxId</label>
+                    <input class="inputEdit" type="text" id="TaxId" asp-for="TaxId">
+                </div>
+                </div>
 
-            <div class="formInput">
-                <label for="BusinessType">Business Type</label>
-                <input class="inputEdit" type="text" id="BusinessType" asp-for="BusinessType">
-            </div>
-
-            <div class="formInput">
-                <label for="TaxId">TaxId</label>
-                <input class="inputEdit" type="text" id="TaxId" asp-for="TaxId">
-            </div>
-        </div>
-
-        <button id="submitBtn" type="submit" class="btnRnd2">Submit</button>
-
-		</form>
-	</div>
+            </section>
+            <button id="submitBtn" type="submit" class="btnRnd1">Submit</button>
+        </form>
+    </main>
+    
     
     <script>
        document.getElementById("CustomerType").addEventListener("change", function()

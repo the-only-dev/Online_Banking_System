@@ -423,44 +423,44 @@ body::-webkit-scrollbar{
 
 /* --- Create Account Page --- */
 
-.overlay {
-    display: none;
-    align-items: center;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    background: hsla(196,31%,49%,1);
-    background-blend-mode: multiply;
-    color: var(--secondary);
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0px 0px 2px 1px hsla(0,0%,100%,0.4);
-    backdrop-filter: blur(24px)
+.CUBody {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--secondary);
+}
+.mainBody {
+    margin: 0% 20%;
+    padding: var(--px16);
+    background-color: var(--secondary);
+    border: 2px solid black;
 }
 
-.formControl {
-    margin: 4vh 40vh;
-    padding: 4vh;
-    border: 2px solid var(--secondary);
-    border-radius: 8px;
-    background: var(--shade);
-    position: relative;
+.userSection{
+    border-bottom: 2px solid black;
+    padding-bottom: var(--px16);
+    margin-bottom: var(--px16);
 }
 
-.formSection {
+
+.userInnerSection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.userContent {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
     gap: 1rem;
     margin-bottom: 2rem;
-    font-size: var(--subHead2);
+    font-size: var(--text);
     font-weight: var(--semiBold);
 }
 
 .spanCol {
-    margin: 0px;
+    margin: 16px 0px;
     padding: 0px;
     grid-column: span 2;
     border-bottom: 2px solid var(--secondary);
