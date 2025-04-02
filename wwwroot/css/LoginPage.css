@@ -4,6 +4,7 @@
     font-family: 'Inter';
 /*    font-size: 8px;*/
 }
+
 :root {
     /* Color Styles */
     --primary: hsla(0,0%,100%,1);
@@ -61,6 +62,10 @@
     --px160: 10rem;
     --px200: 12.5rem;
     --px280: 17.5rem;
+
+    /* Used for Other Items */
+    --px440: 27.5rem;
+    --px480: 30rem;
 }
 
 /* Global Element Changes */
@@ -223,7 +228,7 @@ body::-webkit-scrollbar{
 .navi {
     display: flex;
     box-sizing: border-box;
-    padding: 0px var(--px8);
+    padding: var(--px4);
     align-items: center;
     border-bottom: 1px solid var(--secondary);
 }
@@ -281,7 +286,7 @@ body::-webkit-scrollbar{
 
 .dropdown:hover .navDropdown {
     opacity: 100;
-    max-height: var(--px280);
+    max-height: var(--px440);
 }
 
 .navDropItems h2{
@@ -428,15 +433,21 @@ body::-webkit-scrollbar{
     padding: 0px;
     background-color: var(--secondary);
 }
-.mainBody {
-    margin: 0% 20%;
+.accountCreateForm {
+    margin: 1% 20%;
     padding: var(--px16);
     background-color: var(--secondary);
     border: 2px solid black;
+    border-radius: var(--px16);
+}
+
+.userHeading{
+    padding-bottom: var(--px16);
+    border-bottom: 1px solid black;
 }
 
 .userSection{
-    border-bottom: 2px solid black;
+    border-bottom: var(--px2) solid black;
     padding-bottom: var(--px16);
     margin-bottom: var(--px16);
 }
@@ -525,7 +536,7 @@ body::-webkit-scrollbar{
 
 /* Delete End */
 
-/* Login Page */
+/* Login Box in Login Page */
 
 .loginBackground {
     display: flex;
@@ -537,6 +548,7 @@ body::-webkit-scrollbar{
     background-color: transparent;
     backdrop-filter: blur(10px);
     position: fixed;
+    z-index: 1;
 }
 
 .loginBox {
@@ -545,12 +557,12 @@ body::-webkit-scrollbar{
     align-self: center;
     justify-content: center;
     text-align: left;
-    width: 480px;
-    height: 440px;
-    /*    background-color: var(--tertiary);*/
+    width: var(--px480);
+    height: var(--px440);
+/*        background-color: var(--tertiary);*/
     background: linear-gradient(transparent, var(--tertiary)), var(--shade);
     background-blend-mode: multiply;
-    border: 2px solid var(--secondary);
+    border: var(--px2) solid var(--secondary);
     border-radius: 1rem;
     box-sizing: border-box;
 }
@@ -574,7 +586,7 @@ body::-webkit-scrollbar{
 
 .closeBtn {
     position: absolute;
-    left: 440px;
+    left: var(--px440);
     width: var(--px20);
     height: var(--px20);
     padding: var(--px4);

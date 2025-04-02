@@ -31,7 +31,7 @@
 					<button type="submit" class="sqrLoginBtn">Login</button>
 				</div>
 				<div class="loginItems">
-					<a class="loginLinks" asp-action="CreateAccount">Create Account.</a><br />
+					<a class="loginLinks" asp-action="CreateUser">Create Account.</a><br />
 					<a class="loginLinks" asp-action="">Forgot Password.</a>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 				<a class="navItems" asp-action="">Personal</a>
 				<ul class="navDropdown">
 					<li class="navDropItems">
-						<h2>Account Creation</h2>
+						<h2>Personal Account</h2>
 						<a class="navLinks" asp-action="">Open Savings Account</a>
 						<a class="navLinks" asp-action="">Open Current Account</a>
 					</li>
@@ -70,62 +70,63 @@
 						<a class="navLinks" asp-action="">Apply for Demat Account</a>
 					</li>
 				</ul>
-			</li>
-				<li class="dropdown">
-				<a class="navItems" asp-action="">Business</a>
+			</li> 
+			<li class="dropdown">
+			<a class="navItems" asp-action="">Business</a>
+			<ul class="navDropdown">
+				<li class="navDropItems">
+						<h2>Business Account</h2>
+						<a class="navLinks" asp-action="">Open Regular Current Account</a>
+						<a class="navLinks" asp-action="">Open Freelancer Current Account</a>
+				</li>
+				<li class="navDropItems">
+						<h2>Security & Fraud Prevention</h2>
+						<a class="navLinks" asp-action="">Role-Based Permission</a>
+						<a class="navLinks" asp-action="">Business Fraud Monitoring</a>
+				</li>
+				<li class="navDropItems">
+						<h2>Payment & Transfer</h2>
+						<a class="navLinks" asp-action="">Bulk Payments & Payroll Processing</a>
+						<a class="navLinks" asp-action="">Vendor & Supplier Payments</a>
+				</li>
+				<li class="navDropItems">
+						<h2>Specialized Business A/C</h2>
+						<a class="navLinks" asp-action="">Merchant Account</a>
+						<a class="navLinks" asp-action="">Export / Import Account</a>
+				</li>
+			</ul>
+		</li>
+			<li class="dropdown">
+				<a class="navItems" asp-action="">Commercial</a>
 				<ul class="navDropdown">
 					<li class="navDropItems">
-							<h2>Account Creation</h2>
-							<a class="navLinks" asp-action="">Open Regular Current Account</a>
-							<a class="navLinks" asp-action="">Open Freelancer Current Account</a>
+						<h2>Commercial Account</h2>
+						<a class="navLinks"asp-action="">Open Corporate Current Account</a>
+						<a class="navLinks"asp-action="">Open Corporate Salary Account</a>
 					</li>
 					<li class="navDropItems">
-							<h2>Security & Fraud Prevention</h2>
-							<a class="navLinks" asp-action="">Role-Based Permission</a>
-							<a class="navLinks" asp-action="">Business Fraud Monitoring</a>
+						<h2>Security & Support</h2>
+						<a class="navLinks"asp-action="">Enterprise-Grade Fraud Protection</a>
+						<a class="navLinks"asp-action="">Advanced Cybersecurity</a>
 					</li>
 					<li class="navDropItems">
-							<h2>Payment & Transfer</h2>
-							<a class="navLinks" asp-action="">Bulk Payments & Payroll Processing</a>
-							<a class="navLinks" asp-action="">Vendor & Supplier Payments</a>
+						<h2>Payment & Treasury</h2>
+						<a class="navLinks"asp-action="">Large-Scale Transactions & Payroll</a>
+						<a class="navLinks"asp-action="">Foreign Exchange & Remittances</a>
 					</li>
 					<li class="navDropItems">
-							<h2>Specialized Business A/C</h2>
-							<a class="navLinks" asp-action="">Merchant Account</a>
-							<a class="navLinks" asp-action="">Export / Import Account</a>
+						<h2>Foreign Exchange & Trade</h2>
+						<a class="navLinks"asp-action="">Foreign Currency Account</a>
+						<a class="navLinks"asp-action="">Export Finance Account</a>
 					</li>
 				</ul>
 			</li>
-				<li class="dropdown">
-					<a class="navItems" asp-action="">Commercial</a>
-					<ul class="navDropdown">
-						<li class="navDropItems">
-							<h2>Account Creation</h2>
-							<a class="navLinks"asp-action="">Open Corporate Current Account</a>
-							<a class="navLinks"asp-action="">Open Corporate Salary Account</a>
-						</li>
-						<li class="navDropItems">
-							<h2>Security & Support</h2>
-							<a class="navLinks"asp-action="">Enterprise-Grade Fraud Protection</a>
-							<a class="navLinks"asp-action="">Advanced Cybersecurity</a>
-						</li>
-						<li class="navDropItems">
-							<h2>Payment & Treasury</h2>
-							<a class="navLinks"asp-action="">Large-Scale Transactions & Payroll</a>
-							<a class="navLinks"asp-action="">Foreign Exchange & Remittances</a>
-						</li>
-						<li class="navDropItems">
-							<h2>Foreign Exchange & Trade</h2>
-							<a class="navLinks"asp-action="">Foreign Currency Account</a>
-							<a class="navLinks"asp-action="">Export Finance Account</a>
-						</li>
-					</ul>
-				</li>
-				<li class="dropdown"><a class="navItems" asp-action="">Services</a></li>
-				<li class="dropdown"><a class="navItems" asp-action="">Contact Us</a></li>
+			<li class="dropdown"><a class="navItems" asp-action="">Services</a></li>
+			<li class="dropdown"><a class="navItems" asp-action="">Contact Us</a></li>
 		</ul>
 		<div>
 			<a id="loginBtn" asp-action="" class="loginBtn">Login</a>
+
 			<select id="logoutBtn" class="inputEdit" style="display: none" onchange="handleSelect(this)">
 				<option hidden id="user" selected></option>
 				<option value="/User/Dashboard"><a>Dashboard</a></option>

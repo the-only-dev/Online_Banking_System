@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="~/css/Dashboard.css" asp-append-version="true" />
 </head>
 <body class="CUBody">
-    <main class="mainBody">
+    <main class="accountCreateForm">
         <form asp-action="CreateUser" method="post">
-            <h1>New User Account Creation</h1>
+            <h1 class="userHeading">New User Account Creation</h1>
             <section class="userSection">
-                <h2>Select Account and Branch</h2>
+                <h2 class="userHeading">Select Account and Branch</h2>
                 <div class="userInnerSection">
                     <div class="userContent">
                         <label for="CustomerType">Account Type</label>
@@ -32,7 +32,7 @@
             </section>
 
             <section class="userSection">
-                <h2 class="spanCol">Enter Personal Details</h2>
+                <h2 class="userHeading"> Enter Personal Details</h2>
                 <div class="userInnerSection">
                     <div class="userContent">
                     <label for="Username">Username*</label>
@@ -69,24 +69,24 @@
                 </div>
             </section>
 
-            <section class="userSection">
+            <section id="BusinessDetails" class="userSection" style="display:none">
+                <h2 class="userHeading">Enter Business Details</h2>
                 <div class="userInnerSection">                
-                    <h2 class="spanCol">Enter Business Details</h2>
 
-                <div class="userContent">
-                    <label for="BusinessName">Business Name</label>
-                    <input class="inputEdit" type="text" id="BusinessName" asp-for="BusinessName">
-                </div>
+                    <div class="userContent">
+                        <label for="BusinessName">Business Name</label>
+                        <input class="inputEdit" type="text" id="BusinessName" asp-for="BusinessName">
+                    </div>
 
-                <div class="userContent">
-                    <label for="BusinessType">Business Type</label>
-                    <input class="inputEdit" type="text" id="BusinessType" asp-for="BusinessType">
-                </div>
+                    <div class="userContent">
+                        <label for="BusinessType">Business Type</label>
+                        <input class="inputEdit" type="text" id="BusinessType" asp-for="BusinessType">
+                    </div>
 
-                <div class="userContent">
-                    <label for="TaxId">TaxId</label>
-                    <input class="inputEdit" type="text" id="TaxId" asp-for="TaxId">
-                </div>
+                    <div class="userContent">
+                        <label for="TaxId">TaxId</label>
+                        <input class="inputEdit" type="text" id="TaxId" asp-for="TaxId">
+                    </div>
                 </div>
 
             </section>
