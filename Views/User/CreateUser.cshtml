@@ -15,18 +15,18 @@
             <section class="userSection">
                 <h2 class="userHeading">Select Account and Branch</h2>
                 <div class="userInnerSection">
-                    <div class="userContent">
-                        <label for="CustomerType">Account Type</label>
-                        <select class="inputEdit" id="CustomerType" asp-for="CustomerType">
-                            <option selected value="Personal">Personal</option>
-                            <option value="Business">Business</option>
-                        </select>
-                    </div>
+                <div class="userContent">
+                    <label for="CustomerType">Account Type</label>
+                    <select class="inputEdit" id="CustomerType" asp-for="CustomerType">
+                        <option selected value="Personal">Personal</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
 
-                    <div class="userContent">
-                        <label for="BranchId">Select Branch</label>
-                        <select class="inputEdit" asp-for="BranchId" asp-items="ViewBag.Branches"></select>
-                    </div>
+                <div class="userContent">
+                    <label for="BranchId">Select Branch</label>
+                    <select class="inputEdit" asp-for="BranchId" asp-items="ViewBag.Branches"></select>
+                </div>
                 </div>
 
             </section>

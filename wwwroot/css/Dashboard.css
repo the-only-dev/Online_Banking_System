@@ -1,4 +1,5 @@
-﻿/* Global Elements Change */
+﻿@import url("LoginPage.css");
+/* Global Elements Change */
 table {
     display: flex;
     flex-direction: column;
@@ -49,7 +50,25 @@ input[type="number"]::-webkit-inner-spin-button {
     /*    background-color: blanchedalmond;*/
 }
 
+/* DashBoard */
 
+.bankCard{
+    text-align: left;
+    border-radius: var(--px16);
+    padding: var(--px8);
+    width: var(--px440);
+    background: linear-gradient(to bottom, var(--tertiary) , var(--primary)), var(--shade);
+    background-blend-mode: multiply;
+}
+
+.twoColumn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.twoColumn p:last-child{
+    text-align: center;
+}
 /* -- Account Management -- */
 
 .accountManagement{

@@ -1,0 +1,51 @@
+﻿@import url("LoginPage.css");
+.setBody{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.content{
+   margin-left: 20%;
+   flex-grow: 1;
+   height: 100%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    margin: 0px;
+    position: fixed;
+    padding: var(--px16) 0px;
+    background-color: var(--dark);
+    font-weight: var(--semiBold);
+    text-align: left;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+.dashItems{
+    display: flex;
+    gap: var(--px20);
+    flex-direction: column;
+    margin: 0px;
+    padding: var(--px40) 0px;
+    list-style: none;
+}
+
+.dashLinks {
+    padding-left: var(--px8);
+    height: var(--px40);
+    background-color: var(--dark);
+    font-size: var(--paragraph);
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.signOut {
+    margin-top: auto;
+    text-align: center;
+}

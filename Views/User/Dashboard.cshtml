@@ -9,71 +9,23 @@
 <html lang="en">
 <head>
     <title></title>
-    <link rel="stylesheet" href="~/css/LoginPage.css"/>
+    <link rel="stylesheet" href="~/css/Dashboard.css"/>
 </head>
-<body class="selectedBody">
-    <h1>Hello @Username</h1>
-    <div class="formControl">
-        <h2>Branch Details</h2> 
-        <p>Branch Name : @Model.Branch?.Name</p>
-        <p>Branch Id : @Model.Branch?.Id</p>
-        <p>Branch IFSC : @Model.Branch?.IFSCCode</p>
-        <p>Branch Balance : $@Model.Branch?.Balance</p>
-        <p>Branch Phone : @Model.Branch?.Phone</p>
-        <p>Branch Address : @Model.Branch?.Address</p>
-        <p>Branch Pin : @Model.Branch?.Pin</p>
-        <p>Branch Total Customer : @Model.Branch?.TotalCustomers</p>
-        <p>Branch Total Accounts : @Model.Branch?.TotalAccounts</p>
-        <p>Branch Created On : @Model.Branch?.CreatedAt</p>
-    </div>
-    <div class="formControl">
-        <h2>User Details</h2>
-        <p>Username : @Model.Username</p>
-        <p>Password : @Model.Password</p>
-        <p>Fullname : @Model.FullName</p>
-        <p>BusinessName : @Model.BusinessName</p>
-        <p>BusinessType : @Model.BusinessType</p>
-        <p>TaxId : @Model.TaxId</p>
-        <p>Email : @Model.Email</p>
-        <p>Address : @Model.Address</p>
-        <p>Pin : @Model.Pin</p>
-        <p>Phone : @Model.Phone</p>
-        <p>Job : @Model.Job</p>
-        <p>AccountCount : @Model.Accounts?.Count</p>
-        <p>CustomerType : @Model.CustomerType</p>
-    </div>
-    <div class="formControl">
-        <h2>Account Details</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Account Id</th>
-                    <th>Account No</th>
-                    <th>Balance</th>
-                    <th>Type</th>
-                    <th>Status</th>
-                    <th>Date Created</th>
-                </tr>
-            </thead>
-            <tbody>
+<body class="dashboardBody">
+    <section class="baseSection">
+        <h1>Hello @Username</h1>
+        <div class="twoColumn">
+            <div class="bankCard"><h1>Section 1</h1></div>
+            <div class="bankCard"><h1>Section 2</h1></div>
+        </div>
+        <div>
+            <h1 class="bankCard">Rest of Data</h1>
+        </div>
 
-                @foreach (var account in Model.Accounts)
-                {
-                    <tr>
-                    <td>@account.Id</td>
-                    <td>@account.AccountNo</td>
-                    <td>@account.AccountBalance</td>
-                    <td>@account.AccountType</td>
-                    <td>@account.AccountStatus</td>
-                    <td>@account.CreatedAt</td>
-                    </tr>
-                }
-                
-            </tbody>
-        </table>
-    </div>
+    </section>
+ 
     <div class="formControl">
-        <h2>Transactions Details</h2>
+        <h2>Recent Transactions</h2>
         <table>
             <thead>
                 <tr>

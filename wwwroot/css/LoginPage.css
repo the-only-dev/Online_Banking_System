@@ -268,7 +268,7 @@ body::-webkit-scrollbar{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: absolute;
-    top: var(--px32);
+/*    top: var(--px32);*/
     column-gap: var(--px50);
     row-gap: var(--px24);
     padding: var(--px16);
@@ -316,12 +316,6 @@ body::-webkit-scrollbar{
     font-weight: var(--semiBold);
 }
 
-/* Remove it once fixed*/
-.item {
-    flex: 1;
-    justify-content: center;
-    box-sizing: border-box;
-}
 
 /* 1. Hero Section */
 .intro {
@@ -342,11 +336,11 @@ body::-webkit-scrollbar{
 }
 
 .intro p:nth-child(2) {
-    margin-bottom: 8px;      
+    margin-bottom: var(--px8);
 }
 
 .intro p:nth-child(3){
-    margin-bottom: 8px;
+    margin-bottom: var(--px8);
     font-size: var(--paragraph);
 }
 
@@ -361,7 +355,7 @@ body::-webkit-scrollbar{
     margin: 0px;
     padding: 0px;
     height: 80%;
-    border-radius: 48px;
+    border-radius: var(--px40);
 }
 
 .dashboard p{
@@ -408,22 +402,6 @@ body::-webkit-scrollbar{
     border-radius: var(--px24);
 }
 
-/* Footer (not made yet) */
-
-.footerSec{
-    display: flex;
-    border-top: var(--px2) solid var(--secondary);
-/*    background-color: var(--tertiary);*/
-    align-items: center;
-    justify-content: center;
-}
-
-.footerText{
-    color: black;
-    font-weight: var(--semiBold);
-    margin: 0px;
-    padding: var(--px8);
-}
 /* - End of Login Page - */
 
 /* --- Create Account Page --- */
@@ -433,12 +411,14 @@ body::-webkit-scrollbar{
     padding: 0px;
     background-color: var(--secondary);
 }
+
 .accountCreateForm {
     margin: 1% 20%;
     padding: var(--px16);
     background-color: var(--secondary);
     border: 2px solid black;
     border-radius: var(--px16);
+    box-shadow: 2px 2px 0px black;
 }
 
 .userHeading{

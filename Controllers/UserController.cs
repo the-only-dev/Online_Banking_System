@@ -47,6 +47,8 @@ namespace Bank2.Controllers
         {
             return View();
         }
+
+        //Return user information based on user logged in using id
         public async Task<IActionResult> Dashboard()
         {
            var userId = HttpContext.Session.GetInt32("UserId");
@@ -57,9 +59,6 @@ namespace Bank2.Controllers
                     .Include(b => b.Branch)
                     .FirstOrDefaultAsync(x => x.Id == userId.Value);
                 HttpContext.Session.SetString("LogStatus", "dash");
-                string? logStatus = HttpContext.Session.GetString("LogStatus");
-                Console.WriteLine($"Before: {logStatus}");
-                Console.WriteLine("Hello");
                 return View(user);
            }
             return RedirectToAction("LoginPage");
@@ -104,8 +103,7 @@ namespace Bank2.Controllers
         public async Task<IActionResult> CreateUser([Bind("CustomerType, BranchId, Username, Password, FullName, Email, Phone, Address, Pin, Job, BusinessName, BusinessType, TaxId")] User users)
         {
             if (ModelState.IsValid)
-            {
-                
+            { 
                 _context.Users.Add(users);
                 await _context.SaveChangesAsync();
 

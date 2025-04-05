@@ -1,0 +1,139 @@
+﻿/* Global Elements Change */
+table {
+    display: flex;
+    flex-direction: column;
+    padding: var(--px16);
+    border: 1px solid black;
+    border-radius: var(--px8);
+    box-sizing: border-box;
+}
+
+tr {
+    display: flex;
+    flex-grow: 1;
+    height: var(--px32);
+}
+
+thead {
+    border-bottom: 1px solid black;
+}
+
+th {
+    flex: 1;
+    text-align: left;
+}
+
+td {
+    margin-top: var(--px8);
+    flex: 1;
+    text-align: left;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Global Custom Classes */
+
+.dashboardBody {
+    margin: 0px;
+    padding: 0px;
+}
+
+.baseSection {
+    border-radius: var(--px16);
+    margin: var(--px8);
+    padding: var(--px16);
+    background-color: var(--secondary);
+    /*    background-color: blanchedalmond;*/
+}
+
+
+/* -- Account Management -- */
+
+.accountManagement{
+    display: flex;
+    flex-direction: column;
+}
+
+.smallSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid black;
+}
+
+.bigSection h3 {
+    margin: 0px 0px var(--px4) 0px;
+    padding-bottom: var(--px8);
+    border-bottom: var(--px2) solid black;
+}
+
+.sectionContent{
+    margin: var(--px8) 0px;
+    padding: 0px;
+}
+
+.accBtnSelect{
+    margin: var(--px4) 0px;
+    padding: var(--px2);
+    width: var(--px200);
+    border: 1px solid;
+    border-radius: var(--px4);
+    font-weight: var(--semiBold);
+}
+
+.amountIn{
+    margin: var(--px4) 0px;
+    padding: var(--px2);
+    width: var(--px200);
+    border: 1px solid;
+    border-radius: var(--px4);
+    font-weight: var(--semiBold);
+}
+
+
+.createAccBtn {
+    margin: var(--px4) 0px;
+    padding: var(--px8);
+    width: var(--px200);
+    border: 1px solid;
+    border-radius: var(--px4);
+    font-weight: var(--semiBold);
+}
+
+/* -- Bills and Payments -- */
+
+.paymentSections{
+    display: flex;
+}
+
+.payments {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--px32);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    /*    background-color: blanchedalmond;*/
+    /*    border: var(--px2) solid black;*/
+    border-radius: var(--px16);
+    margin: var(--px8);
+    padding: var(--px16);
+}
+
+.paymentsContent{
+        border: var(--px2) solid var(--dark);
+/*    background-color: var(--shade);*/
+    border-radius: var(--px16);
+    text-align: center;
+}
+
+.paymentsContent a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Security and Privacy */
+

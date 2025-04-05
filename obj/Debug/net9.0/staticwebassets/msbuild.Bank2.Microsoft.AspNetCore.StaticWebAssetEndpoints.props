@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o2el48cd46"},{"Name":"integrity","Value":"sha256-gCEbhMpCwL27vmOwMprHcZKrFHBVyTzkFRL7n2za/DM="},{"Name":"label","Value":"_content/Bank2/css/DashboardLayout.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"954"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gCEbhMpCwL27vmOwMprHcZKrFHBVyTzkFRL7n2za/DM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 10:10:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Bank2/css/LoginPage.8ffn24d4wh.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginPage.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8ffn24d4wh"},{"Name":"integrity","Value":"sha256-1E8v/4NA1/IOooTCviSa6A95L6Ier90Y96a2P5ZRrCM="},{"Name":"label","Value":"_content/Bank2/css/LoginPage.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13272"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221E8v/4NA1/IOooTCviSa6A95L6Ier90Y96a2P5ZRrCM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 12:45:28 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bank2/css/LoginPage.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginPage.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1E8v/4NA1/IOooTCviSa6A95L6Ier90Y96a2P5ZRrCM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13272"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221E8v/4NA1/IOooTCviSa6A95L6Ier90Y96a2P5ZRrCM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 12:45:28 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H\u002Bx/9g85cJ7s6qQ8B4pGeDTCZ87ZZLYDJ31etpfjdII="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12882"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H\u002Bx/9g85cJ7s6qQ8B4pGeDTCZ87ZZLYDJ31etpfjdII=\u0022"},{"Name":"Last-Modified","Value":"Fri, 04 Apr 2025 09:01:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Bank2/css/LoginPage.dx3c9jyia7.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginPage.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dx3c9jyia7"},{"Name":"integrity","Value":"sha256-H\u002Bx/9g85cJ7s6qQ8B4pGeDTCZ87ZZLYDJ31etpfjdII="},{"Name":"label","Value":"_content/Bank2/css/LoginPage.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12882"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H\u002Bx/9g85cJ7s6qQ8B4pGeDTCZ87ZZLYDJ31etpfjdII=\u0022"},{"Name":"Last-Modified","Value":"Fri, 04 Apr 2025 09:01:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bank2/css/site.b9sayid5wm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
