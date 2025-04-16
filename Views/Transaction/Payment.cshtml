@@ -1,0 +1,30 @@
+﻿@model Bank2.Models.SharedData
+@{
+	ViewData["Title"] = "Payment";
+}
+<head>
+	<link rel="stylesheet" href="~/css/Dashboard.css" asp-append-version="true" />
+</head>
+<body class="dashboardBody">
+	<section class="baseSection">
+		<form asp-controller="Transaction" asp-action="Pay">
+			<div class="paymentsContent">
+				<h2>Select Account</h2>
+				<select class="selectFieldDropdown" asp-for="fromAccount" asp-items=ViewBag.Accounts></select>
+			</div>
+			<div>
+				<h2>Send Payment to A/C : </h2>
+				<input class="textInput" type="text" asp-for="toAccount" />
+			</div>
+			<div>
+				<h2>Amount</h2>
+				<input class="textInput" type="number" asp-for="amount" />
+			</div>
+			<div>
+				<h2>Payment Desctiption</h2>
+				<input class="textInput" type="text" asp-for="description" />
+			</div>
+			<input class="buttonSquare" type="submit" value="Pay" />
+		</form>
+	</section>
+</body>

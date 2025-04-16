@@ -12,5 +12,11 @@
         public int amount { get; set; }
         public int accountId { get; set; }
         public int branchId { get; set; }
+
+        // used in payment processing
+        public int fromAccount { get; set; } 
+        public string? toAccount { get; set; } = null!;
+        public string? transactionType { get; set; } = null!;
+        public string? description { get; set; } = null!;
     }
 }

@@ -34,7 +34,7 @@ namespace Bank2.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("AccountNo")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("AccountStatus")
                         .HasColumnType("nvarchar(max)");
@@ -50,6 +50,10 @@ namespace Bank2.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AccountNo")
+                        .IsUnique()
+                        .HasFilter("[AccountNo] IS NOT NULL");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Accounts");
@@ -58,12 +62,22 @@ namespace Bank2.Migrations
                         new
                         {
                             Id = 1,
-                            AccountBalance = 453.32m,
-                            AccountNo = "Acc10000801",
+                            AccountBalance = 45403.32m,
+                            AccountNo = "A/C-0001",
                             AccountStatus = "Active",
                             AccountType = "Savings",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            UserId = 8
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccountBalance = 503.32m,
+                            AccountNo = "A/C-0002",
+                            AccountStatus = "Active",
+                            AccountType = "Savings",
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 1
                         });
                 });
 
@@ -85,7 +99,7 @@ namespace Bank2.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("IFSCCode")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -104,6 +118,10 @@ namespace Bank2.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IFSCCode")
+                        .IsUnique()
+                        .HasFilter("[IFSCCode] IS NOT NULL");
+
                     b.ToTable("Branchs");
 
                     b.HasData(
@@ -112,8 +130,10 @@ namespace Bank2.Migrations
                             Id = 1,
                             Balance = 0m,
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IFSCCode = "1234AGFC",
-                            Name = "First",
+                            IFSCCode = "M46001BZU",
+                            Name = "Main",
+                            Phone = "8978887349",
+                            Pin = "460001",
                             TotalAccounts = 0,
                             TotalCustomers = 0
                         },
@@ -122,8 +142,10 @@ namespace Bank2.Migrations
                             Id = 2,
                             Balance = 0m,
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IFSCCode = "5678DEFG",
-                            Name = "Second",
+                            IFSCCode = "C46001BZU",
+                            Name = "City",
+                            Phone = "9856382368",
+                            Pin = "460001",
                             TotalAccounts = 0,
                             TotalCustomers = 0
                         });
@@ -139,6 +161,9 @@ namespace Bank2.Migrations
 
                     b.Property<int>("AccountId")
                         .HasColumnType("int");
+
+                    b.Property<string>("AccountNumber")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
@@ -160,6 +185,30 @@ namespace Bank2.Migrations
                     b.HasIndex("AccountId");
 
                     b.ToTable("Transactions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccountId = 1,
+                            AccountNumber = "A/C-0001",
+                            Amount = 500.00m,
+                            Balance = 45403.32m,
+                            Date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Sent 500",
+                            Type = "Credit"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccountId = 1,
+                            AccountNumber = "A/C-0002",
+                            Amount = 500.00m,
+                            Balance = 503.32m,
+                            Date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Sent 500",
+                            Type = "Debit"
+                        });
                 });
 
             modelBuilder.Entity("Bank2.Models.User", b =>
@@ -190,7 +239,7 @@ namespace Bank2.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
@@ -202,20 +251,36 @@ namespace Bank2.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Pin")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TaxId")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Username")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("BranchId");
+
+                    b.HasIndex("Email")
+                        .IsUnique()
+                        .HasFilter("[Email] IS NOT NULL");
+
+                    b.HasIndex("Phone")
+                        .IsUnique()
+                        .HasFilter("[Phone] IS NOT NULL");
+
+                    b.HasIndex("TaxId")
+                        .IsUnique()
+                        .HasFilter("[TaxId] IS NOT NULL");
+
+                    b.HasIndex("Username")
+                        .IsUnique()
+                        .HasFilter("[Username] IS NOT NULL");
 
                     b.ToTable("Users");
 

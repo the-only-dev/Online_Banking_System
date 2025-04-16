@@ -50,6 +50,34 @@ input[type="number"]::-webkit-inner-spin-button {
     /*    background-color: blanchedalmond;*/
 }
 
+.buttonSquare {
+    margin: var(--px4) 0px;
+    padding: var(--px8);
+    width: var(--px200);
+    border: 1px solid;
+    border-radius: var(--px4);
+    font-weight: var(--semiBold);
+}
+
+.textInput {
+    margin: var(--px4) 0px;
+    padding: var(--px2);
+    width: var(--px200);
+    border: 1px solid;
+    border-radius: var(--px4);
+    font-weight: var(--semiBold);
+}
+
+.selectFieldDropdown {
+    margin: var(--px4) 0px;
+    padding: var(--px2);
+    width: var(--px200);
+    border: 1px solid;
+    border-radius: var(--px4);
+    font-weight: var(--semiBold);
+}
+
+
 /* DashBoard */
 
 .bankCard{
@@ -69,6 +97,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .twoColumn p:last-child{
     text-align: center;
 }
+
 /* -- Account Management -- */
 
 .accountManagement{
@@ -91,34 +120,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .sectionContent{
     margin: var(--px8) 0px;
     padding: 0px;
-}
-
-.accBtnSelect{
-    margin: var(--px4) 0px;
-    padding: var(--px2);
-    width: var(--px200);
-    border: 1px solid;
-    border-radius: var(--px4);
-    font-weight: var(--semiBold);
-}
-
-.amountIn{
-    margin: var(--px4) 0px;
-    padding: var(--px2);
-    width: var(--px200);
-    border: 1px solid;
-    border-radius: var(--px4);
-    font-weight: var(--semiBold);
-}
-
-
-.createAccBtn {
-    margin: var(--px4) 0px;
-    padding: var(--px8);
-    width: var(--px200);
-    border: 1px solid;
-    border-radius: var(--px4);
-    font-weight: var(--semiBold);
 }
 
 /* -- Bills and Payments -- */

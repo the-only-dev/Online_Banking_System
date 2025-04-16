@@ -64,7 +64,7 @@
 
             <div class="smallSection">
                 <label class="sectionContent">Select Account Type</label>
-                <select class="accBtnSelect" asp-for="accountType">
+                <select class="selectFieldDropdown" asp-for="accountType">
                     <option value="Savings">Savings</option>
                     <option value="Current">Current</option>
                     <option value="Business">Business</option>
@@ -72,9 +72,9 @@
             </div>
             <div class="smallSection">
                 <label class="sectionContent">Amount</label>
-                <input class="amountIn" type="number" asp-for="amount" />
+                <input class="textInput" type="number" asp-for="amount" />
             </div>
-            <button class="createAccBtn" type="submit">Create Account</button>
+            <button class="buttonSquare" type="submit">Create Account</button>
         </form>
     </section>
 </body>

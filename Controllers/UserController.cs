@@ -34,11 +34,6 @@ namespace Bank2.Controllers
             return View();
         }
 
-        public IActionResult BillingAndPayments()
-        {
-            return View();
-        }
-
         public IActionResult SecurityAndPrivacy()
         {
             return View();

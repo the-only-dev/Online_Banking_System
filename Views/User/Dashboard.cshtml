@@ -23,36 +23,46 @@
         </div>
 
     </section>
- 
-    <div class="formControl">
-        <h2>Recent Transactions</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Transaction Id</th>
-                    <th>Date</th>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Balance</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var account in Model.Accounts)
+
+    <section class="baseSection">
+        
+            @foreach (var account in Model.Accounts)
+            {
+            <table>
+                <thead>
+                    <tr>
+                        <th>DateTime</th>
+                        <th>AccountNo</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Balance</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var tran in account.Transactions)
                 {
-                    @foreach(var t in account.Transactions)
+                <tr>
+                    <td>@tran.Date</td>
+                    <td>@tran.AccountNumber</td>
+                    @if (tran.Type == "Debit")
                     {
-                        <tr>@t.Id</tr>
-                        <tr>@t.Date</tr>   
-                        <tr>@t.Type</tr>   
-                        <tr>@t.Amount</tr>   
-                        <tr>@t.Balance</tr>   
-                        <tr>@t.Description</tr>   
+                        <td style="color:forestgreen">@tran.Type</td>
+                        <td style="color:forestgreen">@tran.Amount</td>
                     }
+                    else
+                    {
+                        <td style="color:red">@tran.Type</td>
+                        <td style="color:red">@tran.Amount</td>
+                    }
+                    <td>@tran.Balance</td>
+                    <td>@tran.Description</td>
+                </tr>
                 }
-            </tbody>
-        </table>
-    </div>
-    
+                </tbody>
+            </table>
+            }
+           
+    </section> 
 </body>
 </html>

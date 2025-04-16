@@ -16,7 +16,7 @@ namespace Bank2.Controllers
             _context = context;
         }
 
-
+    
         public async Task<IActionResult> DeleteAccount(int id)
         {
             var acc = await _context.Accounts.FirstOrDefaultAsync(t => t.Id == id);
@@ -44,17 +44,17 @@ namespace Bank2.Controllers
             {
                 return RedirectToAction("LoginPage", "User");
             }
+            var accountCount = await _context.Accounts.ToListAsync();
+            Random rnd = new Random();
             var account = new Account();
             account.UserId = userId.Value;
             account.AccountBalance = data.amount;
-            account.AccountNo = "A/C-0000-" + userId;
+            account.AccountNo = "A/C-" + (accountCount.Count * rnd.Next(1111, 9999));
             account.CreatedAt = DateTime.Now;
             account.AccountStatus = "Active";
             account.AccountType = data.accountType;
 
-            
             _context.Accounts.Add(account);
-
             await _context.SaveChangesAsync();
             return RedirectToAction("AccountManagement", "Account");
         }
