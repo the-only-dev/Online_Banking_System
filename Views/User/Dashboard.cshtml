@@ -12,57 +12,60 @@
     <link rel="stylesheet" href="~/css/Dashboard.css"/>
 </head>
 <body class="dashboardBody">
+  <section class="twoColumn">
     <section class="baseSection">
-        <h1>Hello @Username</h1>
-        <div class="twoColumn">
-            <div class="bankCard"><h1>Section 1</h1></div>
-            <div class="bankCard"><h1>Section 2</h1></div>
-        </div>
-        <div>
-            <h1 class="bankCard">Rest of Data</h1>
-        </div>
-
+      <h2 class="heading">Primary payments A/C</h2>
+      <div class="bankCard">
+        <p>@Model.Accounts[0].AccountNo</p>
+        <h2>@Model.Accounts[0].AccountBalance Rs</h2>
+        <p>@Model.Username</p>
+      </div>
     </section>
 
     <section class="baseSection">
-        
-            @foreach (var account in Model.Accounts)
+      <h2 class="heading">Recent Transaction</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>AccountNo</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>DateTime</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach (var accounts in Model.Accounts)
+          {
+            @foreach (var tran in accounts.Transactions)
             {
-            <table>
-                <thead>
-                    <tr>
-                        <th>DateTime</th>
-                        <th>AccountNo</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                        <th>Balance</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @foreach (var tran in account.Transactions)
+              <tr>
+                <td>@tran.AccountNumber</td>
+                @if (tran.Type == "Debit")
                 {
-                <tr>
-                    <td>@tran.Date</td>
-                    <td>@tran.AccountNumber</td>
-                    @if (tran.Type == "Debit")
-                    {
-                        <td style="color:forestgreen">@tran.Type</td>
-                        <td style="color:forestgreen">@tran.Amount</td>
-                    }
-                    else
-                    {
-                        <td style="color:red">@tran.Type</td>
-                        <td style="color:red">@tran.Amount</td>
-                    }
-                    <td>@tran.Balance</td>
-                    <td>@tran.Description</td>
-                </tr>
+                  <td style="color:forestgreen">@tran.Type</td>
+                  <td style="color:forestgreen">@tran.Amount</td>
                 }
-                </tbody>
-            </table>
+                else
+                {
+                  <td style="color:red">@tran.Type</td>
+                  <td style="color:red">@tran.Amount</td>
+                }
+                <td>@tran.Date</td>
+              </tr>
             }
-           
-    </section> 
+          }
+        </tbody>
+      </table>
+    </section>
+  </section>
+  <section class="baseSection">
+    <h2 class="removeMargin">Quick Access</h2>
+    <div>
+
+    </div>
+  </section>
+  <section class="baseSection">
+    <h2 class="removeMargin">Recommended</h2>
+  </section>
 </body>
 </html>

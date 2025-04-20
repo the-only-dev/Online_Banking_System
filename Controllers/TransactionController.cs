@@ -86,7 +86,11 @@ namespace Bank2.Controllers
                     paymentFrom.AccountNumber = currentAccount.AccountNo;
                     paymentFrom.Type = "Credit";
                     paymentFrom.Amount = data.amount;
-                    paymentFrom.Description = data.description;
+                    paymentFrom.Description = " --- No Description ---";
+                    if (data.description != null)
+                    {
+                        paymentFrom.Description = data.description;
+                    }
                     currentAccount.AccountBalance -= data.amount;
 
                     paymentFrom.Balance = currentAccount.AccountBalance;
@@ -99,7 +103,7 @@ namespace Bank2.Controllers
                     paymentTo.AccountNumber = receiver.AccountNo;
                     paymentTo.Type = "Debit";
                     paymentTo.Amount = data.amount;
-                    paymentTo.Description = data.description;
+                    paymentTo.Description = paymentFrom.Description;
                     receiver.AccountBalance += data.amount;
 
                     paymentTo.Balance = receiver.AccountBalance;

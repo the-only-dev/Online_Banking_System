@@ -98,13 +98,15 @@ namespace Bank2.Controllers
         public async Task<IActionResult> CreateUser([Bind("CustomerType, BranchId, Username, Password, FullName, Email, Phone, Address, Pin, Job, BusinessName, BusinessType, TaxId")] User users)
         {
             if (ModelState.IsValid)
-            { 
+            {
+                var accountCount = await _context.Accounts.ToListAsync();
+                Random rnd = new Random();
                 _context.Users.Add(users);
                 await _context.SaveChangesAsync();
 
                 var account = new Account();
                 account.UserId = users.Id;
-                account.AccountNo = "A/C-0000-" + users.Id;
+                account.AccountNo = "A/C-" + (accountCount.Count * rnd.Next(1111, 9999));
                 account.AccountBalance = 0;
                 account.CreatedAt = DateTime.Now;
                 account.AccountType = "Savings";

@@ -4,7 +4,7 @@ table {
     display: flex;
     flex-direction: column;
     padding: var(--px16);
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: var(--px8);
     box-sizing: border-box;
 }
@@ -15,14 +15,15 @@ tr {
     height: var(--px32);
 }
 
-thead {
-    border-bottom: 1px solid black;
-}
-
 th {
     flex: 1;
     text-align: left;
 }
+
+thead {
+    border-bottom: 1px solid black;
+}
+
 
 td {
     margin-top: var(--px8);
@@ -77,6 +78,18 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: var(--semiBold);
 }
 
+.removeMargin {
+    margin: 0px;
+}
+
+.heading {
+    max-width: fit-content;
+    border-right: var(--px4) solid black;
+    border-radius: var(--px4);
+    margin-top: 0px;
+    margin-bottom: var(--px8);
+    padding-right: var(--px8);
+}
 
 /* DashBoard */
 
@@ -85,17 +98,13 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: var(--px16);
     padding: var(--px8);
     width: var(--px440);
-    background: linear-gradient(to bottom, var(--tertiary) , var(--primary)), var(--shade);
+    background: linear-gradient(to bottom, var(--shade) , var(--primary)), var(--shade);
     background-blend-mode: multiply;
 }
 
 .twoColumn{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.twoColumn p:last-child{
-    text-align: center;
+    grid-template-columns: 1fr 2fr;
 }
 
 /* -- Account Management -- */
@@ -128,7 +137,15 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
 }
 
-.paymentsItems {
+.paymentItem {
+    color: black;
+    background-color: var(--primary);
+    border-radius: var(--px16);
+    text-align: center;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.paymentsContents {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--px32);
@@ -142,24 +159,23 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: var(--px16);
 }
 
-.paymentsContent {
-    color: black;
-    box-shadow: 0px 0px 0px 1px;
-    border-radius: var(--px16);
-    text-align: center;
-    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.paymentsContent:hover {
+.paymentItem:hover {
     background-color: var(--primary);
-    box-shadow: 0px 1px 4px 1px;
+    box-shadow: var(--shade) 0px 0px 8px 1px ;
 }
 
-.paymentsContent a {
+.paymentItem a {
     color: black;
     text-decoration: none;
 }
 
-
+.paymentForm{
+    max-width: var(--px280);
+    padding: var(--px8);
+    border: var(--px2) solid black;
+    border-radius: var(--px16);
+    display: flex;
+    flex-direction: column;
+}
 /* Security and Privacy */
 

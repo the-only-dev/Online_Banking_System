@@ -9,7 +9,7 @@
 
         // Used to send data using forms
         public string? accountType { get; set; } = null!;
-        public int amount { get; set; }
+        public decimal amount { get; set; }
         public int accountId { get; set; }
         public int branchId { get; set; }
 
