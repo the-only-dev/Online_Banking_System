@@ -13,31 +13,32 @@
 <body class="loginPageBody">
 	
 	<form asp-action="CheckLogin" method="post">
-		<div id="loginForm" class="loginBackground" style="display: none">
-			<div class="loginBox">
-				<div class="loginButtons">
-					<h2 class="headCenter">Login</h2>
-					<a id="closeBtn" class="closeBtn" asp-action="">X</a>
+		<div id="showLoginForm" class="loginAuthenticationContainer" style="display: none">
+			<div class="loginAuthenticationForm">
+				<div class="loginAuthenticationCloseContainer">
+					<h2 class="loginCenterHeading">Login</h2>
+					<a id="closeBtn" class="loginCloseButton" asp-action="">X</a>
 				</div>
-				<div class="loginItems">
+				<div class="loginAuthContents">
 					<label for="Username">Username / Email</label>
 					<input required class="inputEdit" asp-for="Username" type="text" />
 				</div>
-				<div class="loginItems">
+				<div class="loginAuthContents">
 					<label for="Password">Password</label>
 					<input required class="inputEdit" asp-for="Password" type="password" />
 				</div>
-				<div class="loginItems">
+				<div class="loginAuthContents">
 					<button type="submit" class="authenticationButton">Login</button>
 				</div>
-				<div class="loginItems">
-					<a class="loginLinks" asp-action="CreateUser">Create Account.</a><br />
-					<a class="loginLinks" asp-action="">Forgot Password.</a>
+				<div class="loginAuthContents">
+					<a class="loginItemLinks" asp-action="CreateUser">Create Account.</a><br />
+					<a class="loginItemLinks" asp-action="">Forgot Password.</a>
 				</div>
 			</div>
-
-			<div id="loginError" class="loginBackground" style="display: none; background-color: red">
-				<h2>Invalid Crednetials</h2>
+		</div>
+		<div id="showLoginError" class="loginAuthenticationContainer" style="display:none;">
+			<div class="loginAuthenticationForm">
+				<h2 class="loginAuthError">Invalid Crednetials <br />Check Username or Password</h2>
 			</div>
 		</div>
 	</form>
@@ -124,10 +125,10 @@
 		 		</ul> 
 		 	</li>
 			<li class="dropdownContainer"><a class="navbarItems" asp-action="">Services</a></li>
-			<li class="dropdownContainer"><a class="navbarItems" asp-action="">Contact Us</a></li>
+				<li class="dropdownContainer"><a class="navbarItems" asp-action=""><b>Contact Us</b></a></li>
 		</ul>
 		<div>
-				<a id="loginBtn" class="navbarLoginButton">Login</a>
+				<a id="navbarLoginBtn" class="navbarLoginButton">Login</a>
 
 			<select id="logoutBtn" class="inputEdit" style="display: none" onchange="handleSelect(this)">
 				<option hidden id="user" selected></option>
@@ -140,60 +141,60 @@
 	</nav>
 	</header>
 
-	<section class="intro">
+	<section class="heroSection">
 		<p class="introItems">A Bank Trusted By</p>
 		<p class="introItems"> More Than <b>10 Million</b> Users.</p>
 		<p class="introItems">Its not we who speak, but out millions of customers.</p>
 		<a asp-action="CreateUser" class="createAccountButton">Create Account</a>
 	</section> 
 
-	<section class="dashboard">
+	<section class="dashboardImageDisplay">
 		<img src="~/rsc/phobe.png" alt="Alternate Text" />
 		<p>Manage your <b>Finance</b> with our easy to use <b>Dashboard</b></p>
 	</section>
 
-	<section class="features">
-		<div class="featureItems">
-			<p class="featureHead"><b>Digital Banking</b> in<br />your hand.</p>
-			<p class="featParagrah">
+	<section class="featuresSection">
+		<div class="featureContents">
+			<p class="featureItemHeading"><b>Digital Banking</b> in<br />your hand.</p>
+			<p class="featureItemText">
 				Now access and manage your accounts without coming to bank.<br />
 				Get easy access to all your needs on our web app.
 			</p>
 			<a asp-action="" class="learnMoreButton">Learn More</a>
 		</div>
-		<div class="featureItems">
-			<img class="displayImages" src="~/rsc/ss.png" alt="Alternate Text" />
+		<div class="featureContents">
+			<img class="featureItemImages" src="~/rsc/ss.png" alt="Alternate Text" />
 		</div>
 	</section>
 
-	<section class="features">
-		<div class="featureItems">
-			<p class="featureHead">Select the <b>Card</b> of<br />your choice.</p>
-			<p class="featParagrah">
+	<section class="featuresSection">
+		<div class="featureContents">
+			<p class="featureItemHeading">Select the <b>Card</b> of<br />your choice.</p>
+			<p class="featureItemText">
 				Now access and manage your accounts without coming to bank.<br />
 				Get easy access to all your needs on our web app.
 			</p>
 			<a asp-action="" class="learnMoreButton">Learn More</a>
 		</div>
-		<div class="featureItems">
-			<img class="displayImages" src="~/rsc/ss.png" alt="Alternate Text" />
+		<div class="featureContents">
+			<img class="featureItemImages" src="~/rsc/ss.png" alt="Alternate Text" />
 		</div>
 	</section>
 
-	<section class="features">
-		<div class="featureItems">
-			<p class="featureHead">No fee, <b>hassle-free.</b></p>
-			<p class="featParagrah">
+	<section class="featuresSection">
+		<div class="featureContents">
+			<p class="featureItemHeading">No fee, <b>hassle-free.</b></p>
+			<p class="featureItemText">
 				No minimum balance. No monthly fees. No foreign transaction fees.<br />
 				Open an account now for free.
 			</p>
-			<div class="doubleBtn">
+			<div class="featureSectionButtons">
 				<a asp-action="" class="learnMoreButton">Learn More</a>
 				<a asp-action="CreateUser" class="createAccountButton">Create Account</a>
 			</div>
 		</div>
-		<div class="featureItems">
-			<img class="displayImages" src="~/rsc/ss.png" alt="Alternate Text" />
+		<div class="featureContents">
+			<img class="featureItemImages" src="~/rsc/ss.png" alt="Alternate Text" />
 		</div>
 	</section>
 
@@ -201,13 +202,14 @@
 		const StatusError = "@TempData["Error"]";
 		const Username = "@Context.Session.GetString("Username")";
 
-		const loginForm = document.getElementById("loginForm");
-		const loginError = document.getElementById("loginError");
-		const display = document.querySelector(".selectedBody");
-		const loginBtn = document.getElementById("loginBtn");
+		const loginForm = document.getElementById("showLoginForm");
+		const loginError = document.getElementById("showLoginError");
+		const display = document.querySelector(".loginPageBody");
+		const loginBtn = document.getElementById("navbarLoginBtn");
 		const logoutBtn = document.getElementById("logoutBtn");
 		const user = document.getElementById("user");
 
+		//Navitgate to selected Webpage and reset the value to Username
 		function handleSelect(select){
 			if(select.value == "/User/Logout"){
 				window.location.href = select.value;
@@ -218,13 +220,18 @@
 			}
 		}
 
+		//Display Error when login fails
 		if(StatusError == "error"){
-			loginForm.style.display = "flex";
-			loginError.style.display = "flex";
+				loginForm.style.display = "none";
+				loginError.style.display = "flex";
+				setTimeout(() => {
+					loginForm.style.display = "flex";
+					loginError.style.display = "none";
+				},2000);
 		}
 
 		//Opens Login Box
-		document.getElementById("loginBtn").addEventListener("click", function(event)
+		document.getElementById("navbarLoginBtn").addEventListener("click", function(event)
 		{
 			event.preventDefault();
 			loginForm.style.display = "flex";

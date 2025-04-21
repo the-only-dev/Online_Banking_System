@@ -84,10 +84,6 @@ body::-webkit-scrollbar{
 
 /* Global custom class for items */
 
-.bold {
-  font-weight: var(--semiBold);
-}
-
 .loginPageBody {
     margin: 0px;
     padding: 0px;
@@ -118,6 +114,13 @@ body::-webkit-scrollbar{
     text-align: center;
     font-size: var(--text );
     font-weight: var(--semiBold);
+    transition: all 0.2s ease-in-out;
+}
+
+.navbarLoginButton:hover { 
+  color: var(--secondary);
+  cursor: pointer; 
+  box-shadow: var(--secondary) 0px 0px 4px 1px;
 }
 
 .createAccountButton {
@@ -157,6 +160,7 @@ body::-webkit-scrollbar{
     text-align: center;
     font-size: var(--paragraph);
     font-weight: var(--bold);
+    transition: all 0.2s ease-in-out;
 }
 
 .learnMoreButton:hover {
@@ -251,10 +255,6 @@ body::-webkit-scrollbar{
     border-bottom: 1px solid var(--secondary);
 }
 
-.navigationContainer li:last-child .navbarItems {
-  font-weight: var(--semiBold);
-}
-
 /* Temprorary Used Text As Icon in nav bar*/
 .navIcon {
     margin: 0px;
@@ -335,58 +335,55 @@ body::-webkit-scrollbar{
   font-weight: var(--light)
 }
 
-
-
 /* 1. Hero Section */
-.intro {
-    display: flex;
-    flex-direction: column;
-    /*border: 12px solid black;*/
-    height: 80vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  /*border: 12px solid black;*/
+  height: 80vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.heroSection > p:nth-child(2) {
+  margin-bottom: var(--px8);
+}
+
+.heroSection > p:nth-child(3) {
+  margin-bottom: var(--px8);
+  font-size: var(--paragraph);
 }
 
 .introItems{
-    margin: 0px;
-    font-weight: var(--light);
-    font-size: var(--big);
-}
-
-.intro p:nth-child(2) {
-    margin-bottom: var(--px8);
-}
-
-.intro p:nth-child(3){
-    margin-bottom: var(--px8);
-    font-size: var(--paragraph);
+  margin: 0px;
+  font-weight: var(--light);
+  font-size: var(--big);
 }
 
 /* 2. Dashboard Screen */
-.dashboard {
-    height: 100vh;
-    text-align: center;
-    box-sizing: border-box;
+.dashboardImageDisplay {
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.dashboard img {
-    margin: 0px;
-    padding: 0px;
-    height: 80%;
-    border-radius: var(--px40);
+.dashboardImageDisplay > img {
+  margin: 0px;
+  padding: 0px;
+  height: 80%;
+  border-radius: var(--px40);
 }
 
-.dashboard p{
-    font-size: var(--subHead);
-    font-weight: var(--light);
-    margin: 0px;
+.dashboardImageDisplay > p {
+  font-size: var(--subHead);
+  font-weight: var(--light);
+  margin: 0px;
 }
-
 
 /* Features Section */
-.features {
+.featuresSection {
     height: 100vh;
     padding: var(--px128);
     display: flex;
@@ -396,32 +393,115 @@ body::-webkit-scrollbar{
     box-sizing: border-box;
 }
 
-.featureItems{
+.featureContents{
     flex: 1;
 }
 
-.featureHead{
+.featureItemHeading{
     font-size: var(--big);
     font-weight: var(--light);
     margin: 0px;
 }
 
-.featParagrah{
-    font-size: var(--paragraph);
-    font-weight: var(--light);
-    text-align: left;
+.featureItemText {
+  font-size: var(--paragraph);
+  font-weight: var(--light);
+  text-align: left;
 }
 
-.doubleBtn{
+.featureItemImages {
+  width: 100%;
+  border-radius: var(--px24);
+}
+
+.featureSectionButtons{
     display: flex;
     gap: var(--px16);
 }
 
-.displayImages{
-    width: 100%;
-    border-radius: var(--px24);
+/* Login Box in Login Page */
+.loginAuthenticationContainer {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1;
 }
 
+.loginAuthenticationForm {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: left;
+  width: var(--px480);
+  height: var(--px440);
+  background: linear-gradient(transparent, var(--tertiary)), var(--shade);
+  background-blend-mode: multiply;
+  border: var(--px2) solid var(--secondary);
+  border-radius: var(--px8);
+  box-sizing: border-box;
+}
+
+.loginAuthenticationCloseContainer {
+  color: var(--secondary);
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.loginCloseButton {
+  position: absolute;
+  top: -0.5rem;
+  left: var(--px440);
+  width: var(--px20);
+  height: var(--px20);
+  padding: var(--px4);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: var(--px4);
+  text-align: center;
+  text-decoration: none;
+}
+
+.loginCenterHeading {
+  flex: 1;
+  padding: var(--px8);
+  text-align: center;
+  border-bottom: var(--px2) solid;
+}
+
+.loginAuthContents {
+  color: var(--secondary);
+  display: flex;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.loginItemLinks {
+  display: contents;
+  margin: 0px 0px;
+  padding: 0px;
+  color: var(--secondary);
+  font-size: var(--text);
+  font-weight: var(--light);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.loginAuthError {
+  text-align: center;
+  align-self: center;
+}
 /* - End of Login Page - */
 
 /* --- Create Account Page --- */
@@ -536,81 +616,3 @@ body::-webkit-scrollbar{
 
 /* Delete End */
 
-/* Login Box in Login Page */
-
-.loginBackground {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    position: fixed;
-    z-index: 1;
-}
-
-.loginBox {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    text-align: left;
-    width: var(--px480);
-    height: var(--px440);
-/*        background-color: var(--tertiary);*/
-    background: linear-gradient(transparent, var(--tertiary)), var(--shade);
-    background-blend-mode: multiply;
-    border: var(--px2) solid var(--secondary);
-    border-radius: 1rem;
-    box-sizing: border-box;
-}
-
-.loginItems {
-    color: var(--secondary);
-    display: flex;
-    padding: 1rem 2rem;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.loginButtons {
-    color: var(--secondary);
-    display: flex;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.closeBtn {
-    position: absolute;
-    left: var(--px440);
-    width: var(--px20);
-    height: var(--px20);
-    padding: var(--px4);
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
-    border-radius: var(--px20);
-    text-align: center;
-    text-decoration: none;
-}
-
-.headCenter {
-    flex: 1;
-    padding: var(--px8);
-    text-align: center;
-    border-bottom: 2px solid;
-}
-
-.loginLinks {
-    display:contents;
-    margin: 0px 0px;
-    padding: 0px;
-    color: var(--secondary);
-    font-size: var(--text);
-    font-weight: var(--light);
-    text-decoration: none;
-    box-sizing: border-box;
-}
