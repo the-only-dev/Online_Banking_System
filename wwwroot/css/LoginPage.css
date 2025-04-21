@@ -6,66 +6,66 @@
 }
 
 :root {
-    /* Color Styles */
-    --primary: hsla(0,0%,100%,1);
-    --secondary: hsla(30,100%,91%,1);
-    --tertiary: hsla(196,31%,49%,1);
-    --accent: hsla(189,56%,62%,1);
-    --dark: hsla(21,23%,41%,1);
-    --shade: hsla(0,0%,0%,0.2);
+  /* Color Styles */
+  --primary: hsla(0,0%,100%,1);
+  --secondary: hsla(30,100%,91%,1);
+  --tertiary: hsla(196,31%,49%,1);
+  --accent: hsla(189,56%,62%,1);
+  --dark: hsla(21,23%,41%,1);
+  --shade: hsla(0,0%,0%,0.2);
 
-    /* Font Family */
-    --mainfont: 'Inter';
+  /* Font Family */
+  --mainfont: 'Inter';
 
-    /* Font Size */
-    --big: 4.5rem;          /* 72px / 16 */
-    --mainHead: 3rem;       /* 48px / 16 */
-    --subHead: 2.25rem;     /* 36px / 16 */
-    --subHead2: 1.75rem;    /* 28px / 16 */
-    --subHead3: 1.5rem;     /* 24px / 16 */
-    --paragraph: 1.25rem;   /* 20px / 16 */
-    --text: 1rem;           /* 16px / 16 */
-    --text2: 0.75rem;       /* 12px / 16 */
+  /* Font Size */
+  --big: 4.5rem;          /* 72px / 16 */
+  --mainHead: 3rem;       /* 48px / 16 */
+  --subHead: 2.25rem;     /* 36px / 16 */
+  --subHead2: 1.75rem;    /* 28px / 16 */
+  --subHead3: 1.5rem;     /* 24px / 16 */
+  --paragraph: 1.25rem;   /* 20px / 16 */
+  --text: 1rem;           /* 16px / 16 */
+  --text2: 0.75rem;       /* 12px / 16 */
 
-    /* Font Weights */
-    --thin: 100;
-    --extraLight: 200;
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --semiBold: 600;
-    --bold: 700;
-    --extraBold: 800;
-    --black: 900;
+  /* Font Weights */
+  --thin: 100;
+  --extraLight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+  --black: 900;
 
-    /* General Use for Spacing */
-    --px1: 0.0625rem;
-    --px2: 0.125rem;
-    --px4: 0.25rem;
-    --px8: 0.5rem;
-    --px16: 1rem;
-    --px20: 1.25rem;
-    --px24: 1.5rem;
-    --px25: 1.5625rem;
-    --px32: 2rem;
+  /* General Use for Spacing */
+  --px1: 0.0625rem;
+  --px2: 0.125rem;
+  --px4: 0.25rem;
+  --px8: 0.5rem;
+  --px16: 1rem;
+  --px20: 1.25rem;
+  --px24: 1.5rem;
+  --px25: 1.5625rem;
+  --px32: 2rem;
 
-    /* Mainly Used For Buttons Height */
-    --px40: 2.5rem;
-    --px50: 3.125rem;
+  /* Mainly Used For Buttons Height */
+  --px40: 2.5rem;
+  --px50: 3.125rem;
 
-    /* Heavy Padding or Margins */
-    --px72: 4.5rem;
-    --px80: 5rem;
-    --px128: 8rem;
+  /* Heavy Padding or Margins */
+  --px72: 4.5rem;
+  --px80: 5rem;
+  --px128: 8rem;
 
-    /* Mainly Used for Button Width*/
-    --px160: 10rem;
-    --px200: 12.5rem;
-    --px280: 17.5rem;
+  /* Mainly Used for Button Width*/
+  --px160: 10rem;
+  --px200: 12.5rem;
+  --px280: 17.5rem;
 
-    /* Used for Other Items */
-    --px440: 27.5rem;
-    --px480: 30rem;
+  /* Used for Other Items */
+  --px440: 27.5rem;
+  --px480: 30rem;
 }
 
 /* Global Element Changes */
@@ -81,8 +81,14 @@ b {
 body::-webkit-scrollbar{
     display: none;
 }
+
 /* Global custom class for items */
-.selectedBody {
+
+.bold {
+  font-weight: var(--semiBold);
+}
+
+.loginPageBody {
     margin: 0px;
     padding: 0px;
     height: 100vh;
@@ -97,8 +103,8 @@ body::-webkit-scrollbar{
     overflow: auto;
 }
 
-/* Link Button Styles*/
-.loginBtn {
+/* Link Tag Button Styles*/
+.navbarLoginButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +120,7 @@ body::-webkit-scrollbar{
     font-weight: var(--semiBold);
 }
 
-.btnRndLink1 {
+.createAccountButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,9 +134,16 @@ body::-webkit-scrollbar{
     text-align: center;
     font-size: var(--paragraph);
     font-weight: var(--semiBold);
+    transition: all 0.2s ease-in-out;
 }
 
-.btnRndLink2 {
+.createAccountButton:hover {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  box-shadow: var(--secondary) 0px 0px 8px 1px;
+}
+
+.learnMoreButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,8 +159,13 @@ body::-webkit-scrollbar{
     font-weight: var(--bold);
 }
 
-/* Button styles */
-.sqrLoginBtn {
+.learnMoreButton:hover {
+  box-shadow: var(--secondary) 0px 0px 8px 1px;
+}
+
+ /*Button Tag styles */
+
+.authenticationButton {
     width: var(--px160);
     height: var(--px40);
     color: var(--secondary);
@@ -158,7 +176,7 @@ body::-webkit-scrollbar{
     background: none;
 }
 
-.btnRnd1 {
+.dashboardSignOutButton {
     padding: 0px var(--px20);
     width: var(--px280);
     height: var(--px50);
@@ -182,7 +200,7 @@ body::-webkit-scrollbar{
     background-color: var(--secondary);
 }
 
-.deleteBtn {
+/*.deleteBtn {
     padding: 0px var(--px20);
     width: var(--px200);
     height: var(--px50);
@@ -219,18 +237,22 @@ body::-webkit-scrollbar{
     border-radius: var(--px8);
     background: linear-gradient(to bottom, green, darkgreen);
     background-color: red;
-}
+}*/
 /* -- End of custom class -- */
 
 
 /* --- Login Page Start --- */
 /* 0. Navigation Bar */
-.navi {
+.navigationContainer {
     display: flex;
     box-sizing: border-box;
     padding: var(--px4);
     align-items: center;
     border-bottom: 1px solid var(--secondary);
+}
+
+.navigationContainer li:last-child .navbarItems {
+  font-weight: var(--semiBold);
 }
 
 /* Temprorary Used Text As Icon in nav bar*/
@@ -240,7 +262,7 @@ body::-webkit-scrollbar{
     font-size: var(--subHead2); /* Adjust */
 }
 
-.navbar {
+.navbarContents {
     display: flex;
     flex: 1;
     gap: var(--px72);
@@ -254,67 +276,65 @@ body::-webkit-scrollbar{
     position: relative;
 }
 
-.navItems{
-    margin: 0px;
-    padding: 0px;
-    color: var(--secondary);
-    font-size: var(--text);
-    font-weight: var(--light);
-    text-decoration: none;
-    box-sizing: border-box;
+.dropdownContainer:hover .dropdownInNavbar {
+  opacity: 100;
+  max-height: var(--px440);
+  pointer-events: auto;
 }
 
-.navDropdown {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-/*    top: var(--px32);*/
-    column-gap: var(--px50);
-    row-gap: var(--px24);
-    padding: var(--px16);
-    border-radius: var(--px16);
-    background: hsla(30,100%,91%,0.1);
-    list-style: none;
-    box-sizing: border-box;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px var(--shade);
-    opacity: 0;
-    max-height: 0px;
-    overflow: hidden;
-    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+.navbarItems{
+  margin: 0px;
+  padding: 0px;
+  color: var(--secondary);
+  font-size: var(--text);
+  font-weight: var(--light);
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.dropdown:hover .navDropdown {
-    opacity: 100;
-    max-height: var(--px440);
+.dropdownInNavbar {
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  column-gap: var(--px50);
+  row-gap: var(--px24);
+  padding: var(--px16);
+  border-radius: var(--px16);
+  background: hsla(30,100%,91%,0.1);
+  list-style: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px var(--px8) var(--shade);
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-width 1s ease, max-height 0.4s ease-in-out;
 }
 
-.navDropItems h2{
-    text-align: left;
-    margin: var(--px8) 0px;
-    padding: 0px;
-    font-size: var(--subHead3);
-    font-weight: var(--semiBold)
+.dropdownContents{
+  display: flex;
+  flex-direction: column;
 }
 
-.navDropItems{
-    display: flex;
-    flex-direction: column;
+.dropdownContents > h2 {
+  text-align: left;
+  margin: var(--px8) 0px;
+  padding: 0px;
+  font-size: var(--subHead3);
+  font-weight: var(--semiBold)
 }
 
-.navLinks
+.dropdownItems
 {
-    text-align: left;
-    text-decoration: none;
-    padding-left: var(--px16);
-    color: var(--secondary);
-    font-size: var(--text);
-    font-weight: var(--light)
+  text-align: left;
+  text-decoration: none;
+  padding-left: var(--px16);
+  color: var(--secondary);
+  font-size: var(--text);
+  font-weight: var(--light)
 }
 
-.navbar li:last-child .navItems{
-    font-weight: var(--semiBold);
-}
 
 
 /* 1. Hero Section */

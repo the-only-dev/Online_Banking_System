@@ -48,4 +48,5 @@
 .signOut {
     margin-top: auto;
     text-align: center;
+    align-self: center;
 }
