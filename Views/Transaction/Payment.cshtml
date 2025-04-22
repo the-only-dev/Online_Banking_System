@@ -8,25 +8,30 @@
 <body class="dashboardBody">
 	<section class="baseSection">
 		<form asp-controller="Transaction" asp-action="Pay">
-		<div class="bankCard">
-			<div class="twoColumn">
-				<label>Select Account</label>
-				<select class="selectFieldDropdown" asp-for="fromAccount" asp-items=ViewBag.Accounts></select>
+			<div class="bankCard">
+				<div class="twoColumn">
+					<label>Select Account</label>
+					<select class="selectFieldDropdown" asp-for="fromAccount" asp-items=ViewBag.Accounts></select>
+				</div>
+				<div class="twoColumn">
+					<label>Send Payment to A/C : </label>
+					<input class="textInput" type="text" asp-for="toAccount" />
+				</div>
+				<div class="twoColumn">
+					<label>Amount</label>
+					<input class="textInput" min="0" step="0.01" type="number" asp-for="amount" />
+				</div>
+				<div class="twoColumn">
+					<label>Payment Desctiption</label>
+					<input class="textInput" max="30" type="text" asp-for="description" />
+				</div>
+				<input class="buttonSquare" type="submit" value="Pay" />
 			</div>
-			<div class="twoColumn">
-				<label>Send Payment to A/C : </label>
-				<input class="textInput" type="text" asp-for="toAccount" />
-			</div>
-			<div class="twoColumn">
-				<label>Amount</label>
-				<input class="textInput" min="0" step="0.01" type="number" asp-for="amount" />
-			</div>
-			<div class="twoColumn">
-				<label>Payment Desctiption</label>
-				<input class="textInput" max="30" type="text" asp-for="description" />
-			</div>
-			<input class="buttonSquare" type="submit" value="Pay" />
-		</div>
 		</form>
 	</section>
+
+	@foreach(var tran in Model.Transactions)
+	{
+		<p>@tran.Amount</p>
+	}
 </body>

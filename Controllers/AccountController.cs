@@ -27,31 +27,26 @@ namespace Bank2.Controllers
         [HttpPost]
         public async Task<IActionResult> NewAccount(int id, [Bind("accountType, amount")] SharedData data)
         {
+          try
+          {
             var userId = HttpContext.Session.GetInt32("UserId");
             var accounts = await _context.Accounts.Where(x => x.UserId == userId.Value).ToListAsync();
             if (accounts.Count > 2)
             {
-                return RedirectToAction("AccountManagement", "Account");
+              return RedirectToAction("AccountManagement", "Account");
             }
 
             if (!userId.HasValue)
             {
-                return RedirectToAction("LoginPage", "User");
+              return RedirectToAction("LoginPage", "User");
             }
-            var accountCount = await _context.Accounts.ToListAsync();
-            Random rnd = new Random();
-            var account = new Account
-            {
-              UserId = userId.Value,
-              AccountBalance = data.amount,
-              AccountNo = "A/C-" + (accountCount.Count * rnd.Next(1111, 9999)),
-              CreatedAt = DateTime.Now,
-              AccountStatus = "Active",
-              AccountType = data.accountType
-            };
-            _context.Accounts.Add(account);
-            await _context.SaveChangesAsync();
+            await CreateNewAccountAsync(userId, data.amount, data.accountType);
             return RedirectToAction("AccountManagement", "Account");
+          }
+          catch(Exception e)
+          {
+            return View(e.Message);
+          }
         }
 
         //sends data for account management page
@@ -63,7 +58,7 @@ namespace Bank2.Controllers
             {
                 return RedirectToAction("LoginPage", "User");
             }
-            var sharedInfo = await getSharedData(userid);
+            var sharedInfo = await getSharedDataAsync(userid);
             return View(sharedInfo);
         }
     }

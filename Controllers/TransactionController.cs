@@ -24,7 +24,7 @@ namespace Bank2.Controllers
         }
         var account = await _context.Accounts.Where(x => x.UserId == userid.Value).ToListAsync();
         ViewData["Accounts"] = new SelectList(account, "Id", "AccountNo");
-        var sharedInfo = await getSharedData(userid);
+        var sharedInfo = await getSharedDataAsync(userid);
         return View(sharedInfo);
       }
       catch(Exception e)

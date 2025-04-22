@@ -44,7 +44,7 @@ namespace Bank2.Controllers
         }
         var account = await _context.Accounts.Where(x => x.UserId == userId.Value).ToListAsync();
         ViewData["Accounts"] = new SelectList(account, "Id", "AccountNo");
-        var sharedInfo = await getSharedData(userId);
+        var sharedInfo = await getSharedDataAsync(userId);
         return View(sharedInfo);
       }
 
@@ -88,10 +88,10 @@ namespace Bank2.Controllers
         {
             if (ModelState.IsValid)
             {
-                var accountCount = await _context.Accounts.ToListAsync();
-                Random rnd = new Random();
                 _context.Users.Add(users);
                 await _context.SaveChangesAsync();
+                var accountCount = await _context.Accounts.ToListAsync();
+                Random rnd = new Random();
 
                 var account = new Account();
                 account.UserId = users.Id;

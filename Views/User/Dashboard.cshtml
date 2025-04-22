@@ -37,35 +37,31 @@
           </tr>
         </thead>
         <tbody>
-          @foreach (var accounts in Model.Account)
-          {
-            if (accounts.Transactions.Count == 0)
-            {
-              <tr>
-                <td colspan="4" style="text-align: center;">
-                  -------------------- No Entries --------------------
-                </td>
-              </tr>
-            }
-            @foreach (var tran in accounts.Transactions.OrderByDescending(t => t.Date).Take(10).ToList())
-            {
-              
-              <tr>
-                <td>@tran.AccountNumber</td>
-                @if (tran.Type == "Debit")
-                {
-                  <td style="color:forestgreen">@tran.Type</td>
-                  <td style="color:forestgreen">@tran.Amount</td>
-                }
-                else
-                {
-                  <td style="color:red">@tran.Type</td>
-                  <td style="color:red">@tran.Amount</td>
-                }
-                <td>@tran.Date</td>
-              </tr>
-            }
-          }
+           @if (Model.Transactions.Count == 0)
+           { 
+             <tr> 
+               <td colspan="4" style="text-align: center;"> 
+                 -------------------- No Entries -------------------- 
+               </td> 
+             </tr>
+           } 
+           @foreach (var tran in Model.Transactions.Take(5)) 
+           { 
+             <tr> 
+               <td>@tran.AccountNumber</td> 
+               @if (tran.Type == "Debit") 
+               { 
+                 <td style="color:forestgreen">@tran.Type</td> 
+                 <td style="color:forestgreen">@tran.Amount</td> 
+               } 
+               else 
+               { 
+                 <td style="color:red">@tran.Type</td> 
+                 <td style="color:red">@tran.Amount</td> 
+               } 
+               <td>@tran.Date</td> 
+             </tr> 
+           }
         </tbody>
       </table>
     </section>
