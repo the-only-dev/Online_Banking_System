@@ -1,49 +1,53 @@
 ﻿@model Bank2.Models.SharedData
 @{
-    ViewData["Title"] = "Account Management";
+  ViewData["Title"] = "Account Management";
 }
 <head>
-    <link rel="stylesheet" href="~/css/Dashboard.css" />
-    <link rel="stylesheet" href="~/css/LoginPage.css" />
+  <link rel="stylesheet" href="~/css/Dashboard.css" />
+  <link rel="stylesheet" href="~/css/LoginPage.css" />
 </head>
 <body class="dashboardBody">
-    <header class="baseSection">
-        <h1 class="">Account Management</h1>
-    </header>
-    <section class="baseSection">
-        <div>
-            <div>
-                <h2>Accounts Owned : @Model.Account?.Count</h2>
-            </div>
+  <header class="baseSection">
+    <h1 class="">Account Management</h1>
+  </header>
+  <section class="baseSection">
+    <div>
+      <div>
+        @if(Model.Account.Count < 3){
+          <h2>Accounts Owned : @Model.Account?.Count</h2>
+        }else{
+        <h2>Accounts Owned : @Model.Account?.Count (Max Limit Reached)</h2>
+        }
+      </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>A/C No</th>
-                        <th>Type</th>
-                        <th>Balance</th>
-                        <th>Status</th>
-                        <th>Creation Date</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
+      <table>
+        <thead>
+          <tr>
+            <th>A/C No</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Status</th>
+            <th>Creation Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
 
-                <tbody>
-                    @foreach (var accounts in Model.Account)
-                    {
-                    <tr>
-                        <td>@accounts.AccountNo</td>
-                        <td>@accounts.AccountType</td>
-                        <td>@accounts.AccountBalance</td>
-                        <td>@accounts.AccountStatus</td>
-                        <td>@accounts.CreatedAt</td>
-                        <td>
-                            <a asp-action="DeleteAccount" asp-route-id="@accounts.Id">Delete</a>
-                        </td>
-                    </tr>
-                    }
-                </tbody>
-            </table>
+        <tbody>
+          @foreach (var accounts in Model.Account)
+          {
+          <tr>
+            <td>@accounts.AccountNo</td>
+            <td>@accounts.AccountType</td>
+            <td>@accounts.AccountBalance</td>
+            <td>@accounts.AccountStatus</td>
+            <td>@accounts.CreatedAt</td>
+            <td>
+              <a asp-action="DeleteAccount" style="color:red; text-decoration: none;" asp-route-id="@accounts.Id">Delete</a>
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
         </div>
     </section>
 
@@ -65,9 +69,10 @@
             <div class="smallSection">
                 <label class="sectionContent">Select Account Type</label>
                 <select class="selectFieldDropdown" asp-for="accountType">
-                    <option value="Savings">Savings</option>
+                    <option value="Savings">Personal (Savings)</option>
                     <option value="Current">Current</option>
                     <option value="Business">Business</option>
+                    <option value="Merchant">Merchant</option>
                 </select>
             </div>
             <div class="smallSection">

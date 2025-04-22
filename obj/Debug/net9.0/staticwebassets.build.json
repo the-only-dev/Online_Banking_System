@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6Cag2qiFQWThBntY7C2C+cGX8zlBtO4yGJ8vsHQi5lE=",
+  "Hash": "s1He6nyGT6sOGDA29O/2pV4Xcw1uljQMGIrX43KyV80=",
   "Source": "Bank2",
   "BasePath": "_content/Bank2",
   "Mode": "Default",
@@ -500,12 +500,12 @@
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-pyxvvjntj1.gz",
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-f4vq9xjn7a.gz",
       "SourceId": "Bank2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Bank2",
-      "RelativePath": "css/LoginPage#[.{fingerprint=pyxvvjntj1}]?.css.gz",
+      "RelativePath": "css/LoginPage#[.{fingerprint=f4vq9xjn7a}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -514,8 +514,8 @@
       "RelatedAsset": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "b6ytd18jnt",
-      "Integrity": "Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4=",
+      "Fingerprint": "yzj4gq8tjg",
+      "Integrity": "PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css"
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pyxvvjntj1",
-      "Integrity": "sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8=",
+      "Fingerprint": "f4vq9xjn7a",
+      "Integrity": "8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\LoginPage.css"
@@ -4131,12 +4131,12 @@
     },
     {
       "Route": "css/LoginPage.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-pyxvvjntj1.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-f4vq9xjn7a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000376506024"
+          "Quality": "0.000344946533"
         }
       ],
       "ResponseHeaders": [
@@ -4146,15 +4146,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2655"
+          "Value": "2898"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4=\""
+          "Value": "\"PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:53:50 GMT"
+          "Value": "Tue, 22 Apr 2025 08:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4174,13 +4174,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8=\""
+          "Value": "W/\"8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8="
+          "Value": "sha256-8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc="
         }
       ]
     },
@@ -4195,7 +4195,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12823"
+          "Value": "13819"
         },
         {
           "Name": "Content-Type",
@@ -4203,11 +4203,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8=\""
+          "Value": "\"8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:53:50 GMT"
+          "Value": "Tue, 22 Apr 2025 08:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4217,13 +4217,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8="
+          "Value": "sha256-8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc="
         }
       ]
     },
     {
       "Route": "css/LoginPage.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-pyxvvjntj1.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-f4vq9xjn7a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4232,7 +4232,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2655"
+          "Value": "2898"
         },
         {
           "Name": "Content-Type",
@@ -4240,11 +4240,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4=\""
+          "Value": "\"PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:53:50 GMT"
+          "Value": "Tue, 22 Apr 2025 08:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4262,18 +4262,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4="
+          "Value": "sha256-PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs="
         }
       ]
     },
     {
-      "Route": "css/LoginPage.pyxvvjntj1.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-pyxvvjntj1.gz",
+      "Route": "css/LoginPage.f4vq9xjn7a.css",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-f4vq9xjn7a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000376506024"
+          "Quality": "0.000344946533"
         }
       ],
       "ResponseHeaders": [
@@ -4283,15 +4283,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2655"
+          "Value": "2898"
         },
         {
           "Name": "ETag",
-          "Value": "\"Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4=\""
+          "Value": "\"PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:53:50 GMT"
+          "Value": "Tue, 22 Apr 2025 08:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4311,13 +4311,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8=\""
+          "Value": "W/\"8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pyxvvjntj1"
+          "Value": "f4vq9xjn7a"
         },
         {
           "Name": "label",
@@ -4325,12 +4325,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8="
+          "Value": "sha256-8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc="
         }
       ]
     },
     {
-      "Route": "css/LoginPage.pyxvvjntj1.css",
+      "Route": "css/LoginPage.f4vq9xjn7a.css",
       "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4340,7 +4340,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12823"
+          "Value": "13819"
         },
         {
           "Name": "Content-Type",
@@ -4348,11 +4348,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8=\""
+          "Value": "\"8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:53:50 GMT"
+          "Value": "Tue, 22 Apr 2025 08:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4362,7 +4362,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pyxvvjntj1"
+          "Value": "f4vq9xjn7a"
         },
         {
           "Name": "label",
@@ -4370,13 +4370,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sRia3lHr5jBvuv/B5htaXRwJ+xQkufp2/QcMdylPBI8="
+          "Value": "sha256-8SKC6u6q8LyhFOr6bWjerxeKkXyDpimRx/9r1c9aMfc="
         }
       ]
     },
     {
-      "Route": "css/LoginPage.pyxvvjntj1.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-pyxvvjntj1.gz",
+      "Route": "css/LoginPage.f4vq9xjn7a.css.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Debug\\net9.0\\compressed\\e108juxnei-f4vq9xjn7a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4385,7 +4385,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2655"
+          "Value": "2898"
         },
         {
           "Name": "Content-Type",
@@ -4393,11 +4393,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4=\""
+          "Value": "\"PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:53:50 GMT"
+          "Value": "Tue, 22 Apr 2025 08:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4415,7 +4415,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pyxvvjntj1"
+          "Value": "f4vq9xjn7a"
         },
         {
           "Name": "label",
@@ -4423,7 +4423,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Q2NfY3j/PstnXXWg5MZDgca/zHLE4OAWEJXYYro9Bd4="
+          "Value": "sha256-PrYKtRTYiOpV6J+lr1P7Z7Tp6mbgKduulc/H/+SkIAs="
         }
       ]
     },

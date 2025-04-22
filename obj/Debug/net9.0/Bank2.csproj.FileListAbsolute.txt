@@ -222,4 +222,4 @@ C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\jouqp2clo
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.sourcelink.json
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\bernb2p045-gm81oz84v2.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\tb43idqe4i-4cmzmhaac6.gz
-C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\e108juxnei-pyxvvjntj1.gz
+C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\e108juxnei-f4vq9xjn7a.gz

@@ -1,24 +1,27 @@
-﻿@model Bank2.Models.User
+﻿@model Bank2.Models.SharedData
 @{
-    var Username = Context.Session.GetString("Username");
-    var UserId = Context.Session.GetString("UserId");
-    ViewData["Title"] = "Dashboard";
+  var Username = Context.Session.GetString("Username");
+  var UserId = Context.Session.GetString("UserId");
+  ViewData["Title"] = "Dashboard";
 }
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
-    <link rel="stylesheet" href="~/css/Dashboard.css"/>
+  <title></title>
+  <link rel="stylesheet" href="~/css/Dashboard.css"/>
 </head>
 <body class="dashboardBody">
   <section class="twoColumn">
     <section class="baseSection">
       <h2 class="heading">Primary payments A/C</h2>
       <div class="bankCard">
-        <p>@Model.Accounts[0].AccountNo</p>
-        <h2>@Model.Accounts[0].AccountBalance Rs</h2>
-        <p>@Model.Username</p>
+        <p>@Model.Account[0].AccountNo</p>
+        <h2>@Model.Account[0].AccountBalance Rs</h2>
+        <p>@Model.User.Username</p>
+      </div>
+      <div>
+      <select id="selectedAccount" asp-items="ViewBag.Accounts"></select>
       </div>
     </section>
 
@@ -34,10 +37,19 @@
           </tr>
         </thead>
         <tbody>
-          @foreach (var accounts in Model.Accounts)
+          @foreach (var accounts in Model.Account)
           {
-            @foreach (var tran in accounts.Transactions)
+            if (accounts.Transactions.Count == 0)
             {
+              <tr>
+                <td colspan="4" style="text-align: center;">
+                  -------------------- No Entries --------------------
+                </td>
+              </tr>
+            }
+            @foreach (var tran in accounts.Transactions.OrderByDescending(t => t.Date).Take(10).ToList())
+            {
+              
               <tr>
                 <td>@tran.AccountNumber</td>
                 @if (tran.Type == "Debit")
@@ -67,5 +79,6 @@
   <section class="baseSection">
     <h2 class="removeMargin">Recommended</h2>
   </section>
+  
 </body>
 </html>

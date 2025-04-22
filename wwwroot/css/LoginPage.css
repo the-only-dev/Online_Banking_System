@@ -180,7 +180,7 @@ body::-webkit-scrollbar{
     background: none;
 }
 
-.dashboardSignOutButton {
+.dashboardSignInOutButton {
     padding: 0px var(--px20);
     width: var(--px280);
     height: var(--px50);
@@ -190,6 +190,15 @@ body::-webkit-scrollbar{
     border: none;
     border-radius: var(--px25);
     background-color: var(--tertiary);
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboardSignInOutButton:hover {
+  color: var(--dark);
+  box-shadow: var(--primary) 0px 0px 8px 1px;
+  background-color: var(--primary);
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .btnRnd2 {
@@ -506,55 +515,71 @@ body::-webkit-scrollbar{
 
 /* --- Create Account Page --- */
 
-.CUBody {
+.createUserProfile {
     margin: 0px;
     padding: 0px;
     background-color: var(--secondary);
 }
 
-.accountCreateForm {
-    margin: 1% 20%;
-    padding: var(--px16);
-    background-color: var(--secondary);
-    border: 2px solid black;
-    border-radius: var(--px16);
-    box-shadow: 2px 2px 0px black;
+.userProfileCreationForm {
+  margin: 1% 20%;
+  padding: var(--px16);
+  background-color: var(--secondary);
+  border: var(--px2) solid black;
+  border-radius: var(--px16);
+  box-shadow: var(--px2) var(--px2) black;
 }
 
-.userHeading{
+.userProfileMainHeading{
     padding-bottom: var(--px16);
-    border-bottom: 1px solid black;
+    border-bottom: var(--px4) solid black;
 }
 
-.userSection{
+.userInputContainer {
     border-bottom: var(--px2) solid black;
     padding-bottom: var(--px16);
     margin-bottom: var(--px16);
 }
 
-
-.userInnerSection {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.userProfileSubHeading {
+  padding-bottom: var(--px16);
+  border-bottom: 1px solid black;
 }
 
-.userContent {
+.userProfileInnerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.userProfileContent {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: var(--px16);
+    margin-bottom: var(--px16);
+    padding-left: var(--px16);
     font-size: var(--text);
     font-weight: var(--semiBold);
 }
 
+.userInputField {
+    padding: var(--px8);
+    color: black;
+    background-color: var(--secondary);
+    border: 1px solid var(--dark);
+    border-radius: var(--px4);
+    font-size: var(--text);
+    font-weight: var(--bold);
+}
+
+
 .spanCol {
-    margin: 16px 0px;
-    padding: 0px;
-    grid-column: span 2;
-    border-bottom: 2px solid var(--secondary);
+  margin: var(--px16) 0px;
+  padding: 0px;
+  grid-column: span 2;
+  border-bottom: var(--px2) solid var(--secondary);
 }
 
 .span {
@@ -570,16 +595,6 @@ body::-webkit-scrollbar{
     padding: 0rem 2rem;
     font-size: var(--paragraph);
     font-weight: var(--light);
-}
-
-.inputEdit {
-    padding: 8px;
-    color: black;
-    background-color: var(--secondary);
-    border: 1px solid var(--dark);
-    border-radius: 0.5rem;
-    font-size: var(--text);
-    font-weight: var(--bold);
 }
 
 .frmPad{

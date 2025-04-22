@@ -12,7 +12,7 @@
 </head>
 <body class="loginPageBody">
 	
-	<form asp-action="CheckLogin" method="post">
+	<form asp-controller="User" asp-action="CheckLogin" method="post">
 		<div id="showLoginForm" class="loginAuthenticationContainer" style="display: none">
 			<div class="loginAuthenticationForm">
 				<div class="loginAuthenticationCloseContainer">
@@ -21,11 +21,11 @@
 				</div>
 				<div class="loginAuthContents">
 					<label for="Username">Username / Email</label>
-					<input required class="inputEdit" asp-for="Username" type="text" />
+					<input required class="userInputField" asp-for="Username" type="text" />
 				</div>
 				<div class="loginAuthContents">
 					<label for="Password">Password</label>
-					<input required class="inputEdit" asp-for="Password" type="password" />
+					<input required class="userInputField" asp-for="Password" type="password" />
 				</div>
 				<div class="loginAuthContents">
 					<button type="submit" class="authenticationButton">Login</button>
@@ -130,7 +130,7 @@
 		<div>
 				<a id="navbarLoginBtn" class="navbarLoginButton">Login</a>
 
-			<select id="logoutBtn" class="inputEdit" style="display: none" onchange="handleSelect(this)">
+			<select id="logoutBtn" class="userInputField" style="display: none" onchange="handleSelect(this)">
 				<option hidden id="user" selected></option>
 				<option value="/User/Dashboard"><a>Dashboard</a></option>
 				<option value="/Transaction/Payment"><a>Profile</a></option>

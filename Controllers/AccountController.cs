@@ -6,17 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bank2.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
-
-        private readonly BankContext _context;
-
-        public AccountController(BankContext context)
-        {
-            _context = context;
-        }
-
+        public AccountController(BankContext context) : base(context) { }
     
+        //Used to delete accounts from account management page
         public async Task<IActionResult> DeleteAccount(int id)
         {
             var acc = await _context.Accounts.FirstOrDefaultAsync(t => t.Id == id);
@@ -28,6 +22,7 @@ namespace Bank2.Controllers
             return RedirectToAction("AccountManagement", "Account");
         }
 
+        //Create new account from account management page
         [Route("/Account/NewAccount")]
         [HttpPost]
         public async Task<IActionResult> NewAccount(int id, [Bind("accountType, amount")] SharedData data)
@@ -36,7 +31,6 @@ namespace Bank2.Controllers
             var accounts = await _context.Accounts.Where(x => x.UserId == userId.Value).ToListAsync();
             if (accounts.Count > 2)
             {
-                ViewData["MaxAccount"] = "You Have Reached Max Account Limit. Contact Support for more informaton.";
                 return RedirectToAction("AccountManagement", "Account");
             }
 
@@ -46,19 +40,21 @@ namespace Bank2.Controllers
             }
             var accountCount = await _context.Accounts.ToListAsync();
             Random rnd = new Random();
-            var account = new Account();
-            account.UserId = userId.Value;
-            account.AccountBalance = data.amount;
-            account.AccountNo = "A/C-" + (accountCount.Count * rnd.Next(1111, 9999));
-            account.CreatedAt = DateTime.Now;
-            account.AccountStatus = "Active";
-            account.AccountType = data.accountType;
-
+            var account = new Account
+            {
+              UserId = userId.Value,
+              AccountBalance = data.amount,
+              AccountNo = "A/C-" + (accountCount.Count * rnd.Next(1111, 9999)),
+              CreatedAt = DateTime.Now,
+              AccountStatus = "Active",
+              AccountType = data.accountType
+            };
             _context.Accounts.Add(account);
             await _context.SaveChangesAsync();
             return RedirectToAction("AccountManagement", "Account");
         }
 
+        //sends data for account management page
         [Route("/Account/AccountManagement")]
         public async Task<IActionResult> AccountManagement(int id)
         {
@@ -67,26 +63,7 @@ namespace Bank2.Controllers
             {
                 return RedirectToAction("LoginPage", "User");
             }
-            var branch = await _context.Branchs.ToListAsync();
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userid.Value);
-            var accounts = await _context.Accounts.Where(x => x.UserId == userid.Value).ToListAsync();
-            var accountIds = accounts.Select(a => a.Id).ToList();
-            var transactions = await _context.Transactions
-                    .Where(t => accountIds.Contains(t.AccountId))
-                    .OrderByDescending(t => t.Date)
-                    .ToListAsync();
-
-            int accountCount = accounts.Count;
-
-            var sharedInfo = new SharedData
-            {
-                Branch = branch,
-                User = user,
-                Account = accounts,
-                Transactions = transactions
-            };
-
-            //ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
+            var sharedInfo = await getSharedData(userid);
             return View(sharedInfo);
         }
     }
