@@ -70,7 +70,7 @@
         </div>
       </section>
 
-      <section id="BusinessDetails" class="userInputContainer" style="display:grid">
+      <section id="BusinessDetails" class="userInputContainer" style="display:none">
         <h2 class="userProfileSubHeading">Enter Business Details</h2>
         <div class="userProfileInnerContainer">
 
@@ -101,7 +101,7 @@
            let customerValue = this.value;
            let businessDisplay = document.getElementById("BusinessDetails");
 
-           if(customerValue === "Business" || "Merchant") {
+           if(customerValue === "Business" || customerValue === "Merchant") {
                 businessDisplay.style.display = "grid";
            }
            else{

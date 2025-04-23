@@ -90,19 +90,7 @@ namespace Bank2.Controllers
             {
                 _context.Users.Add(users);
                 await _context.SaveChangesAsync();
-                var accountCount = await _context.Accounts.ToListAsync();
-                Random rnd = new Random();
-
-                var account = new Account();
-                account.UserId = users.Id;
-                account.AccountNo = "A/C-" + (accountCount.Count * rnd.Next(1111, 9999));
-                account.AccountBalance = 0;
-                account.CreatedAt = DateTime.Now;
-                account.AccountType = "Savings";
-
-                 _context.Accounts.Add(account);
-                await _context.SaveChangesAsync();
-
+                await CreateNewAccountAsync(users.Id, 0, users.CustomerType);
                 return RedirectToAction("LoginPage");
             }
             ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");

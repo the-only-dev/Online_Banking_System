@@ -78,10 +78,6 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: var(--semiBold);
 }
 
-.removeMargin {
-    margin: 0px;
-}
-
 .heading {
     max-width: fit-content;
     border-right: var(--px4) solid black;
@@ -133,35 +129,62 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* -- Bills and Payments -- */
 
-.paymentSections{
+.paymentContainer{
     display: flex;
-}
-
-.paymentItem {
-    color: black;
-    background-color: var(--primary);
-    border-radius: var(--px16);
-    text-align: center;
-    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .paymentsContents {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    flex: 1;
+/*    flex-wrap: wrap;*/
+    display: flex;
     gap: var(--px32);
     align-items: center;
-    justify-content: center;
     background-color: var(--secondary);
-    /*    background-color: blanchedalmond;*/
-    /*    border: var(--px2) solid black;*/
+    border: 1px solid gray;
     border-radius: var(--px16);
     margin: var(--px8);
     padding: var(--px16);
 }
 
+.paymentLegend {
+  padding: 0px var(--px8);
+  border: 1px gray solid;
+  border-radius: var(--px8);
+  background-color: var(--secondary);
+  font-size: var(--subHead3);
+  font-weight: var(--semiBold);
+}
+.paymentItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: var(--px120);
+  background-color: var(--primary);
+  border: 1px solid lightgray;
+  border-radius: var(--px16);
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.paymentItemLogo {
+  padding: var(--px8) 0px;
+  width: var(--px40);
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.paymentItemName {
+  text-decoration: none;
+  margin: 0px 0px var(--px8) 0px;
+}
 .paymentItem:hover {
     background-color: var(--primary);
-    box-shadow: var(--shade) 0px 0px 8px 1px ;
+    box-shadow: var(--shade) 0px 0px var(--px8) 1px ;
 }
 
 .paymentItem a {

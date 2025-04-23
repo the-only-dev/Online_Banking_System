@@ -56,6 +56,9 @@
   /* Heavy Padding or Margins */
   --px72: 4.5rem;
   --px80: 5rem;
+
+  /* Use for Paament Buttons*/
+  --px120: 7.5rem;
   --px128: 8rem;
 
   /* Mainly Used for Button Width*/
@@ -83,6 +86,10 @@ body::-webkit-scrollbar{
 }
 
 /* Global custom class for items */
+
+.removeMargin {
+  margin: 0px;
+}
 
 .loginPageBody {
     margin: 0px;

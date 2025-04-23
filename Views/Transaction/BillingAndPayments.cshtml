@@ -14,32 +14,82 @@
     <h1 class="removeMargin">Billing and Payments</h1>
   </header>
 
-  <section class="paymentSections">
-    <div class="paymentsContents">
-      <div class="paymentItem"> <a asp-for="" asp-controller="Transaction" asp-action="Payment"> <h2>Bank Transfer</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Pay Contact</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Self Transfer</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Pay Phone Number</h2> </a> </div>
-    </div>                 
-    <div class="paymentsContents">
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Bank Transfer</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Pay Contact</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Self Transfer</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Pay Phone Number</h2> </a> </div>
-    </div>
+  <section class="paymentContainer">
+    <fieldset class="paymentsContents">
+      <legend class="paymentLegend">Bank and Transfer</legend>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/bank.png" alt="itemImage" />
+        <h3 class="paymentItemName">Bank Transfer</h3> 
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/contact-book.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay<br />Contact</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/self-transfer.png" alt="itemImage" />
+        <h3 class="paymentItemName">Self<br /> Transfer</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/donation.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Phone Number</h3>
+      </a>
+    </fieldset>                 
+    <fieldset class="paymentsContents">
+      <legend class="paymentLegend">Payments</legend>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/bank.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Merchant</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/contact-book.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay<br />Contact</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/self-transfer.png" alt="itemImage" />
+        <h3 class="paymentItemName">Self<br /> Transfer</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/donation.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Phone Number</h3>
+      </a>
+    </fieldset>
   </section>
 
-  <section>
-    <h2>Bills and Recharges</h2>
-    <div class="paymentsContents">
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Mobile Postpaid</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Water Bill</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Gas Bill</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>DTH Reacharge</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Mobile Prepaid</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Electricity Bill</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Electricity Bill</h2> </a> </div>
-      <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Broadband / Landline</h2> </a> </div>
-    </div>
+  <section class="paymentContainer">
+    <fieldset class="paymentsContents">
+      <legend class="paymentLegend">Bills and Recharges</legend>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/bank.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Merchant</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/contact-book.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay<br />Contact</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/self-transfer.png" alt="itemImage" />
+        <h3 class="paymentItemName">Self<br /> Transfer</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/donation.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Phone Number</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/bank.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Merchant</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/contact-book.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay<br />Contact</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/self-transfer.png" alt="itemImage" />
+        <h3 class="paymentItemName">Self<br /> Transfer</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/donation.png" alt="itemImage" />
+        <h3 class="paymentItemName">Pay Phone Number</h3>
+      </a>
+    </fieldset>
   </section>
 </body>
