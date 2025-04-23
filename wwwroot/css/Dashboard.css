@@ -134,6 +134,10 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-wrap: wrap;
 }
 
+.redblack{
+
+}
+
 .paymentsContents {
     flex: 1;
 /*    flex-wrap: wrap;*/
@@ -171,6 +175,10 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
+.paymentItem a {
+    color: black;
+}
+
 .paymentItemLogo {
   padding: var(--px8) 0px;
   width: var(--px40);
@@ -179,17 +187,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .paymentItemName {
+  font-weight: var(--semiBold);
   text-decoration: none;
-  margin: 0px 0px var(--px8) 0px;
+  margin: var(--px8)var(--px8);
 }
 .paymentItem:hover {
     background-color: var(--primary);
     box-shadow: var(--shade) 0px 0px var(--px8) 1px ;
-}
-
-.paymentItem a {
-    color: black;
-    text-decoration: none;
 }
 
 .paymentForm{

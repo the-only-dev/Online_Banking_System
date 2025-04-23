@@ -25,6 +25,50 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\bank.png",
+      "PackagePath": "staticwebassets\\ico\\bank.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\contact-book.png",
+      "PackagePath": "staticwebassets\\ico\\contact-book.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\donation.png",
+      "PackagePath": "staticwebassets\\ico\\donation.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\electricity.png",
+      "PackagePath": "staticwebassets\\ico\\electricity.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\gas-tank.png",
+      "PackagePath": "staticwebassets\\ico\\gas-tank.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\gas.png",
+      "PackagePath": "staticwebassets\\ico\\gas.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\light-bulb.png",
+      "PackagePath": "staticwebassets\\ico\\light-bulb.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\lighting.png",
+      "PackagePath": "staticwebassets\\ico\\lighting.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\self-transfer.png",
+      "PackagePath": "staticwebassets\\ico\\self-transfer.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\water-tap.png",
+      "PackagePath": "staticwebassets\\ico\\water-tap.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\water.png",
+      "PackagePath": "staticwebassets\\ico\\water.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

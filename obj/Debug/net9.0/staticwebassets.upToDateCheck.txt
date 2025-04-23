@@ -68,6 +68,17 @@ wwwroot\css\DashboardLayout.css
 wwwroot\css\LoginPage.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\ico\bank.png
+wwwroot\ico\contact-book.png
+wwwroot\ico\donation.png
+wwwroot\ico\electricity.png
+wwwroot\ico\gas.png
+wwwroot\ico\gas-tank.png
+wwwroot\ico\light-bulb.png
+wwwroot\ico\lighting.png
+wwwroot\ico\self-transfer.png
+wwwroot\ico\water.png
+wwwroot\ico\water-tap.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

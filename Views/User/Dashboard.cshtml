@@ -67,17 +67,25 @@
     </section>
   </section>
   <section class="baseSection">
-    <h2 class="removeMargin">Quick Access</h2>
-    <div>
-      <section class="paymentContainer">
-        <div class="paymentsContents">
-          <div class="paymentItem"> <a asp-for="" asp-controller="Transaction" asp-action="Payment"> <h2>Bank Transfer</h2> </a> </div>
-          <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Pay Contact</h2> </a> </div>
-          <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Self Transfer</h2> </a> </div>
-          <div class="paymentItem"> <a asp-for="" asp-action=""> <h2>Pay Phone Number</h2> </a> </div>
-        </div>
-      </section>
-    </div>
+    <fieldset class="paymentsContents">
+      <legend class="paymentLegend">Quick Access</legend>
+        <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+          <img class="paymentItemLogo" src="~/ico/phone-list.png" alt="itemImage" />
+          <h3 class="paymentItemName">Pay Contact</h3>
+        </a>
+        <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+          <img class="paymentItemLogo" src="~/ico/donation.png" alt="itemImage" />
+          <h3 class="paymentItemName">Pay Phone Number</h3>
+        </a>
+        <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+          <img class="paymentItemLogo" src="~/ico/mobile-recharge.png" alt="itemImage" />
+          <h3 class="paymentItemName">Mobile Recharge</h3>
+        </a>
+        <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+          <img class="paymentItemLogo" src="~/ico/mobile-postpaid.png" alt="itemImage" />
+          <h3 class="paymentItemName">Mobile Postpaid</h3>
+        </a>
+    </fieldset>
   </section>
   <section class="baseSection">
     <h2 class="removeMargin">Recommended</h2>
