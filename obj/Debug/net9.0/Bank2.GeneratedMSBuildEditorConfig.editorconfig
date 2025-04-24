@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cQmlsbGluZ0FuZFBheW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/\!Study Data/Visual Basic Practice/Bank2/Views/Transaction/partialTransaction.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25ccGFydGlhbFRyYW5zYWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/\!Study Data/Visual Basic Practice/Bank2/Views/Transaction/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

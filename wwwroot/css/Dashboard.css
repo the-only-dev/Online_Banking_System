@@ -89,19 +89,20 @@ input[type="number"]::-webkit-inner-spin-button {
 /* DashBoard */
 
 .twoColumn{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-.bankCard {
+.bankAccountCard {
   display: flex;
   flex-direction: column;
-  margin: var(--px8) 0px;
+  margin: var(--px16) 0px;
   padding: var(--px8);
   text-align: left;
   border-radius: var(--px16);
   color: white;
-  width: var(--px400);
+  max-width: var(--px400);
+  max-height: var(--px200);
   background: linear-gradient(15deg,var(--black13), var(--black38));
   box-shadow: var(--black38) 0px 0px var(--px8) 0px;
 }
@@ -111,10 +112,15 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  font-weight: var(--semiBold);
 }
 
 .bankCardBalance{
- 
+  padding-right: var(--px8);
+  margin: 0px;
+  font-size: var(--mainHead);
+  font-weight: var(--bold);
+  text-align: end;
 }
 /* -- Account Management -- */
 

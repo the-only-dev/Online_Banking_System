@@ -13,6 +13,27 @@ namespace Bank2.Controllers
       return View();
     }
 
+    [Route("/Transaction/getTransaction")]
+    public async Task<IActionResult> getTransaction(int accountId)
+    {
+      var userid = HttpContext.Session.GetInt32("UserId");
+      var user = await _context.Users.Include(b => b.Branch).FirstOrDefaultAsync(u => u.Id == userid);
+      var account = await _context.Accounts.FirstOrDefaultAsync(a => a.Id == accountId);
+      var accounts = await _context.Accounts.Where(a => a.Id == accountId).ToListAsync();
+      var transactions = await _context.Transactions
+                        .Where(a => a.AccountId == accountId).OrderByDescending(x => x.Date)
+                        .ToListAsync();
+
+      var sharedInfo = new SharedData
+      {
+        User = user,
+        SoloAccount = account,
+        Account = account != null ? new List<Account> { account } : new List<Account>(),
+        Transactions = transactions
+      };
+      return PartialView("partialTransaction", sharedInfo);
+    }
+
     public async Task<IActionResult> Payment()
     {
       try

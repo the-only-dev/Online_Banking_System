@@ -1,0 +1,48 @@
+﻿@model Bank2.Models.SharedData
+
+<section class="baseSection">
+  <h2 class="dashboardSectionHeading">Primary payments A/C</h2>
+  <div class="bankAccountCard">
+    <div class="bankCardContents">
+      <p>@Model.User.Branch.Name Branch</p>
+      <p>@Model.Account[0].AccountNo</p>
+    </div>
+    <p class="bankCardBalance">₹ @Model.Account[0].AccountBalance</p>
+    <div class="bankCardContents">
+      <p>Holder : @Model.User.Username</p>
+    </div>
+  </div>
+</section>
+
+<section class="baseSection">
+  <h2 class="dashboardSectionHeading">Recent Transaction</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>AccountNo</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>DateTime</th>
+      </tr>
+    </thead>
+    <tbody>
+      @if (Model.Transactions.Count == 0)
+      {
+        <tr>
+          <td colspan="4" style="text-align: center;">
+            -------------------- No Entries --------------------
+          </td>
+        </tr>
+      }
+      @foreach (var tran in Model.Transactions.Take(4))
+      {
+        <tr>
+          <td>@tran.AccountNumber</td>
+          <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Type</td>
+          <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Amount</td>
+          <td>@tran.Date</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</section> 

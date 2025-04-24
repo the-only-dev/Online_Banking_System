@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
 </head>
 <body class="loginPageBody">
-	
+	<a asp-controller="Transaction" asp-action="getTransaction">Click Me</a>
+
 	<form asp-controller="User" asp-action="CheckLogin" method="post">
 		<div id="showLoginForm" class="loginAuthenticationContainer" style="display: none">
 			<div class="loginAuthenticationForm">
