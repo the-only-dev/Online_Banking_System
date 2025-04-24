@@ -25,12 +25,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\UPI-Black.png",
+      "PackagePath": "staticwebassets\\ico\\UPI-Black.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\amazon-music.png",
+      "PackagePath": "staticwebassets\\ico\\amazon-music.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\apple-music.png",
+      "PackagePath": "staticwebassets\\ico\\apple-music.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\bank.png",
       "PackagePath": "staticwebassets\\ico\\bank.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\changing.png",
+      "PackagePath": "staticwebassets\\ico\\changing.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\contact-book.png",
       "PackagePath": "staticwebassets\\ico\\contact-book.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\credit-card.png",
+      "PackagePath": "staticwebassets\\ico\\credit-card.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\donation.png",
@@ -57,8 +77,80 @@
       "PackagePath": "staticwebassets\\ico\\lighting.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\mobile-postpaid.png",
+      "PackagePath": "staticwebassets\\ico\\mobile-postpaid.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\mobile-recharge.png",
+      "PackagePath": "staticwebassets\\ico\\mobile-recharge.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\mobile.png",
+      "PackagePath": "staticwebassets\\ico\\mobile.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\monitor.png",
+      "PackagePath": "staticwebassets\\ico\\monitor.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\netflix.png",
+      "PackagePath": "staticwebassets\\ico\\netflix.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\pay-credit-card.png",
+      "PackagePath": "staticwebassets\\ico\\pay-credit-card.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\pay-merchant.png",
+      "PackagePath": "staticwebassets\\ico\\pay-merchant.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\phone-list.png",
+      "PackagePath": "staticwebassets\\ico\\phone-list.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\phone.png",
+      "PackagePath": "staticwebassets\\ico\\phone.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\router-ethick.png",
+      "PackagePath": "staticwebassets\\ico\\router-ethick.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\router-thick.png",
+      "PackagePath": "staticwebassets\\ico\\router-thick.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\router.png",
+      "PackagePath": "staticwebassets\\ico\\router.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\self-transfer.png",
       "PackagePath": "staticwebassets\\ico\\self-transfer.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\smart-tv-ex.png",
+      "PackagePath": "staticwebassets\\ico\\smart-tv-ex.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\smart-tv-thick.png",
+      "PackagePath": "staticwebassets\\ico\\smart-tv-thick.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\smart-tv.png",
+      "PackagePath": "staticwebassets\\ico\\smart-tv.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\soundcloud.png",
+      "PackagePath": "staticwebassets\\ico\\soundcloud.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\spotify.png",
+      "PackagePath": "staticwebassets\\ico\\spotify.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\transfer.png",
+      "PackagePath": "staticwebassets\\ico\\transfer.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\water-tap.png",

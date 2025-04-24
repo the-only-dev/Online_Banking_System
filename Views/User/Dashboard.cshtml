@@ -11,22 +11,26 @@
   <title></title>
   <link rel="stylesheet" href="~/css/Dashboard.css"/>
 </head>
-<body class="dashboardBody">
+<body class="dashboardContentBody">
   <section class="twoColumn">
     <section class="baseSection">
-      <h2 class="heading">Primary payments A/C</h2>
+      <h2 class="dashboardSectionHeading">Primary payments A/C</h2>
+      <select class="selectFieldDropdown" id="selectedAccount" asp-items="ViewBag.Accounts"></select>
       <div class="bankCard">
-        <p>@Model.Account[0].AccountNo</p>
+        <div class="bankCardContents">
+          <p>@Model.User.Branch.Name Branch</p>
+          <p class="bankCardBalance">@Model.Account[0].AccountNo</p>
+        </div>
         <h2>@Model.Account[0].AccountBalance Rs</h2>
-        <p>@Model.User.Username</p>
-      </div>
-      <div>
-      <select id="selectedAccount" asp-items="ViewBag.Accounts"></select>
+        <div class="bankCardContents">
+          <p>@Model.User.Username</p>
+          <p>@Model.User.Username</p>
+        </div>
       </div>
     </section>
 
     <section class="baseSection">
-      <h2 class="heading">Recent Transaction</h2>
+      <h2 class="dashboardSectionHeading">Recent Transaction</h2>
       <table>
         <thead>
           <tr>

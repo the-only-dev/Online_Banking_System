@@ -38,7 +38,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Global Custom Classes */
 
-.dashboardBody {
+.dashboardContentBody {
   margin: 0px;
   padding: 0px;
 }
@@ -48,7 +48,6 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: var(--px8);
     padding: var(--px16);
     background-color: var(--secondary);
-    /*    background-color: blanchedalmond;*/
 }
 
 .buttonSquare {
@@ -78,7 +77,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: var(--semiBold);
 }
 
-.heading {
+.dashboardSectionHeading {
     max-width: fit-content;
     border-right: var(--px4) solid black;
     border-radius: var(--px4);
@@ -89,20 +88,34 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* DashBoard */
 
-.bankCard{
-    text-align: left;
-    border-radius: var(--px16);
-    padding: var(--px8);
-    width: var(--px440);
-    background: linear-gradient(to bottom, var(--shade) , var(--primary)), var(--shade);
-    background-blend-mode: multiply;
-}
-
 .twoColumn{
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
+.bankCard {
+  display: flex;
+  flex-direction: column;
+  margin: var(--px8) 0px;
+  padding: var(--px8);
+  text-align: left;
+  border-radius: var(--px16);
+  color: white;
+  width: var(--px400);
+  background: linear-gradient(15deg,var(--black13), var(--black38));
+  box-shadow: var(--black38) 0px 0px var(--px8) 0px;
+}
+
+.bankCardContents{
+  padding: 0px var(--px8);
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.bankCardBalance{
+ 
+}
 /* -- Account Management -- */
 
 .accountManagement{
@@ -127,6 +140,7 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 0px;
 }
 
+
 /* -- Bills and Payments -- */
 
 .paymentContainer{
@@ -134,13 +148,8 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-wrap: wrap;
 }
 
-.redblack{
-
-}
-
 .paymentsContents {
     flex: 1;
-/*    flex-wrap: wrap;*/
     display: flex;
     gap: var(--px32);
     align-items: center;
@@ -175,10 +184,6 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
-.paymentItem a {
-    color: black;
-}
-
 .paymentItemLogo {
   padding: var(--px8) 0px;
   width: var(--px40);
@@ -191,10 +196,13 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   margin: var(--px8)var(--px8);
 }
+
 .paymentItem:hover {
     background-color: var(--primary);
     box-shadow: var(--shade) 0px 0px var(--px8) 1px ;
 }
+
+/* Payment Page */
 
 .paymentForm{
     max-width: var(--px280);
@@ -204,5 +212,8 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
 }
+
 /* Security and Privacy */
+
+
 

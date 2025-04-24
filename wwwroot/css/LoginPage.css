@@ -13,20 +13,19 @@
   --accent: hsla(189,56%,62%,1);
   --dark: hsla(21,23%,41%,1);
   --shade: hsla(0,0%,0%,0.2);
-
+  --black13: hsla(0, 0%, 13%, 1);
+  --black38:hsla(0, 0%, 38%, 1); 
   /* Font Family */
   --mainfont: 'Inter';
-
   /* Font Size */
-  --big: 4.5rem;          /* 72px / 16 */
-  --mainHead: 3rem;       /* 48px / 16 */
-  --subHead: 2.25rem;     /* 36px / 16 */
-  --subHead2: 1.75rem;    /* 28px / 16 */
-  --subHead3: 1.5rem;     /* 24px / 16 */
-  --paragraph: 1.25rem;   /* 20px / 16 */
-  --text: 1rem;           /* 16px / 16 */
-  --text2: 0.75rem;       /* 12px / 16 */
-
+  --big: 4.5rem; /* 72px / 16 */
+  --mainHead: 3rem; /* 48px / 16 */
+  --subHead: 2.25rem; /* 36px / 16 */
+  --subHead2: 1.75rem; /* 28px / 16 */
+  --subHead3: 1.5rem; /* 24px / 16 */
+  --paragraph: 1.25rem; /* 20px / 16 */
+  --text: 1rem; /* 16px / 16 */
+  --text2: 0.75rem; /* 12px / 16 */
   /* Font Weights */
   --thin: 100;
   --extraLight: 200;
@@ -37,7 +36,6 @@
   --bold: 700;
   --extraBold: 800;
   --black: 900;
-
   /* General Use for Spacing */
   --px1: 0.0625rem;
   --px2: 0.125rem;
@@ -48,24 +46,19 @@
   --px24: 1.5rem;
   --px25: 1.5625rem;
   --px32: 2rem;
-
   /* Mainly Used For Buttons Height */
   --px40: 2.5rem;
   --px50: 3.125rem;
-
   /* Heavy Padding or Margins */
   --px72: 4.5rem;
   --px80: 5rem;
-
   /* Use for Paament Buttons*/
   --px120: 7.5rem;
   --px128: 8rem;
-
   /* Mainly Used for Button Width*/
   --px160: 10rem;
   --px200: 12.5rem;
   --px280: 17.5rem;
-
   /* Used for Other Items */
   --px440: 27.5rem;
   --px480: 30rem;
