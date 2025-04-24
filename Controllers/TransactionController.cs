@@ -3,12 +3,18 @@ using Bank2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 namespace Bank2.Controllers
 {
   public class TransactionController : BaseController
   {
     public TransactionController(BankContext context) : base(context) { }
     public IActionResult BillingAndPayments()
+    {
+      return View();
+    }
+
+    public async Task<IActionResult> Transactions()
     {
       return View();
     }

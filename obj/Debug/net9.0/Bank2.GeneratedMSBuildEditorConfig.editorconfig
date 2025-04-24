@@ -72,6 +72,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/\!Study Data/Visual Basic Practice/Bank2/Views/Transaction/Transactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cVHJhbnNhY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGVVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,10 +106,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/SecurityAndPrivacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZWN1cml0eUFuZFByaXZhY3kuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/Transactions.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxUcmFuc2FjdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/\!Study Data/Visual Basic Practice/Bank2/Views/_ViewImports.cshtml]

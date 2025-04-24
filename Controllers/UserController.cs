@@ -14,26 +14,8 @@ namespace Bank2.Controllers
           HttpContext.Session.Clear(); // Remove all session data
           return RedirectToAction("LoginPage");
       }
-      public IActionResult LoginPage()
-      {
-          return View();
-      }
 
-      public IActionResult Notifications()
-      {
-          return View();
-      }
-
-      public IActionResult SecurityAndPrivacy()
-      {
-          return View();
-      }
-      public IActionResult Profile()
-      {
-          return View();
-      }
-        
-      //Return Logged in User information
+      //When Logged in open dashboard
       public async Task<IActionResult> Dashboard()
       {
         HttpContext.Session.SetString("LogStatus", "dash");
@@ -44,38 +26,75 @@ namespace Bank2.Controllers
         }
         var account = await _context.Accounts.Where(x => x.UserId == userId.Value).ToListAsync();
         ViewData["Accounts"] = new SelectList(account, "Id", "AccountNo");
-        var sharedInfo = await getSharedDataAsync(userId);
-        return View(sharedInfo);
+        //var sharedInfo = await getSharedDataAsync(userId);
+        return View();
       }
 
+      public IActionResult LoginPage()
+      {
+          return View();
+      }
+
+      public IActionResult Notifications()
+      {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null)
+        {
+          return RedirectToAction("LoginPage");
+        }
+        return View();
+      }
+
+      public IActionResult SecurityAndPrivacy()
+      {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null)
+        {
+          return RedirectToAction("LoginPage");
+        }
+        return View();
+      }
+
+      public IActionResult Profile()
+      {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null)
+        {
+          return RedirectToAction("LoginPage");
+        }
+        return View();
+      }
+        
+      //Main Action to Check Login
       [Route("User/CheckLogin")]
       [HttpPost]
       public async Task<IActionResult> CheckLogin([Bind("Username, Password")] User user)
       {
-          var confirm = await _context.Users.SingleOrDefaultAsync(x =>
-          x.Username == user.Username && 
-          x.Password == user.Password);
+        var confirm = await _context.Users.SingleOrDefaultAsync(x =>
+        x.Username == user.Username && 
+        x.Password == user.Password);
 
-          if (confirm != null)
-          {
-              HttpContext.Session.SetString("Username", confirm.Username ?? "Unknown User");
-              HttpContext.Session.SetInt32("UserId", confirm.Id);
-              return RedirectToAction("LoginPage");
-          }
-          TempData["Error"] = "error";
-          return RedirectToAction("LoginPage");
+        if (confirm != null)
+        {
+            HttpContext.Session.SetString("Username", confirm.Username ?? "Unknown User");
+            HttpContext.Session.SetInt32("UserId", confirm.Id);
+            return RedirectToAction("LoginPage");
+        }
+        TempData["Error"] = "error";
+        return RedirectToAction("LoginPage");
       }
 
-      public async Task<IActionResult> CreateAccount([Bind()] Account account)
-      {
-          if (ModelState.IsValid)
-          {
-              _context.Accounts.Add(account);
-              await _context.SaveChangesAsync();
-              return RedirectToAction("Dashboard");
-          }
-          return RedirectToAction("LoginPage");
-      }
+
+    //public async Task<IActionResult> CreateAccount([Bind()] Account account)
+    //{
+    //    if (ModelState.IsValid)
+    //    {
+    //        _context.Accounts.Add(account);
+    //        await _context.SaveChangesAsync();
+    //        return RedirectToAction("Dashboard");
+    //    }
+    //    return RedirectToAction("LoginPage");
+    //}
 
     public IActionResult CreateUser()
     {
@@ -84,18 +103,18 @@ namespace Bank2.Controllers
     }
 
     [HttpPost]
-        public async Task<IActionResult> CreateUser([Bind("CustomerType, BranchId, Username, Password, FullName, Email, Phone, Address, Pin, Job, BusinessName, BusinessType, TaxId")] User users)
+    public async Task<IActionResult> CreateUserAccount([Bind("CustomerType, BranchId, Username, Password, FullName, Email, Phone, Address, Pin, Job, BusinessName, BusinessType, TaxId")] User users)
+    {
+        if (ModelState.IsValid)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Users.Add(users);
-                await _context.SaveChangesAsync();
-                await CreateNewAccountAsync(users.Id, 0, users.CustomerType);
-                return RedirectToAction("LoginPage");
-            }
-            ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
-            return View(users);
+            _context.Users.Add(users);
+            await _context.SaveChangesAsync();
+            await CreateNewAccountAsync(users.Id, 0, users.CustomerType);
+            return RedirectToAction("LoginPage");
         }
+        //ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
+        return View(users);
+    }
 
     //public async Task<IActionResult> EditAccount(int id)
     //{
@@ -118,29 +137,22 @@ namespace Bank2.Controllers
     //    return View(users);
     //}
 
-    public async Task<IActionResult> DeleteAccount(int id)
-    {
-      var user = await _context.Users.Include(b => b.Branch).FirstOrDefaultAsync(x => x.Id == id);
-      return View(user);
-    }
+    //public async Task<IActionResult> DeleteAccount(int id)
+    //{
+    //  var user = await _context.Users.Include(b => b.Branch).FirstOrDefaultAsync(x => x.Id == id);
+    //  return View(user);
+    //}
 
-    [HttpPost, ActionName("Delete")]
-    public async Task<IActionResult> Deleted(int id)
-    {
-      var user = await _context.Users.FindAsync(id);
-      if (user != null)
-      {
-        _context.Users.Remove(user);
-        await _context.SaveChangesAsync();
-      }
-      return RedirectToAction("Transactions");
+    //[HttpPost, ActionName("Delete")]
+    //public async Task<IActionResult> Deleted(int id)
+    //{
+    //  var user = await _context.Users.FindAsync(id);
+    //  if (user != null)
+    //  {
+    //    _context.Users.Remove(user);
+    //    await _context.SaveChangesAsync();
+    //  }
+    //  return RedirectToAction("Transactions");
+    //}
     }
-
-    public async Task<IActionResult> Transactions()
-    {
-      var user = await _context.Users.Include(s => s.Accounts)
-                                     .Include(b => b.Branch).ToListAsync();
-      return View(user);
-    }
-  }
 }

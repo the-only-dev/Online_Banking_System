@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
 </head>
 <body class="loginPageBody">
-	<a asp-controller="Transaction" asp-action="getTransaction">Click Me</a>
-
 	<form asp-controller="User" asp-action="CheckLogin" method="post">
 		<div id="showLoginForm" class="loginAuthenticationContainer" style="display: none">
 			<div class="loginAuthenticationForm">
@@ -126,7 +124,7 @@
 		 		</ul> 
 		 	</li>
 			<li class="dropdownContainer"><a class="navbarItems" asp-action="">Services</a></li>
-				<li class="dropdownContainer"><a class="navbarItems" asp-action=""><b>Contact Us</b></a></li>
+			<li class="dropdownContainer"><a class="navbarItems" asp-action=""><b>Contact Us</b></a></li>
 		</ul>
 		<div>
 				<a id="navbarLoginBtn" class="navbarLoginButton">Login</a>
@@ -146,7 +144,9 @@
 		<p class="introItems">A Bank Trusted By</p>
 		<p class="introItems"> More Than <b>10 Million</b> Users.</p>
 		<p class="introItems">Its not we who speak, but out millions of customers.</p>
-		<a asp-action="CreateUser" class="createAccountButton">Create Account</a>
+		<a asp-action="CreateUser" class="createAccountButton createUser" style="display: flex;">Create Account</a>
+		<a asp-action="Dashboard" class="createAccountButton goToDashboard" style="display: none;">Dashboard</a>
+
 	</section> 
 
 	<section class="dashboardImageDisplay">
@@ -191,7 +191,8 @@
 			</p>
 			<div class="featureSectionButtons">
 				<a asp-action="" class="learnMoreButton">Learn More</a>
-				<a asp-action="CreateUser" class="createAccountButton">Create Account</a>
+				<a asp-action="CreateUser" class="createAccountButton createUser" style="display: flex;">Create Account</a>
+				<a asp-action="Dashboard" class="createAccountButton goToDashboard" style="display: none;">Dashboard</a>
 			</div>
 		</div>
 		<div class="featureContents">
@@ -202,7 +203,8 @@
 	<script>
 		const StatusError = "@TempData["Error"]";
 		const Username = "@Context.Session.GetString("Username")";
-
+		const createUserButton = document.querySelectorAll(".createUser");
+		const goToDashboardButton = document.querySelectorAll(".goToDashboard");
 		const loginForm = document.getElementById("showLoginForm");
 		const loginError = document.getElementById("showLoginError");
 		const display = document.querySelector(".loginPageBody");
@@ -242,6 +244,8 @@
 		//Set username once login verified
 		if(Username && Username.trim().toLowerCase() !== null)
 		{
+			createUserButton.forEach (button => {button.style.display = "none"});
+			goToDashboardButton.forEach (button => {button.style.display = "flex"});
 			loginBtn.style.display = "none";
 			logoutBtn.style.display = "block";
 			user.innerText = Username;
