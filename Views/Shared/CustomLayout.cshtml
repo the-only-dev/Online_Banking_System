@@ -3,43 +3,51 @@
 <head>
 	<title>@ViewData["Title"]</title>
 	<link rel="stylesheet" href="~/css/DashboardLayout.css"/>
+	<script>
+		if(sessionStorage.getItem("isHidden") === "true")
+		{
+			document.documentElement.classList.add("sidebar-hidden");
+		}
+	</script>
 </head>
 <body class="dashboardContentBody">
 	<section class="setBody">
 		<nav id="sidebarNavigation" class="sidebar">
 			<img id="menu" class="menuButton" src="~/ico/menu-icon.png" />
 			<div class="dashboardNavigationLinkContainer">
+
 				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Dashboard">
-					<img class="dashboardIcons" src="~/ico/dashboard_img.png" /><span>Dashboard</span>
+					<img class="dashboardIcons" src="~/ico/dashboard_img.png" /><span class="typing">Dashboard</span>
 				</a>
 
 				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Notifications">
-					<img class="dashboardIcons" src="~/ico/notification.png" /><span>Notifications</span>
+					<img class="dashboardIcons" src="~/ico/notification.png" /><span class="typing">Notifications</span>
 				</a>
 
 				<a class="dashboardNavigationLinks" asp-controller="Transaction" asp-action="BillingAndPayments">
-					<img class="dashboardIcons" src="~/ico/bill-and-payment.png" /><span>Billing and Payment</span>
+					<img class="dashboardIcons" src="~/ico/bill-and-payment.png" /><span class="typing">Billing and Payment</span>
 				</a>
 
 				<a class="dashboardNavigationLinks" asp-controller="Account" asp-action="AccountManagement">
-					<img class="dashboardIcons" src="~/ico/account.png" /><span>Account Management</span>
+					<img class="dashboardIcons" src="~/ico/account.png" /><span class="typing">Account Management</span>
 				</a>
 
 				<a class="dashboardNavigationLinks" asp-controller="Transaction" asp-action="Transactions">
-					<img class="dashboardIcons" src="~/ico/transactions.png" /><span>Transactions</span>
+					<img class="dashboardIcons" src="~/ico/transactions.png" /><span class="typing">Transactions</span>
 				</a>
 
 				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="SecurityAndPrivacy">
-					<img class="dashboardIcons" src="~/ico/security.png" /><span>Security and Privacy</span>
+					<img class="dashboardIcons" src="~/ico/security.png" /><span class="typing">Security and Privacy</span>
 				</a>
 
 				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Profile">
-					<img class="dashboardIcons" src="~/ico/profile2.png" /><span>Profile</span>
+					<img class="dashboardIcons" src="~/ico/profile2.png" /><span class="typing">Profile</span>
 				</a>
 			</div>
 			<div class="signOut">
-				<img id="logoutIcon" onclick="logout()" style="display: none;" class="dashboardIcons" src="~/ico/logout.png" />
-				<button id="signOutButton" class="dashboardSignInOutButton" onclick="logout()">Sign Out</button>
+				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Logout">
+					<img class="dashboardIcons" src="~/ico/logout.png" /><span>Logout</span>
+				</a>
 			</div>
 		</nav>
 
@@ -49,52 +57,21 @@
 	</section>
 
 	<script>
-		const sidebar = document.getElementById("sidebarNavigation");
-		const logoutBtn = document.getElementById("logoutIcon");
-		const signOutBtn = document.getElementById("signOutButton");
-		const icon = document.getElementById("menu");
-		const contents = document.getElementById("showContent");
-		sessionStorage.setItem("isShrinked", "false");
 		function logout(){
 			window.location.href = "/User/Logout";
 		}
 
-
-		document.getElementById("menu").addEventListener("click",function()
-		{
-			let isShrinked = sessionStorage.getItem("isShrinked");
-
-			if(isShrinked == "false")
-			{
-				let items = document.querySelectorAll(".dashboardNavigationLinks");
-				items.forEach(item => {
-					const spans = item.querySelector("span");
-					if(spans) spans.style.display = "none";
-				});
-
-				icon.style.left = "10px";
-				signOutBtn.style.display = "none";
-				logoutBtn.style.display = "flex";
-				sidebar.style.width = "5%";
-				contents.style.marginLeft = "5%";
-				console.log("Clicked Me");
+		window.onload = () => { 
+			if(isHidden = sessionStorage.getItem("isHidden") === "true") {
+				document.documentElement.classList.add("sidebar-hidden");
+			} else {
+				document.documentElement.classList.remove("sideba-hidden");
 			}
+		}
 
-			if(isShrinked == "true")
-			{
-				let items = document.querySelectorAll(".dashboardNavigationLinks");
-				items.forEach(item => {
-					const spans = item.querySelector("span");
-					if(spans) spans.style.display = "inline";
-				});
-
-				icon.style.left = "260px";
-				signOutBtn.style.display = "block";
-				logoutBtn.style.display = "none";
-				sidebar.style.width = "20%";
-				contents.style.marginLeft = "20%";
-				console.log("Clicked Me");
-			}
+		document.getElementById("menu").addEventListener("click",function(){
+			const hidden = document.documentElement.classList.toggle("sidebar-hidden");
+			sessionStorage.setItem("isHidden", hidden ? "true" : "false");
 		});
 
 		document.addEventListener("DOMContentLoaded", function() {

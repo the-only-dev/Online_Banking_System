@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="~/css/Dashboard.css" />
 </head>
 
-<body class="">
+<body class="dashboardContentBody">
   <header class="baseSection">
-    <h1 class="removeMargin">Transaction</h1>
+    <h1 class="removeMargin dashboardMainHeading">Transaction</h1>
   </header>
   <section class="baseSection">
     <h2 class="removeMargin">All Transactions</h2>
@@ -29,8 +29,8 @@
           {
             <tr>
               <td>@tran.AccountNumber</td>
-              <td>@tran.Type</td>
-              <td>@tran.Amount</td>
+              <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Type</td>
+              <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Amount</td>
               <td>@tran.Date</td>
               <td>@tran.Description</td>
             </tr>

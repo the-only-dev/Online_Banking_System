@@ -1,39 +1,38 @@
 ﻿@import url("LoginPage.css");
 /* Global Elements Change */
 table {
-    display: flex;
-    flex-direction: column;
-    padding: var(--px16);
-    border: 2px solid black;
-    border-radius: var(--px8);
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: var(--px16);
+  border: 2px solid black;
+  border-radius: var(--px8);
+  box-sizing: border-box;
 }
 
 tr {
-    display: flex;
-    flex-grow: 1;
-    height: var(--px32);
+  display: flex;
+  flex-grow: 1;
+  height: var(--px32);
 }
 
 th {
-    flex: 1;
-    text-align: left;
+  flex: 1;
+  text-align: left;
 }
 
 thead {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-
 td {
-    margin-top: var(--px8);
-    flex: 1;
-    text-align: left;
+  margin-top: var(--px8);
+  flex: 1;
+  text-align: left;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Global Custom Classes */
@@ -41,6 +40,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .dashboardContentBody {
   margin: 0px;
   padding: 0px;
+}
+
+.dashboardMainHeading {
+  font-size: var(--subHead);
+  font-weight: var(--bold);
 }
 
 .baseSection {
@@ -146,7 +150,6 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 0px;
 }
 
-
 /* -- Bills and Payments -- */
 
 .paymentContainer{
@@ -174,6 +177,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: var(--subHead3);
   font-weight: var(--semiBold);
 }
+
 .paymentItem {
   flex: 1;
   display: flex;
@@ -186,8 +190,14 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid lightgray;
   border-radius: var(--px16);
   text-align: center;
-  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
+}
+
+.paymentItem:hover {
+    background-color: var(--primary);
+    box-shadow: var(--shade) 0px 0px var(--px8) 1px ;
+    transform: scale(1.05);
 }
 
 .paymentItemLogo {
@@ -201,11 +211,6 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: var(--semiBold);
   text-decoration: none;
   margin: var(--px8)var(--px8);
-}
-
-.paymentItem:hover {
-    background-color: var(--primary);
-    box-shadow: var(--shade) 0px 0px var(--px8) 1px ;
 }
 
 /* Payment Page */
