@@ -44,10 +44,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .baseSection {
-    border-radius: var(--px16);
-    margin: var(--px8);
-    padding: var(--px16);
-    background-color: var(--secondary);
+  border-radius: var(--px16);
+  margin: var(--px8);
+  padding: var(--px16);
+  background-color: var(--secondary);
 }
 
 .buttonSquare {

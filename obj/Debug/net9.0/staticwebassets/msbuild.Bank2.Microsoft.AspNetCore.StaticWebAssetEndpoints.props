@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginPage.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XQwKUhzf8bsM7sl51YgpqgmtvcFqWB0rG9S03/9hF5g="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13919"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XQwKUhzf8bsM7sl51YgpqgmtvcFqWB0rG9S03/9hF5g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 10:26:54 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13919"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XQwKUhzf8bsM7sl51YgpqgmtvcFqWB0rG9S03/9hF5g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 18:31:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bank2/css/LoginPage.xvewdnlbos.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginPage.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xvewdnlbos"},{"Name":"integrity","Value":"sha256-XQwKUhzf8bsM7sl51YgpqgmtvcFqWB0rG9S03/9hF5g="},{"Name":"label","Value":"_content/Bank2/css/LoginPage.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13919"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XQwKUhzf8bsM7sl51YgpqgmtvcFqWB0rG9S03/9hF5g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 10:26:54 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13919"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XQwKUhzf8bsM7sl51YgpqgmtvcFqWB0rG9S03/9hF5g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 18:31:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bank2/css/site.b9sayid5wm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

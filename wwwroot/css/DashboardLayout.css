@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-.dashItems{
+.dashboardNavigationLinkContainer{
     display: flex;
     gap: var(--px20);
     flex-direction: column;
@@ -36,13 +36,17 @@
     list-style: none;
 }
 
-.dashLinks {
+.dashboardNavigationLinks {
+    display: flex;
+    gap: var(--px8);
+    align-items: center;
     padding-left: var(--px8);
-    height: var(--px40);
+    max-height: var(--px80);
     background-color: var(--dark);
     font-size: var(--paragraph);
     color: var(--secondary);
     text-decoration: none;
+    transition: all 0.1s ease-in-out;
 }
 
 .signOut {

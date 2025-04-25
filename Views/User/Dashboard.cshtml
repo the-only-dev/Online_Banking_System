@@ -14,60 +14,9 @@
 <body class="dashboardContentBody">
   <header class="baseSection">
     <h1 class="removeMargin">Dashboard</h1>
-     <select id="selectedAccount" class="selectFieldDropdown" asp-items="ViewBag.Accounts"></select>
+    <h3 class="removeMargin">Change Account <select id="selectedAccount" class="selectFieldDropdown" asp-items="ViewBag.Accounts"></select></h3>
   </header>
-  <section id="showTransaction" class="twoColumn">
-
-     @*
-     <section class="baseSection"> 
-       <h2 class="dashboardSectionHeading">Primary payments A/C</h2> 
-       <div class="bankAccountCard"> 
-         <div class="bankCardContents"> 
-           <p>@Model.User.Branch.Name Branch</p> 
-           <p>@Model.Account[0].AccountNo</p> 
-         </div> 
-         <p class="bankCardBalance">₹ @Model.Account[0].AccountBalance</p> 
-         <div class="bankCardContents"> 
-           <p>@Model.User.Username</p> 
-         </div> 
-       </div> 
-     </section> 
-
-     <section class="baseSection">
-       <h2 class="dashboardSectionHeading">Recent Transaction</h2> 
-       <table> 
-         <thead> 
-           <tr> 
-             <th>AccountNo</th> 
-             <th>Type</th> 
-             <th>Amount</th> 
-             <th>DateTime</th> 
-           </tr> 
-         </thead> 
-         <tbody> 
-            @if (Model.Transactions.Count == 0) 
-            {  
-              <tr>  
-                <td colspan="4" style="text-align: center;">  
-                  -------------------- No Entries --------------------  
-                </td>  
-              </tr>
-            }  
-            @foreach (var tran in Model.Transactions.Take(5))  
-            {  
-              <tr>  
-                <td>@tran.AccountNumber</td>  
-                <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Type</td>
-                <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Amount</td>
-                <td>@tran.Date</td>  
-              </tr>  
-            } 
-         </tbody> 
-       </table> 
-     </section> 
-     *@
-  </section>
-
+  <section id="showTransaction" class="twoColumn"></section>
   <section class="baseSection">
     <fieldset class="paymentsContents">
       <legend class="paymentLegend">Quick Access</legend>
@@ -90,7 +39,25 @@
     </fieldset>
   </section>
   <section class="baseSection">
-    <h2 class="removeMargin">Recommended</h2>
+    <fieldset class="paymentsContents">
+      <legend class="paymentLegend">Recommended</legend>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/personal_loan.png" alt="itemImage" />
+        <h3 class="paymentItemName">Personal Loan</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/apply-for-credit-card.png" alt="itemImage" />
+        <h3 class="paymentItemName">Credit Card</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/health-insurance.png" alt="itemImage" />
+        <h3 class="paymentItemName">Health Insurance</h3>
+      </a>
+      <a class="paymentItem" asp-for="" asp-controller="Transaction" asp-action="Payment">
+        <img class="paymentItemLogo" src="~/ico/mobile-postpaid.png" alt="itemImage" />
+        <h3 class="paymentItemName">Health</h3>
+      </a>
+    </fieldset>
   </section>
   
   <script>
