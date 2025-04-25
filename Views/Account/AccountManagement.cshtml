@@ -50,36 +50,36 @@
         </div>
     </section>
 
-    <section class="baseSection">
-        <h2 class="">Create New Account</h2>
-        <form class="accountManagement" asp-controller="Account" asp-action="NewAccount" method="post">
-            <div class="bigSection">
-                <h3>User Information</h3>
-                <div class="smallSection">
-                    <p class="sectionContent">Full Name : @Model.User?.FullName</p>
-                    <p class="sectionContent">Email : @Model.User?.Email</p>
-                    <p class="sectionContent">Phone : @Model.User?.Phone</p>
-                    <p class="sectionContent">Address : @Model.User?.Address</p>
-                    <p class="sectionContent">Branch Name : @Model.User?.Branch?.Name</p>
-                    <p class="sectionContent">Branch Code : @Model.User?.Branch?.IFSCCode</p>
-                </div>
-            </div>
+  <section class="baseSection">
+    <h2 class="">Create New Account</h2>
+    <form class="accountManagement" asp-controller="Account" asp-action="NewAccount" method="post">
+      <div class="bigSection">
+        <h3>User Information</h3>
+        <div class="smallSection">
+          <p class="sectionContent">Full Name : @Model.User?.FullName</p>
+          <p class="sectionContent">Email : @Model.User?.Email</p>
+          <p class="sectionContent">Phone : @Model.User?.Phone</p>
+          <p class="sectionContent">Address : @Model.User?.Address</p>
+          <p class="sectionContent">Branch Name : @Model.User?.Branch?.Name</p>
+          <p class="sectionContent">Branch Code : @Model.User?.Branch?.IFSCCode</p>
+        </div>
+      </div>
 
-            <div class="smallSection">
-                <label class="sectionContent">Select Account Type</label>
-                <select class="selectFieldDropdown" asp-for="accountType">
-                    <option value="Savings">Personal (Savings)</option>
-                    <option value="Current">Current</option>
-                    <option value="Business">Business</option>
-                    <option value="Merchant">Merchant</option>
-                </select>
-            </div>
-            <div class="smallSection">
-                <label class="sectionContent">Amount</label>
-                <input class="textInput" type="number" asp-for="amount" />
-            </div>
-            <button class="buttonSquare" type="submit">Create Account</button>
-        </form>
-    </section>
+      <div class="smallSection">
+        <label class="sectionContent">Select Account Type</label>
+        <select class="selectFieldDropdown" asp-for="accountType">
+          <option value="Savings">Personal (Savings)</option>
+          <option value="Current">Current</option>
+          <option value="Business">Business</option>
+          <option value="Merchant">Merchant</option>
+        </select>
+      </div>
+      <div class="smallSection">
+        <label class="sectionContent">Amount</label>
+        <input class="textInput" type="number" asp-for="amount" />
+      </div>
+      <button class="buttonSquare" type="submit">Create Account</button>
+    </form>
+  </section>
 </body>
 

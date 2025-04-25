@@ -3,35 +3,99 @@
 <head>
 	<title>@ViewData["Title"]</title>
 	<link rel="stylesheet" href="~/css/DashboardLayout.css"/>
-	<link rel="stylesheet" href="~/css/LoginPage.css"/>
 </head>
-<body>
-	<div class="setBody">
-		<nav class="sidebar">
+<body class="dashboardContentBody">
+	<section class="setBody">
+		<nav id="sidebarNavigation" class="sidebar">
+			<img id="menu" class="menuButton" src="~/ico/menu-icon.png" />
 			<div class="dashboardNavigationLinkContainer">
-				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Dashboard"><img class="paymentItemLogo" src="~/ico/dashboard_img.png"/>Dashboard</a>
-				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Notifications"><img class="paymentItemLogo" src="~/ico/notification.png"/>Notifications</a>
-				<a class="dashboardNavigationLinks" asp-controller="Transaction" asp-action="BillingAndPayments"><img class="paymentItemLogo" src="~/ico/bill-and-payment.png"/>Billing and Payment</a>
-				<a class="dashboardNavigationLinks" asp-controller="Account" asp-action="AccountManagement"><img class="paymentItemLogo" src="~/ico/account.png"/>Account Management</a>
-				<a class="dashboardNavigationLinks" asp-controller="Transaction" asp-action="Transactions"><img class="paymentItemLogo" src="~/ico/transactions.png"/>Transactions</a>
-				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="SecurityAndPrivacy"><img class="paymentItemLogo" src="~/ico/security.png"/>Security and Privacy</a>
-				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Profile"><img class="paymentItemLogo" src="~/ico/profile2.png"/>Profile</a>
-				@* <a class="navLinks" asp-controller="User" asp-action="Home">Home</a> *@
+				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Dashboard">
+					<img class="dashboardIcons" src="~/ico/dashboard_img.png" /><span>Dashboard</span>
+				</a>
+
+				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Notifications">
+					<img class="dashboardIcons" src="~/ico/notification.png" /><span>Notifications</span>
+				</a>
+
+				<a class="dashboardNavigationLinks" asp-controller="Transaction" asp-action="BillingAndPayments">
+					<img class="dashboardIcons" src="~/ico/bill-and-payment.png" /><span>Billing and Payment</span>
+				</a>
+
+				<a class="dashboardNavigationLinks" asp-controller="Account" asp-action="AccountManagement">
+					<img class="dashboardIcons" src="~/ico/account.png" /><span>Account Management</span>
+				</a>
+
+				<a class="dashboardNavigationLinks" asp-controller="Transaction" asp-action="Transactions">
+					<img class="dashboardIcons" src="~/ico/transactions.png" /><span>Transactions</span>
+				</a>
+
+				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="SecurityAndPrivacy">
+					<img class="dashboardIcons" src="~/ico/security.png" /><span>Security and Privacy</span>
+				</a>
+
+				<a class="dashboardNavigationLinks" asp-controller="User" asp-action="Profile">
+					<img class="dashboardIcons" src="~/ico/profile2.png" /><span>Profile</span>
+				</a>
 			</div>
 			<div class="signOut">
-				<button class="dashboardSignInOutButton" onclick="logout()">Sign Out</button>
+				<img id="logoutIcon" onclick="logout()" style="display: none;" class="dashboardIcons" src="~/ico/logout.png" />
+				<button id="signOutButton" class="dashboardSignInOutButton" onclick="logout()">Sign Out</button>
 			</div>
 		</nav>
 
-		<main class="content">
+		<main id="showContent" class="content">
 			@RenderBody()
 		</main>
-	</div>
+	</section>
 
 	<script>
+		const sidebar = document.getElementById("sidebarNavigation");
+		const logoutBtn = document.getElementById("logoutIcon");
+		const signOutBtn = document.getElementById("signOutButton");
+		const icon = document.getElementById("menu");
+		const contents = document.getElementById("showContent");
+		sessionStorage.setItem("isShrinked", "false");
 		function logout(){
 			window.location.href = "/User/Logout";
 		}
+
+
+		document.getElementById("menu").addEventListener("click",function()
+		{
+			let isShrinked = sessionStorage.getItem("isShrinked");
+
+			if(isShrinked == "false")
+			{
+				let items = document.querySelectorAll(".dashboardNavigationLinks");
+				items.forEach(item => {
+					const spans = item.querySelector("span");
+					if(spans) spans.style.display = "none";
+				});
+
+				icon.style.left = "10px";
+				signOutBtn.style.display = "none";
+				logoutBtn.style.display = "flex";
+				sidebar.style.width = "5%";
+				contents.style.marginLeft = "5%";
+				console.log("Clicked Me");
+			}
+
+			if(isShrinked == "true")
+			{
+				let items = document.querySelectorAll(".dashboardNavigationLinks");
+				items.forEach(item => {
+					const spans = item.querySelector("span");
+					if(spans) spans.style.display = "inline";
+				});
+
+				icon.style.left = "260px";
+				signOutBtn.style.display = "block";
+				logoutBtn.style.display = "none";
+				sidebar.style.width = "20%";
+				contents.style.marginLeft = "20%";
+				console.log("Clicked Me");
+			}
+		});
 
 		document.addEventListener("DOMContentLoaded", function() {
 			let items = document.querySelectorAll(".dashboardNavigationLinks");

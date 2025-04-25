@@ -10,6 +10,7 @@
    margin-left: 20%;
    flex-grow: 1;
    height: 100%;
+   transition: all 0.2s ease;
 }
 
 .sidebar{
@@ -23,8 +24,25 @@
     background-color: var(--dark);
     font-weight: var(--semiBold);
     text-align: left;
-    font-family: 'Inter';
+/*    font-family: 'Inter';*/
     box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.menuButton {
+  padding: 0px 4px;
+  border-radius: 4px;
+  position: fixed;
+  top: 8px;
+  left: 260px;
+  color: var(--secondary);
+  height: var(--px40);
+  transition: all 0.2s ease;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
 }
 
 .dashboardNavigationLinkContainer{
@@ -53,4 +71,8 @@
     margin-top: auto;
     text-align: center;
     align-self: center;
+}
+
+.dashboardIcons {
+  height: var(--px50);
 }

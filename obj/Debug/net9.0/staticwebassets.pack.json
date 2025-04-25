@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\ico\\UPI-Black.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\account.png",
+      "PackagePath": "staticwebassets\\ico\\account.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\amazon-music.png",
       "PackagePath": "staticwebassets\\ico\\amazon-music.png"
     },
@@ -37,8 +41,16 @@
       "PackagePath": "staticwebassets\\ico\\apple-music.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\apply-for-credit-card.png",
+      "PackagePath": "staticwebassets\\ico\\apply-for-credit-card.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\bank.png",
       "PackagePath": "staticwebassets\\ico\\bank.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\bill-and-payment.png",
+      "PackagePath": "staticwebassets\\ico\\bill-and-payment.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\changing.png",
@@ -53,8 +65,16 @@
       "PackagePath": "staticwebassets\\ico\\credit-card.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\dashboard_img.png",
+      "PackagePath": "staticwebassets\\ico\\dashboard_img.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\donation.png",
       "PackagePath": "staticwebassets\\ico\\donation.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\education_loan.png",
+      "PackagePath": "staticwebassets\\ico\\education_loan.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\electricity.png",
@@ -69,12 +89,28 @@
       "PackagePath": "staticwebassets\\ico\\gas.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\health-insurance.png",
+      "PackagePath": "staticwebassets\\ico\\health-insurance.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\home_loan.png",
+      "PackagePath": "staticwebassets\\ico\\home_loan.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\light-bulb.png",
       "PackagePath": "staticwebassets\\ico\\light-bulb.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\lighting.png",
       "PackagePath": "staticwebassets\\ico\\lighting.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\logout.png",
+      "PackagePath": "staticwebassets\\ico\\logout.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\menu-icon.png",
+      "PackagePath": "staticwebassets\\ico\\menu-icon.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\mobile-postpaid.png",
@@ -97,6 +133,10 @@
       "PackagePath": "staticwebassets\\ico\\netflix.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\notification.png",
+      "PackagePath": "staticwebassets\\ico\\notification.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\pay-credit-card.png",
       "PackagePath": "staticwebassets\\ico\\pay-credit-card.png"
     },
@@ -105,12 +145,24 @@
       "PackagePath": "staticwebassets\\ico\\pay-merchant.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\personal_loan.png",
+      "PackagePath": "staticwebassets\\ico\\personal_loan.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\phone-list.png",
       "PackagePath": "staticwebassets\\ico\\phone-list.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\phone.png",
       "PackagePath": "staticwebassets\\ico\\phone.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\profile.png",
+      "PackagePath": "staticwebassets\\ico\\profile.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\profile2.png",
+      "PackagePath": "staticwebassets\\ico\\profile2.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\router-ethick.png",
@@ -123,6 +175,10 @@
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\router.png",
       "PackagePath": "staticwebassets\\ico\\router.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\security.png",
+      "PackagePath": "staticwebassets\\ico\\security.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\self-transfer.png",
@@ -149,8 +205,16 @@
       "PackagePath": "staticwebassets\\ico\\spotify.png"
     },
     {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\transactions.png",
+      "PackagePath": "staticwebassets\\ico\\transactions.png"
+    },
+    {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\transfer.png",
       "PackagePath": "staticwebassets\\ico\\transfer.png"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\vehicle_loan.png",
+      "PackagePath": "staticwebassets\\ico\\vehicle_loan.png"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\ico\\water-tap.png",

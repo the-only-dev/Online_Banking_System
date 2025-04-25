@@ -16,7 +16,13 @@ namespace Bank2.Controllers
 
     public async Task<IActionResult> Transactions()
     {
-      return View();
+      var userId = HttpContext.Session.GetInt32("UserId");
+      if (userId == null)
+      {
+        return RedirectToAction("LoginPage");
+      }
+      var sharedInfo = await getSharedDataAsync(userId);
+      return View(sharedInfo);
     }
 
     [Route("/Transaction/getTransaction")]
