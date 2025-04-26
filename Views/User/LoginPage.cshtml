@@ -16,7 +16,7 @@
 			<div class="loginAuthenticationForm">
 				<div class="loginAuthenticationCloseContainer">
 					<h2 class="loginCenterHeading">Login</h2>
-					<a id="closeBtn" class="loginCloseButton" asp-action="">X</a>
+					<p id="closeBtn" class="loginCloseButton" asp-action="">X</p>
 				</div>
 				<div class="loginAuthContents">
 					<label for="Username">Username / Email</label>
@@ -31,7 +31,7 @@
 				</div>
 				<div class="loginAuthContents">
 					<a class="loginItemLinks" asp-action="CreateUser">Create Account.</a><br />
-					<a class="loginItemLinks" asp-action="">Forgot Password.</a>
+					<a class="loginItemLinks" asp-action="#">Forgot Password.</a>
 				</div>
 			</div>
 		</div>
@@ -241,6 +241,10 @@
 			display.style.overflow = "hidden";
 		});
 
+		document.getElementById("closeBtn").addEventListener("click", function(){
+			loginForm.style.display = "none";
+			display.style.overflow = "";
+		});
 		//Set username once login verified
 		if(Username && Username.trim().toLowerCase() !== null)
 		{

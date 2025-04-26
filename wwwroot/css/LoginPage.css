@@ -170,6 +170,16 @@ body::-webkit-scrollbar{ display: none; }
     border: 1px solid var(--secondary);
     border-radius: var(--px8);
     background: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.authenticationButton:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  font-weight: var(--semiBold);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+  background-color: var(--secondary);
 }
 
 .dashboardSignInOutButton {
@@ -429,6 +439,16 @@ body::-webkit-scrollbar{ display: none; }
   border-radius: var(--px4);
   text-align: center;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.loginCloseButton:hover {
+  transform: scale(0.9);
+  box-shadow: var(--black38) 0px 0px 12px 0px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--dark);
+  font-weight: var(--semiBold);
 }
 
 .loginCenterHeading {
