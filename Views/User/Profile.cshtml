@@ -88,17 +88,17 @@
             <h2 class="">Update Password</h2>
 
               <div class="profileInputContainer">
-                <label for="BusinessName">Old Password</label>
-                <input class="profileUserInput" type="password" id="BusinessName" asp-for="OldPassword">
+                <label for="OldPassword">Old Password</label>
+                <input class="profileUserInput" type="password" id="OldPassword" asp-for="OldPassword">
               </div>
               <div class="profileInputContainer">
-                <label for="BusinessType">New Password</label>
-                <input class="profileUserInput" type="password" id="BusinessType" asp-for="Password">
+                <label for="newPassword">New Password</label>
+                <input class="profileUserInput" type="password" id="newPassword" asp-for="Password">
               </div>
             </div>
           </div>
         <div>
-          <h3>Make Sure all the information is correct before updating!</h3>
+          <h3>Overrite over the details, make sure all the information is correct before updating!</h3>
           <button type="submit" class="updateBtn">Update Profile</button>
         </div>
         </div>
@@ -116,32 +116,33 @@
       <button id="delete" type="submit" class="deleteBtn">Delete My Profile</button>
     @* </form> *@
   </section>
-
-  <div id="confirm" class="profileDeleteBox">
-    <div class="deleteConfirm">
+  <div class="profileChangeContainer">
+    <div id="confirm" class="deleteConfirm">
       <p class="warningText">
         You are permanantely deleting your profile.
         This action cannot be undone.
-        <form asp-action="" method="post">
-          <button type="submit" class="deleteBtn">Delete My Profile</button>
+        <form asp-action="DeleteProfile" method="post">
+          <button type="submit" class="deleteBtn">Delete Confirm</button>
         </form>
-          <button id="cancel" type="submit" class="updateBtn">Cancel</button>
+        <button id="cancel" type="submit" class="updateBtn">Cancel</button>
       </p>
     </div>
   </div>
   <script>
-    const delete = document.getElementById("delete")
-    const cancel = document.getElementById("cancel")
-    const confirm = document.getElementById("confirm")
+    const deleted = document.getElementById("delete");
+    const cancel = document.getElementById("cancel");
+    const confirm = document.getElementById("confirm");
 
-    document.getElementById("delete").addEventListener("click",() {
+    document.getElementById("delete").addEventListener("click",function(){
       console.log("funcion delete called");
-      confirm.style.display = "flex";
+      confirm.style.opacity = "1";
+      confirm.style.pointerEvents = "auto";
     });
 
     document.getElementById("cancel").addEventListener("click",function (){
       console.log("funcion confirm called");
-      confirm.style.display = "none";
+      confirm.style.opacity = "0";
+      confirm.style.pointerEvents = "none";
     });
   </script>
 </body>

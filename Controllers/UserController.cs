@@ -131,10 +131,14 @@ namespace Bank2.Controllers
 
         userdata.Username = users.Username;
         userdata.FullName = users.FullName;
-        userdata.OldPassword = users.OldPassword;
-        userdata.Password = users.Password;
+        if(users.Password != null)
+        {
+          userdata.Password = users.Password;
+          userdata.OldPassword = users.OldPassword;
+        }
         userdata.BusinessName = users.BusinessName;
         userdata.BusinessType = users.BusinessType;
+        
         userdata.TaxId = users.TaxId;
         userdata.Email = users.Email;
         userdata.Phone = users.Phone;

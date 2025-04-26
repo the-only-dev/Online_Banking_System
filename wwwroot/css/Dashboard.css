@@ -324,26 +324,32 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: red;
 }
 
-.profileDeleteBox {
+.profileChangeContainer {
   display: flex;
   position: relative;
+  transition: all 0.3s ease;
+  top: 65%;
 }
 
 .deleteConfirm {
   display: flex;
+  pointer-events: none;
+  opacity: 0%;
   flex-direction: column;
   padding: 0px var(--px16);
   gap: var(--px16);
   position: fixed;
-  top: 25%;
+  top: 30%;
   left: 45%;
-  backdrop-filter: invert(100%) sepia(10%) blur(50px);
+  backdrop-filter: invert(5%) sepia(10%) blur(32px);
   box-shadow: var(--black13) 0px 0px var(--px16) 0px;
   width: var(--px480);
   height: var(--px280);
   border: 2px solid white;
   border-radius: var(--px16);
+  transition: all 0.2s ease;
 }
+
 /* Security and Privacy */
 
 /* Notification Page */
