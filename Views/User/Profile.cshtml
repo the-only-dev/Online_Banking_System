@@ -11,12 +11,12 @@
     <h1 class="removeMargin dashboardMainHeading">Profile</h1>
   </header>
   <section class="baseSection">
-    <form asp-action="EditAccount" method="post">
+    <form asp-action="UpdateProfile" method="post">
       <div class="profileOuterContainer">
-
         <div class="profileInnerContainer">
           <div class="profileContentsContainer">
           <h2>Personal Info</h2>
+
             <div class="profileInputContainer">
               <label for="Username">Username</label>
               <input class="profileUserInput" type="text" id="Username" asp-for="Username">
@@ -35,6 +35,7 @@
 
           <div class="profileContentsContainer">
           <h2>Contact Info</h2>
+
             <div class="profileInputContainer">
               <label for="Email">Email</label>
               <input class="profileUserInput" type="email" id="Email" asp-for="Email">
@@ -48,6 +49,7 @@
 
           <div class="profileContentsContainer">
           <h2>Address Info</h2>
+
             <div class="profileInputContainer">
               <label for="Address">Address</label>
               <input class="profileUserInput" type="text" id="Address" asp-for="Address">
@@ -60,46 +62,86 @@
           </div>
         </div>
 
-        <div class="profileInnerContainer">
-          <div class="profileContentsContainer">
-          <h2>Business Info</h2>
-            <div class="profileInputContainer">
-              <label for="BusinessName">Business Name</label>
-              <input class="profileUserInput" type="text" id="BusinessName" asp-for="BusinessName">
-            </div>
+        <div class="profileInnerGridContainer">
+          <div class="profileInnerContainer">
+            <div class="profileContentsContainer">
+            <h2>Business Info</h2>
 
-            <div class="profileInputContainer">
-              <label for="BusinessType">Business Type</label>
-              <input class="profileUserInput" type="text" id="BusinessType" asp-for="BusinessType">
-            </div>
+              <div class="profileInputContainer">
+                <label for="BusinessName">Business Name</label>
+                <input class="profileUserInput" type="text" id="BusinessName" asp-for="BusinessName">
+              </div>
 
-            <div class="profileInputContainer">
-              <label for="TaxId">TaxId</label>
-              <input class="profileUserInput" type="text" id="TaxId" asp-for="TaxId">
-            </div>
-            <div class="">
-              <button type="submit" class="updateBtn frmPad">Update</button>
-              <button asp-action="Transactions" class="deleteBtn frmPad">Delete Profile</button>
+              <div class="profileInputContainer">
+                <label for="BusinessType">Business Type</label>
+                <input class="profileUserInput" type="text" id="BusinessType" asp-for="BusinessType">
+              </div>
+
+              <div class="profileInputContainer">
+                <label for="TaxId">TaxId</label>
+                <input class="profileUserInput" type="text" id="TaxId" asp-for="TaxId">
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="profileInnerContainer">
-          <div class="profileContentsContainer">
+          <div class="profileInnerContainer">
+            <div class="profileContentsContainer">
             <h2 class="">Update Password</h2>
-            <div class="profileInputContainer">
-              <label for="BusinessName">Old Password</label>
-              <input class="profileUserInput" type="password" id="BusinessName" asp-for="Password">
-            </div>
-            <div class="profileInputContainer">
-              <label for="BusinessType">New Password</label>
-              <input class="profileUserInput" type="password" id="BusinessType" asp-for="Password">
+
+              <div class="profileInputContainer">
+                <label for="BusinessName">Old Password</label>
+                <input class="profileUserInput" type="password" id="BusinessName" asp-for="OldPassword">
+              </div>
+              <div class="profileInputContainer">
+                <label for="BusinessType">New Password</label>
+                <input class="profileUserInput" type="password" id="BusinessType" asp-for="Password">
+              </div>
             </div>
           </div>
+        <div>
+          <h3>Make Sure all the information is correct before updating!</h3>
+          <button type="submit" class="updateBtn">Update Profile</button>
+        </div>
         </div>
       </div>
     </form>
   </section>
+  <section class="baseSection">
+    <h2 class="userProfileSubHeading removeMargin">Delete Profile Section</h2>
+    <p class="warningText">
+      Deleting your profile will permanently remove all your data.
+      This action cannot be undone. Please proceed with caution.
+    </p>
+
+    @* <form asp-action="" method="post"> *@
+      <button id="delete" type="submit" class="deleteBtn">Delete My Profile</button>
+    @* </form> *@
+  </section>
+
+  <div id="confirm" class="profileDeleteBox">
+    <div class="deleteConfirm">
+      <p class="warningText">
+        You are permanantely deleting your profile.
+        This action cannot be undone.
+        <form asp-action="" method="post">
+          <button type="submit" class="deleteBtn">Delete My Profile</button>
+        </form>
+          <button id="cancel" type="submit" class="updateBtn">Cancel</button>
+      </p>
+    </div>
+  </div>
   <script>
+    const delete = document.getElementById("delete")
+    const cancel = document.getElementById("cancel")
+    const confirm = document.getElementById("confirm")
+
+    document.getElementById("delete").addEventListener("click",() {
+      console.log("funcion delete called");
+      confirm.style.display = "flex";
+    });
+
+    document.getElementById("cancel").addEventListener("click",function (){
+      console.log("funcion confirm called");
+      confirm.style.display = "none";
+    });
   </script>
 </body>

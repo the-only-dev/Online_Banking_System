@@ -3,6 +3,7 @@ using Bank2.Models;
 using Bank2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Diagnostics;
 namespace Bank2.Controllers
 {
   public class UserController : BaseController
@@ -111,44 +112,62 @@ namespace Bank2.Controllers
 
     //Used to update user profile
     [HttpPost]
-    public async Task<IActionResult> EditAccount(int id, User users)
+    public async Task<IActionResult> UpdateProfile(int id, ProfileUpdate? users)
     {
-      if (ModelState.IsValid)
+      var userId = HttpContext.Session.GetInt32("UserId");
+      if (userId == null)
       {
-        _context.Users.Update(users);
-        await _context.SaveChangesAsync();
-        return RedirectToAction("Transactions");
+        return RedirectToAction("LoginPage");
       }
-      ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
-      return View(users);
+
+      try
+      {
+        var userdata = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+        if(users.OldPassword != null && userdata.Password != users.OldPassword)
+        {
+          Debug.WriteLine("Error: No Data");
+          return RedirectToAction("Profile");
+        }
+
+        userdata.Username = users.Username;
+        userdata.FullName = users.FullName;
+        userdata.OldPassword = users.OldPassword;
+        userdata.Password = users.Password;
+        userdata.BusinessName = users.BusinessName;
+        userdata.BusinessType = users.BusinessType;
+        userdata.TaxId = users.TaxId;
+        userdata.Email = users.Email;
+        userdata.Phone = users.Phone;
+        userdata.Job = users.Job;
+        userdata.Pin = users.Pin;
+        userdata.Address = users.Address;
+        userdata.CustomerType = userdata.CustomerType;
+
+        _context.Users.Update(userdata);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Profile");
+        }
+      catch(Exception e)
+      {
+        return View(e.Message);
+      }
     }
 
-
-    //public async Task<IActionResult> EditAccount(int id)
-    //{
-    //    var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
-
-    //    ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
-    //    return View(user);
-    //}
-
-
-    //public async Task<IActionResult> DeleteAccount(int id)
-    //{
-    //  var user = await _context.Users.Include(b => b.Branch).FirstOrDefaultAsync(x => x.Id == id);
-    //  return View(user);
-    //}
-
-    //[HttpPost, ActionName("Delete")]
-    //public async Task<IActionResult> Deleted(int id)
-    //{
-    //  var user = await _context.Users.FindAsync(id);
-    //  if (user != null)
-    //  {
-    //    _context.Users.Remove(user);
-    //    await _context.SaveChangesAsync();
-    //  }
-    //  return RedirectToAction("Transactions");
-    //}
+    public async Task<IActionResult> DeleteProfile()
+    {
+      var userId = HttpContext.Session.GetInt32("UserId");
+      if (userId == null)
+      {
+        return RedirectToAction("LoginPage");
+      }
+      var userdata = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+      if(userdata != null)
+      {
+        _context.Users.Remove(userdata);
+        await _context.SaveChangesAsync();
+        HttpContext.Session.Clear();
+      }
+      return RedirectToAction("LoginPage");
+    }
   }
 }

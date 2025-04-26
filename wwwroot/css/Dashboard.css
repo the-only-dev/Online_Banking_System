@@ -229,12 +229,17 @@ input[type="number"]::-webkit-inner-spin-button {
 .profileOuterContainer{
   display: grid;
   gap: var(--px32);
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   align-items: start;
 }
 
+.profileInnerGridContainer{
+  display: grid;
+  gap:var(--px32);
+}
+
 .profileInnerContainer{ 
-  flex-shrink: 1;
+  display: grid;
   border: 2px solid black;
   border-radius: var(--px16);
   box-shadow: var(--black38) 0px 0px 12px 0px;
@@ -264,50 +269,81 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid black;
   border-radius: var(--px4);
   padding: var(--px8);
-  background-color: lightgrey;
+  background-color: hsla(0,0%,90%,1);
   font-weight: var(--semiBold);
   font-size: var(--text);
 }
 
-.deleteBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, red, darkred);
-    background-color: red;
+.buttonSpacing{
+  padding-left: var(--px32);
+  margin-bottom: var(--px8);
 }
 
 .updateBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, blue, darkblue);
-    background-color: red;
+  padding: 0px var(--px20);
+  width: var(--px280);
+  height: var(--px50);
+  color: white;
+  font-size: var(--paragraph);
+  font-weight: var(--bold);
+  border: none;
+  border-radius: var(--px8);
+/*  background: linear-gradient(40deg, var(--black38), var(--black13));*/
+  background-color: var(--black38);
+  transition: all 0.2s ease-in-out;
 }
 
-.cancelBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, green, darkgreen);
-    background-color: red;
+.updateBtn:hover {
+  cursor: pointer;
+  background-color: var(--black13);
 }
 
+.warningText {
+  color: #b30000;
+  font-size: var(--paragraph);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.deleteBtn {
+  padding: 0px var(--px20);
+  width: var(--px280);
+  height: var(--px50);
+  color: white;
+  font-size: var(--paragraph);
+  font-weight: var(--bold);
+  border: none;
+  border-radius: var(--px8);
+  /*    background: linear-gradient(40deg, red, darkred);*/
+  background-color: #b30000;
+  transition: all 0.2s ease-in-out;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.profileDeleteBox {
+  display: flex;
+  position: relative;
+}
+
+.deleteConfirm {
+  display: flex;
+  flex-direction: column;
+  padding: 0px var(--px16);
+  gap: var(--px16);
+  position: fixed;
+  top: 25%;
+  left: 45%;
+  backdrop-filter: invert(100%) sepia(10%) blur(50px);
+  box-shadow: var(--black13) 0px 0px var(--px16) 0px;
+  width: var(--px480);
+  height: var(--px280);
+  border: 2px solid white;
+  border-radius: var(--px16);
+}
 /* Security and Privacy */
 
 /* Notification Page */

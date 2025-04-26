@@ -85,6 +85,7 @@ wwwroot\ico\gas.png
 wwwroot\ico\gas-tank.png
 wwwroot\ico\health-insurance.png
 wwwroot\ico\home_loan.png
+wwwroot\ico\investment.png
 wwwroot\ico\light-bulb.png
 wwwroot\ico\lighting.png
 wwwroot\ico\logout.png
