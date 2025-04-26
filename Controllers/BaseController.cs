@@ -14,6 +14,8 @@ namespace Bank2.Controllers
     {
       _context = context;
     }
+
+    //Used to share data btw diffrent web pages
     protected async Task<SharedData> getSharedDataAsync(int? id)
     {
       var branch = await _context.Branchs.ToListAsync();
@@ -34,6 +36,7 @@ namespace Bank2.Controllers
       };
     }
 
+    //Create a new account #this method is called by other controller
     protected async Task<IActionResult> CreateNewAccountAsync(int? id, decimal amount, string accountType)
     {
       var accountCount = await _context.Accounts.ToListAsync();

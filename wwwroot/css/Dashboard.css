@@ -224,7 +224,21 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
 }
 
+/*  Profile Page */
+
+.formInput {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: var(--px16);
+  padding: 0px var(--px32);
+  font-size: var(--subHead3);
+  font-weight: var(--regular);
+}
+
 /* Security and Privacy */
+
+/* Notification Page */
 
 
 

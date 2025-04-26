@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Bank2.Models.User
+@{
     ViewData["Title"] = "Profile";
 }
 <head>
@@ -9,4 +10,78 @@
   <header class="baseSection">
     <h1 class="removeMargin dashboardMainHeading">Profile</h1>
   </header>
+  <section class="baseSection">
+    <form asp-action="EditAccount" method="post" class="formControl">
+      <fieldset id="PersonalDetails" class="accountManagement">
+      <legend>Personal Details</legend>
+        <div class="bigSection">
+
+          <div class="formInput">
+            <label for="Username">Username</label>
+            <input class="userInputField" type="text" id="Username" asp-for="Username">
+          </div>
+
+          <div class="formInput">
+            <label for="FullName">Full Name</label>
+            <input class="userInputField" type="text" id="FullName" asp-for="FullName">
+          </div>
+
+          <div class="formInput">
+            <label for="Email">Email</label>
+            <input class="userInputField" type="email" id="Email" asp-for="Email">
+          </div>
+
+          <div class="formInput">
+            <label for="Phone">Phone</label>
+            <input class="userInputField" type="text" id="Phone" asp-for="Phone">
+          </div>
+
+          <div class="formInput">
+            <label for="Address">Enter Address</label>
+            <input class="userInputField" type="text" id="Address" asp-for="Address">
+          </div>
+
+          <div class="formInput">
+            <label for="Pin">Pincode</label>
+            <input class="userInputField" type="text" id="Pin" asp-for="Pin">
+          </div>
+
+          <div class="formInput">
+            <label for="Job">Job</label>
+            <input class="userInputField" type="text" id="Job" asp-for="Job">
+          </div>
+        </div>
+
+        <div class="bigSection">
+          <div id="BusinessDetails" style="display: grid" class="formSection">
+            <p class="spanCol">Enter Business Details</p>
+
+            <div class="formInput">
+              <label for="BusinessName">Business Name</label>
+              <input class="textInput" type="text" id="BusinessName" asp-for="BusinessName">
+            </div>
+
+            <div class="formInput">
+              <label for="BusinessType">Business Type</label>
+              <input class="textInput" type="text" id="BusinessType" asp-for="BusinessType">
+            </div>
+
+            <div class="formInput">
+              <label for="TaxId">TaxId</label>
+              <input class="textInput" type="text" id="TaxId" asp-for="TaxId">
+            </div>
+          </div>
+        </div>
+        <div class="smallSection">
+          <button type="submit" class="updateBtn frmPad">Update</button>
+          <button asp-action="Transactions" class="cancelBtn frmPad">Cancel</button>
+        </div>
+      </fieldset>
+
+
+      
+
+
+    </form>
+  </section>
 </body>

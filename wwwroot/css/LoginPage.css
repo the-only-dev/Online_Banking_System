@@ -391,7 +391,7 @@ body::-webkit-scrollbar{
   margin: 0px;
 }
 
-/* Features Section */
+/* 3. Features Section */
 .featuresSection {
     height: 100vh;
     padding: var(--px128);
@@ -428,7 +428,7 @@ body::-webkit-scrollbar{
     gap: var(--px16);
 }
 
-/* Login Box in Login Page */
+/* 4. Login Box in Login Page */
 .loginAuthenticationContainer {
   display: flex;
   justify-content: center;
@@ -514,7 +514,6 @@ body::-webkit-scrollbar{
 /* - End of Login Page - */
 
 /* --- Create Account Page --- */
-
 .createUserProfile {
     margin: 0px;
     padding: 0px;
@@ -572,33 +571,6 @@ body::-webkit-scrollbar{
     border-radius: var(--px4);
     font-size: var(--text);
     font-weight: var(--bold);
-}
-
-
-.spanCol {
-  margin: var(--px16) 0px;
-  padding: 0px;
-  grid-column: span 2;
-  border-bottom: var(--px2) solid var(--secondary);
-}
-
-.span {
-    grid-column: span 2; 
-    font-size: var(--text); 
-    margin: 0px;
-    font-weight: var(--semiBold);
-}
-.formInput {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    padding: 0rem 2rem;
-    font-size: var(--paragraph);
-    font-weight: var(--light);
-}
-
-.frmPad{
-    margin: 0rem 2rem;
 }
 /* - End of Create Account Page - */
 
