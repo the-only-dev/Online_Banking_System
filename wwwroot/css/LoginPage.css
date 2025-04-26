@@ -36,7 +36,7 @@
   --bold: 700;
   --extraBold: 800;
   --black: 900;
-  /* General Use for Spacing */
+  /* General Use for Spacing, but can also use other */
   --px1: 0.0625rem;
   --px2: 0.125rem;
   --px4: 0.25rem;
@@ -52,9 +52,11 @@
   /* Heavy Padding or Margins */
   --px72: 4.5rem;
   --px80: 5rem;
-  /* Use for Paament Buttons*/
+
+  /* Use for Payment Buttons on Bills n Payment Page */
   --px120: 7.5rem;
   --px128: 8rem;
+
   /* Mainly Used for Button Width*/
   --px160: 10rem;
   --px200: 12.5rem;
@@ -65,24 +67,14 @@
 }
 
 /* Global Element Changes */
-body{
-    margin: 0px;
-    padding: 0px;
-}
 
-b {
-    font-weight: var(--semiBold);
-}
-
-body::-webkit-scrollbar{
-    display: none;
-}
+body{ margin: 0px; padding: 0px; }
+b{ font-weight: var(--semiBold); }
+body::-webkit-scrollbar{ display: none; }
 
 /* Global custom class for items */
 
-.removeMargin {
-  margin: 0px;
-}
+.removeMargin { margin: 0px; }
 
 .loginPageBody {
     margin: 0px;
@@ -213,46 +205,7 @@ body::-webkit-scrollbar{
     background-color: var(--secondary);
 }
 
-/*.deleteBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, red, darkred);
-    background-color: red;
-}
-
-.updateBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, blue, darkblue);
-    background-color: red;
-}
-
-.cancelBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, green, darkgreen);
-    background-color: red;
-}*/
 /* -- End of custom class -- */
-
 
 /* --- Login Page Start --- */
 /* 0. Navigation Bar */
@@ -348,7 +301,6 @@ body::-webkit-scrollbar{
 .heroSection {
   display: flex;
   flex-direction: column;
-  /*border: 12px solid black;*/
   height: 80vh;
   text-align: center;
   justify-content: center;

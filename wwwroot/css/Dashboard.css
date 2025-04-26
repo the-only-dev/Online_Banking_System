@@ -216,24 +216,96 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Payment Page */
 
 .paymentForm{
-    max-width: var(--px280);
-    padding: var(--px8);
-    border: var(--px2) solid black;
-    border-radius: var(--px16);
-    display: flex;
-    flex-direction: column;
+  max-width: var(--px280);
+  padding: var(--px8);
+  border: var(--px2) solid black;
+  border-radius: var(--px16);
+  display: flex;
+  flex-direction: column;
 }
 
 /*  Profile Page */
 
-.formInput {
+.profileOuterContainer{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: var(--px32);
+  grid-template-columns: auto auto;
+  align-items: start;
+}
+
+.profileInnerContainer{ 
+  flex-shrink: 1;
+  border: 2px solid black;
+  border-radius: var(--px16);
+  box-shadow: var(--black38) 0px 0px 12px 0px;
+}
+
+.profileContentsContainer{
+  padding-left: var(--px16);
+  margin-bottom: var(--px8);
+}
+
+.profileContentsContainer > h2 {
+  margin-bottom: var(--px4);
+  border-bottom: 1px solid;
+}
+
+.profileInputContainer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
   margin-bottom: var(--px16);
   padding: 0px var(--px32);
   font-size: var(--subHead3);
   font-weight: var(--regular);
+}
+
+.profileUserInput {
+  border: 1px solid black;
+  border-radius: var(--px4);
+  padding: var(--px8);
+  background-color: lightgrey;
+  font-weight: var(--semiBold);
+  font-size: var(--text);
+}
+
+.deleteBtn {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: white;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px8);
+    background: linear-gradient(to bottom, red, darkred);
+    background-color: red;
+}
+
+.updateBtn {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: white;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px8);
+    background: linear-gradient(to bottom, blue, darkblue);
+    background-color: red;
+}
+
+.cancelBtn {
+    padding: 0px var(--px20);
+    width: var(--px200);
+    height: var(--px50);
+    color: white;
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--px8);
+    background: linear-gradient(to bottom, green, darkgreen);
+    background-color: red;
 }
 
 /* Security and Privacy */
