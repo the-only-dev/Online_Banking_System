@@ -12,9 +12,9 @@
 </head>
 <body class="loginPageBody">
 	<form asp-controller="User" asp-action="CheckLogin" method="post">
-		<div id="showLoginForm" class="loginAuthenticationContainer" style="display: none">
+		<div id="showLoginForm" class="loginAuthenticationContainer">
 			<div class="loginAuthenticationForm">
-				<div class="loginAuthenticationCloseContainer">
+				<div class="loginAuthContents">
 					<h2 class="loginCenterHeading">Login</h2>
 					<p id="closeBtn" class="loginCloseButton" asp-action="">X</p>
 				</div>
@@ -35,7 +35,8 @@
 				</div>
 			</div>
 		</div>
-		<div id="showLoginError" class="loginAuthenticationContainer" style="display:none;">
+
+		<div id="showLoginError" class="loginAuthenticationContainer">
 			<div class="loginAuthenticationForm">
 				<h2 class="loginAuthError">Invalid Crednetials <br />Check Username or Password</h2>
 			</div>
@@ -150,8 +151,8 @@
 	</section> 
 
 	<section class="dashboardImageDisplay">
-		<img src="~/rsc/phobe.png" alt="Alternate Text" />
-		<p>Manage your <b>Finance</b> with our easy to use <b>Dashboard</b></p>
+		<img class="dashboardImage" src="~/rsc/dashboard-clipped.png" alt="Alternate Text" />
+		<p class="dashboardParagraph">Manage your <b>Finance</b> with our easy to use <b>Dashboard</b></p>
 	</section>
 
 	<section class="featuresSection">
@@ -225,26 +226,30 @@
 
 		//Display Error when login fails
 		if(StatusError == "error"){
-				loginForm.style.display = "none";
-				loginError.style.display = "flex";
+				loginForm.style.opacity = "1";
+				loginError.style.opacity = "1";
 				setTimeout(() => {
-					loginForm.style.display = "flex";
-					loginError.style.display = "none";
-				},2000);
+					loginForm.style.opacity = "1";
+					loginError.style.opacity = "0";
+					loginForm.style.pointerEvents = "auto";
+				},1500);
 		}
 
 		//Opens Login Box
 		document.getElementById("navbarLoginBtn").addEventListener("click", function(event)
 		{
 			event.preventDefault();
-			loginForm.style.display = "flex";
+			loginForm.style.opacity = "1";
+			loginForm.style.pointerEvents = "auto";
 			display.style.overflow = "hidden";
 		});
 
 		document.getElementById("closeBtn").addEventListener("click", function(){
-			loginForm.style.display = "none";
+			loginForm.style.opacity = "0";
+			loginForm.style.pointerEvents = "none";
 			display.style.overflow = "";
 		});
+
 		//Set username once login verified
 		if(Username && Username.trim().toLowerCase() !== null)
 		{

@@ -4,6 +4,7 @@ using Bank2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
+using System.Runtime.Intrinsics.Arm;
 namespace Bank2.Controllers
 {
   public class UserController : BaseController
@@ -76,10 +77,10 @@ namespace Bank2.Controllers
     public async Task<IActionResult> CheckLogin([Bind("Username, Password")] User user)
     {
       var confirm = await _context.Users.SingleOrDefaultAsync(x =>
-      x.Username == user.Username && 
-      x.Password == user.Password);
+      x.Username.ToLower() == user.Username.ToLower() ||
+      x.Email.ToLower() == user.Username.ToLower());
 
-      if (confirm != null)
+      if (confirm != null && confirm.Password == user.Password)
       {
           HttpContext.Session.SetString("Username", confirm.Username ?? "Unknown User");
           HttpContext.Session.SetInt32("UserId", confirm.Id);
