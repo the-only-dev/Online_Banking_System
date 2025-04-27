@@ -1,5 +1,6 @@
 ﻿@model Bank2.Models.User
 @{
+	Context.Session.SetString("LogStatus","fauck");
 	var username = Context.Session.GetString("Username");
 	var userid = Context.Session.GetInt32("ID");
 	ViewData["Title"] = "Login";
@@ -127,17 +128,27 @@
 			<li class="dropdownContainer"><a class="navbarItems" asp-action="">Services</a></li>
 			<li class="dropdownContainer"><a class="navbarItems" asp-action=""><b>Contact Us</b></a></li>
 		</ul>
-		<div>
-				<a id="navbarLoginBtn" class="navbarLoginButton">Login</a>
 
-			<select id="logoutBtn" class="userInputField" style="display: none" onchange="handleSelect(this)">
-				<option hidden id="user" selected></option>
-				<option value="/User/Dashboard"><a>Dashboard</a></option>
-				<option value="/Transaction/Payment"><a>Profile</a></option>
-				<option value="/User/Transactions"><a>Transactions</a></option>
-				<option value="/User/Logout"><a>Logout</a></option>
-			</select>
+		<div>
+			<a id="navbarLoginBtn" class="navbarLoginButton" style="display: flex;">Login</a>
+			<div id="smallNavigator" class="smallNavContainer" style="display: none">
+				<div class="navbarLoginButton">
+					<img class="smallNavigatorIcons" src="~/ico/profile.png" />
+					<span id="user" >Username</span>
+				</div>
+				<div class="smallNavigator">
+					<a class="smallNavigatorItems" asp-action="Dashboard">
+						<img class="smallNavigatorIcons" src="~/ico/dashboard_img.png" />Dashboard</a>
+					<a class="smallNavigatorItems" asp-action="Profile">
+						<img class="smallNavigatorIcons" src="~/ico/profile2.png" />Profile</a>
+					<a class="smallNavigatorItems" asp-controller="Transaction" asp-action="Transactions">
+						<img class="smallNavigatorIcons" src="~/ico/transactions.png" />Transaction</a>
+					<a class="smallNavigatorItems" asp-action="Logout">
+						<img class="smallNavigatorIcons" src="~/ico/logout.png" />Logout</a>
+				</div>
+			</div>
 		</div>
+			
 	</nav>
 	</header>
 
@@ -210,18 +221,11 @@
 		const loginError = document.getElementById("showLoginError");
 		const display = document.querySelector(".loginPageBody");
 		const loginBtn = document.getElementById("navbarLoginBtn");
-		const logoutBtn = document.getElementById("logoutBtn");
+		const navigator = document.getElementById("smallNavigator");
 		const user = document.getElementById("user");
 
-		//Navitgate to selected Webpage and reset the value to Username
-		function handleSelect(select){
-			if(select.value == "/User/Logout"){
-				window.location.href = select.value;
-			}
-			else{
-				window.location.href = select.value;
-				logoutBtn.selectedIndex = 0;
-			}
+		if (performance.getEntriesByType("navigation")[0].type === "back_forward") {
+			window.location.reload();
 		}
 
 		//Display Error when login fails
@@ -250,13 +254,13 @@
 			display.style.overflow = "";
 		});
 
-		//Set username once login verified
+		//Change Login Button to Navigator and Create button >> Dashboard
 		if(Username && Username.trim().toLowerCase() !== null)
 		{
 			createUserButton.forEach (button => {button.style.display = "none"});
 			goToDashboardButton.forEach (button => {button.style.display = "flex"});
 			loginBtn.style.display = "none";
-			logoutBtn.style.display = "block";
+			navigator.style.display = "block";
 			user.innerText = Username;
 		}
 
