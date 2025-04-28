@@ -560,21 +560,16 @@ body::-webkit-scrollbar{ display: none; }
 
 /* --- Create User Profile Page --- */
 
-.displayError{
-  z-index: 1;
-  padding: 0px;
-  margin: 0px;
-  width: var(--px200);
-/*  border: 1px solid red;*/
+.displayError {
+  display: flex;
+  flex-wrap: nowrap;
   color: red;
-  position: absolute;
-  text-align: right;
-  left: 600px;
 }
 
 .createUserProfile {
   margin: 0px;
   padding: 0px;
+  min-width: 1280px;
   background-color: var(--secondary);
 }
 

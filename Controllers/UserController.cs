@@ -84,14 +84,15 @@ namespace Bank2.Controllers
     [HttpPost]
     public async Task<IActionResult> CheckLogin([Bind("Username, Password")] User user)
     {
-      var confirm = await _context.Users.SingleOrDefaultAsync(x =>
+      var foundUser = await _context.Users.SingleOrDefaultAsync(x =>
       x.Username.ToLower() == user.Username.ToLower() ||
       x.Email.ToLower() == user.Username.ToLower());
 
-      if (confirm != null && confirm.Password == user.Password)
+      user.Password = GenerateHash256(user.Password + foundUser.Salt);
+      if (foundUser != null && foundUser.Password == user.Password)
       {
-          HttpContext.Session.SetString("Username", confirm.Username ?? "Unknown User");
-          HttpContext.Session.SetInt32("UserId", confirm.Id);
+          HttpContext.Session.SetString("Username", foundUser.Username ?? "Unknown User");
+          HttpContext.Session.SetInt32("UserId", foundUser.Id);
           return RedirectToAction("LoginPage");
       }
       TempData["Error"] = "error";
@@ -126,11 +127,14 @@ namespace Bank2.Controllers
         {
           ModelState.AddModelError("Phone", "Phone Already Exist");
         }
+        ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
         return View("CreateUser", users);
       }
      
       if (ModelState.IsValid)
       {
+        users.Salt = GenerateSalt();
+        users.Password = GenerateHash256(users.Password + users.Salt);
         _context.Users.Add(users);
         await _context.SaveChangesAsync();
         await CreateNewAccountAsync(users.Id, 0, users.CustomerType);

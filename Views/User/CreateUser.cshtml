@@ -36,9 +36,11 @@
         <h2 class="userProfileSubHeading">Enter Personal Details</h2>
         <div class="userProfileInnerContainer">
           <div class="userProfileContent">
-              <label for="Username">Username*</label>
-              <input required class="userInputField" type="text" id="Username" asp-for="Username">
-            <p class="displayError">@Html.ValidationMessageFor(model => model.Username, "", new { @class = "" })</p>
+            <label for="Username">Username*
+              <span class="displayError">@Html.ValidationMessageFor(model => model.Username, "", new { @class = "" })</span>
+            </label>
+            <input required class="userInputField" type="text" id="Username" asp-for="Username">
+            
           </div>
           <div class="userProfileContent">
               <label for="Password">Password*</label>
@@ -49,15 +51,18 @@
               <input class="userInputField" type="text" id="FullName" asp-for="FullName">
           </div>
           <div class="userProfileContent">
-              <label for="Email">Email*</label>
+            <label for="Email">Email*
+              <span class="displayError">@Html.ValidationMessageFor(model => model.Email, "", new { @class = "" })</span>
+            </label>
             <input required class="userInputField" type="email" id="Email" asp-for="Email">
-            <p class="displayError">@Html.ValidationMessageFor(model => model.Email, "", new { @class = "" })</p>
+            
 
           </div>
           <div class="userProfileContent">
-              <label for="Phone">Phone</label>
-              <input class="userInputField" type="text" id="Phone" asp-for="Phone">
-            <p class="displayError">@Html.ValidationMessageFor(model => model.Phone, "", new { @class = "" })</p>
+            <label for="Phone">Phone
+              <span class="displayError">@Html.ValidationMessageFor(model => model.Phone, "", new { @class = "" })</span>
+            </label>
+            <input class="userInputField" type="text" id="Phone" asp-for="Phone">
 
           </div>
           <div class="userProfileContent">

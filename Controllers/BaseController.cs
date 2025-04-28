@@ -2,6 +2,9 @@
 using Bank2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.Intrinsics.Arm;
+using System.Security.Cryptography;
+using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Bank2.Controllers
@@ -54,5 +57,24 @@ namespace Bank2.Controllers
       await _context.SaveChangesAsync();
       return Ok();
     }
+
+    public static string GenerateHash256(string rawData)
+    {
+      using (var sha256 = SHA256.Create())
+      {
+        return Convert.ToHexString(sha256.ComputeHash(Encoding.UTF8.GetBytes(rawData))).ToLower();
+      }
+    }
+
+    public static string GenerateSalt(int size = 16)
+    {
+      var randomBytes = new byte[size];
+      using (var rng = RandomNumberGenerator.Create())
+      {
+        rng.GetBytes(randomBytes);
+      }
+      return Convert.ToBase64String(randomBytes);
+    }
+
   }
 }

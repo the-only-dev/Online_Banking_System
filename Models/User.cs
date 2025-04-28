@@ -13,6 +13,7 @@ namespace Bank2.Models
     public string? OldPassword { get; set; } = null;
     [Required]
     public string? Password { get; set; } = null!;
+    public string? Salt { get; set; } = null!;
     public string? BusinessName { get; set; } = null!;
     public string? BusinessType { get; set; } = null!;
     public string? TaxId { get; set; } = null!;
