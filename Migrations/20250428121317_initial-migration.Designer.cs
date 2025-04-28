@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank2.Migrations
 {
     [DbContext(typeof(BankContext))]
-    [Migration("20250426114240_added-empty-column")]
-    partial class addedemptycolumn
+    [Migration("20250428121317_initial-migration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -239,6 +239,7 @@ namespace Bank2.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FullName")
@@ -251,6 +252,7 @@ namespace Bank2.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
@@ -259,10 +261,14 @@ namespace Bank2.Migrations
                     b.Property<string>("Pin")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Salt")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("TaxId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -270,8 +276,7 @@ namespace Bank2.Migrations
                     b.HasIndex("BranchId");
 
                     b.HasIndex("Email")
-                        .IsUnique()
-                        .HasFilter("[Email] IS NOT NULL");
+                        .IsUnique();
 
                     b.HasIndex("Phone")
                         .IsUnique()
@@ -282,8 +287,7 @@ namespace Bank2.Migrations
                         .HasFilter("[TaxId] IS NOT NULL");
 
                     b.HasIndex("Username")
-                        .IsUnique()
-                        .HasFilter("[Username] IS NOT NULL");
+                        .IsUnique();
 
                     b.ToTable("Users");
 

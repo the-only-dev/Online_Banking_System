@@ -41,17 +41,18 @@ namespace Bank2.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Username = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Username = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    OldPassword = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Salt = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     BusinessName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     BusinessType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TaxId = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Pin = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Phone = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     Job = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AccountCount = table.Column<int>(type: "int", nullable: true),
                     CustomerType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BranchId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -125,8 +126,8 @@ namespace Bank2.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "AccountCount", "Address", "BranchId", "BusinessName", "BusinessType", "CustomerType", "Email", "FullName", "Job", "Password", "Phone", "Pin", "TaxId", "Username" },
-                values: new object[] { 1, null, "Admin", 1, "Admin", "Admin", "Admin", "Admin@gmail.com", "Admin", "Admin", "Admin", "0000000000", "Admin", "Admin", "Admin" });
+                columns: new[] { "Id", "Address", "BranchId", "BusinessName", "BusinessType", "CustomerType", "Email", "FullName", "Job", "OldPassword", "Password", "Phone", "Pin", "Salt", "TaxId", "Username" },
+                values: new object[] { 1, "Admin", 1, "Admin", "Admin", "Admin", "Admin@gmail.com", "Admin", "Admin", null, "Admin", "0000000000", "Admin", null, "Admin", "Admin" });
 
             migrationBuilder.InsertData(
                 table: "Accounts",
@@ -179,8 +180,7 @@ namespace Bank2.Migrations
                 name: "IX_Users_Email",
                 table: "Users",
                 column: "Email",
-                unique: true,
-                filter: "[Email] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Phone",
@@ -200,8 +200,7 @@ namespace Bank2.Migrations
                 name: "IX_Users_Username",
                 table: "Users",
                 column: "Username",
-                unique: true,
-                filter: "[Username] IS NOT NULL");
+                unique: true);
         }
 
         /// <inheritdoc />

@@ -110,7 +110,7 @@ namespace Bank2.Controllers
     [HttpPost]
     public async Task<IActionResult> CreateUserAccount(User users)
     {
-      if(users != null)
+      if (users != null)
       {
         var isUsername = await _context.Users.AnyAsync(u => u.Username == users.Username);
         var isEmail = await _context.Users.AnyAsync(u => u.Email == users.Email);
@@ -127,10 +127,13 @@ namespace Bank2.Controllers
         {
           ModelState.AddModelError("Phone", "Phone Already Exist");
         }
-        ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
-        return View("CreateUser", users);
+        if(isUsername || isEmail || isPhone)
+        {
+          ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
+          return View("CreateUser", users);
+        }
       }
-     
+
       if (ModelState.IsValid)
       {
         users.Salt = GenerateSalt();
