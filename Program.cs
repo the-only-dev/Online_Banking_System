@@ -11,7 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BankContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+//options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
+options.UseSqlite(builder.Configuration.GetConnectionString("SqliteBankDatabase")));
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
