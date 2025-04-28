@@ -558,11 +558,24 @@ body::-webkit-scrollbar{ display: none; }
 }
 /* - End of Login Page - */
 
-/* --- Create Account Page --- */
+/* --- Create User Profile Page --- */
+
+.displayError{
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+  width: var(--px200);
+/*  border: 1px solid red;*/
+  color: red;
+  position: absolute;
+  text-align: right;
+  left: 600px;
+}
+
 .createUserProfile {
-    margin: 0px;
-    padding: 0px;
-    background-color: var(--secondary);
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--secondary);
 }
 
 .userProfileCreationForm {
@@ -597,6 +610,7 @@ body::-webkit-scrollbar{ display: none; }
 }
 
 .userProfileContent {
+    position: relative;
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

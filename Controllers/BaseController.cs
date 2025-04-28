@@ -52,7 +52,7 @@ namespace Bank2.Controllers
       };
       _context.Accounts.Add(account);
       await _context.SaveChangesAsync();
-      return null;
+      return Ok();
     }
   }
 }

@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title></title>
-    <link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LoginPage.css" @*asp-append-version="true"*@ />
 	<link rel="stylesheet" href="~/css/Dashboard.css" asp-append-version="true" />
 </head>
 <body class="createUserProfile">
@@ -38,6 +38,7 @@
           <div class="userProfileContent">
               <label for="Username">Username*</label>
               <input required class="userInputField" type="text" id="Username" asp-for="Username">
+            <p class="displayError">@Html.ValidationMessageFor(model => model.Username, "", new { @class = "" })</p>
           </div>
           <div class="userProfileContent">
               <label for="Password">Password*</label>
@@ -49,11 +50,15 @@
           </div>
           <div class="userProfileContent">
               <label for="Email">Email*</label>
-              <input required class="userInputField" type="email" id="Email" asp-for="Email">
+            <input required class="userInputField" type="email" id="Email" asp-for="Email">
+            <p class="displayError">@Html.ValidationMessageFor(model => model.Email, "", new { @class = "" })</p>
+
           </div>
           <div class="userProfileContent">
               <label for="Phone">Phone</label>
               <input class="userInputField" type="text" id="Phone" asp-for="Phone">
+            <p class="displayError">@Html.ValidationMessageFor(model => model.Phone, "", new { @class = "" })</p>
+
           </div>
           <div class="userProfileContent">
               <label for="Address">Enter Address</label>

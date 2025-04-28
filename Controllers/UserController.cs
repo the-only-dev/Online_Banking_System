@@ -109,6 +109,26 @@ namespace Bank2.Controllers
     [HttpPost]
     public async Task<IActionResult> CreateUserAccount(User users)
     {
+      if(users != null)
+      {
+        var isUsername = await _context.Users.AnyAsync(u => u.Username == users.Username);
+        var isEmail = await _context.Users.AnyAsync(u => u.Email == users.Email);
+        var isPhone = await _context.Users.AnyAsync(u => u.Phone == users.Phone);
+        if (isUsername)
+        {
+          ModelState.AddModelError("Username", "Username Already Exist");
+        }
+        if (isEmail)
+        {
+          ModelState.AddModelError("Email", "Email Already Exist");
+        }
+        if (isPhone)
+        {
+          ModelState.AddModelError("Phone", "Phone Already Exist");
+        }
+        return View("CreateUser", users);
+      }
+     
       if (ModelState.IsValid)
       {
         _context.Users.Add(users);
@@ -116,7 +136,7 @@ namespace Bank2.Controllers
         await CreateNewAccountAsync(users.Id, 0, users.CustomerType);
         return RedirectToAction("LoginPage");
       }
-      return View(users);
+      return View("CreateUser", users);
     }
 
     //Used to update user profile
