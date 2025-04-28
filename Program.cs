@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BankContext>(options =>
 //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
-options.UseSqlite(builder.Configuration.GetConnectionString("SqliteBankDatabase")));
+options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {

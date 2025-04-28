@@ -2,8 +2,14 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\!Study Data\Banking System</_PublishTargetUrl>
-    <History>True|2025-04-04T08:28:39.6162249Z||;</History>
+    <_PublishTargetUrl>C:\!Study Data\Bank2 New</_PublishTargetUrl>
+    <History>True|2025-04-28T15:05:13.2120588Z||;True|2025-04-28T19:03:57.6491414+05:30||;False|2025-04-28T18:58:40.8894076+05:30||;True|2025-04-28T18:53:00.9906503+05:30||;True|2025-04-28T18:46:20.5743576+05:30||;True|2025-04-28T18:35:13.5993195+05:30||;True|2025-04-28T18:33:11.7255334+05:30||;False|2025-04-28T18:32:09.2790598+05:30||;True|2025-04-28T18:28:21.4782120+05:30||;True|2025-04-28T18:26:50.4950839+05:30||;</History>
     <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnectionString">
+      <Value>Data Source=BankDB.db</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>

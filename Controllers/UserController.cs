@@ -84,19 +84,28 @@ namespace Bank2.Controllers
     [HttpPost]
     public async Task<IActionResult> CheckLogin([Bind("Username, Password")] User user)
     {
-      var foundUser = await _context.Users.SingleOrDefaultAsync(x =>
-      x.Username.ToLower() == user.Username.ToLower() ||
-      x.Email.ToLower() == user.Username.ToLower());
-
-      user.Password = GenerateHash256(user.Password + foundUser.Salt);
-      if (foundUser != null && foundUser.Password == user.Password)
+      try
       {
-          HttpContext.Session.SetString("Username", foundUser.Username ?? "Unknown User");
-          HttpContext.Session.SetInt32("UserId", foundUser.Id);
-          return RedirectToAction("LoginPage");
+        var foundUser = await _context.Users.SingleOrDefaultAsync(x =>
+        x.Username.ToLower() == user.Username.ToLower() ||
+        x.Email.ToLower() == user.Username.ToLower());
+
+        var hash = GenerateHash256(user.Password + foundUser.Salt);
+        if (foundUser != null && foundUser.Password == hash)
+        {
+            HttpContext.Session.SetString("Username", foundUser.Username ?? "Unknown User");
+            HttpContext.Session.SetInt32("UserId", foundUser.Id);
+            return RedirectToAction("LoginPage");
+        }
+        TempData["Error"] = "error";
+        return RedirectToAction("LoginPage");
       }
-      TempData["Error"] = "error";
-      return RedirectToAction("LoginPage");
+      catch(Exception e)
+      {
+        TempData["Error"] = "error";
+        return RedirectToAction("LoginPage");
+      }
+      
     }
 
     //Retruns the User Creation Page

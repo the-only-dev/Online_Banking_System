@@ -1,51 +1,91 @@
 ﻿@import url("LoginPage.css");
+/* Classlist CSS*/
+
+.sidebar-hidden .sidebar { width: 4.5%; }
+.sidebar-hidden .content { margin-left: 4.5%;}
+.sidebar-hidden .menuButton { left: 8px;}
+.sidebar-hidden .dashboardNavigationLinks span 
+{ pointer-events: none;width: 0; opacity: 0;}
+.sidebar-hidden #logoutIcon { display: flex;}
+.sidebar-hidden #signOutButton { display : none;}
+
+/* Normal CSS */
 .setBody{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
-.content{
-   margin-left: 20%;
-   flex-grow: 1;
-   height: 100%;
+.dashboardNavigationLinks > span {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.content {
+  margin-left: 20%;
+  flex-grow: 1;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 
 .sidebar{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 100vh;
-    margin: 0px;
-    position: fixed;
-    padding: var(--px16) 0px;
-    background-color: var(--dark);
-    font-weight: var(--semiBold);
-    text-align: left;
-    font-family: 'Inter';
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  margin: 0px;
+  position: fixed;
+  padding: var(--px16) 0px;
+  background-color: var(--dark);
+  font-weight: var(--semiBold);
+  text-align: left;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
-.dashItems{
-    display: flex;
-    gap: var(--px20);
-    flex-direction: column;
-    margin: 0px;
-    padding: var(--px40) 0px;
-    list-style: none;
+.menuButton {
+  padding: 0px 4px;
+  border-radius: 4px;
+  position: fixed;
+  top: 8px;
+  left: 16%;
+  color: var(--secondary);
+  height: var(--px40);
+  transition: all 0.3s ease;
 }
 
-.dashLinks {
-    padding-left: var(--px8);
-    height: var(--px40);
-    background-color: var(--dark);
-    font-size: var(--paragraph);
-    color: var(--secondary);
-    text-decoration: none;
+.menuButton:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+}
+
+.dashboardNavigationLinkContainer{
+  display: flex;
+  gap: var(--px20);
+  flex-direction: column;
+  margin: 0px;
+  padding: var(--px40) 0px;
+}
+
+.dashboardNavigationLinks {
+  display: flex;
+  gap: var(--px8);
+  align-items: center;
+  padding-left: var(--px8);
+  max-height: var(--px80);
+  background-color: var(--dark);
+  font-size: var(--paragraph);
+  color: var(--secondary);
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
 }
 
 .signOut {
-    margin-top: auto;
-    text-align: center;
+  margin-top: auto;
+}
+
+.dashboardIcons {
+  height: var(--px50);
 }

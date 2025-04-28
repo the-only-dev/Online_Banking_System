@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Bank2.0wp9njeobq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0wp9njeobq"},{"Name":"integrity","Value":"sha256-sJHlBEhFnJDsfqFtNHdnAiHloer0WyAqfW2cyxGaNY4="},{"Name":"label","Value":"_content/Bank2/Bank2.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1123"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022sJHlBEhFnJDsfqFtNHdnAiHloer0WyAqfW2cyxGaNY4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Mar 2025 10:50:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1123"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022sJHlBEhFnJDsfqFtNHdnAiHloer0WyAqfW2cyxGaNY4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 15:04:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bank2/Bank2.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Bank2.0wp9njeobq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sJHlBEhFnJDsfqFtNHdnAiHloer0WyAqfW2cyxGaNY4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1123"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022sJHlBEhFnJDsfqFtNHdnAiHloer0WyAqfW2cyxGaNY4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Mar 2025 10:50:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1123"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022sJHlBEhFnJDsfqFtNHdnAiHloer0WyAqfW2cyxGaNY4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 15:04:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Bank2/css/Dashboard.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Dashboard.css'))</AssetFile>

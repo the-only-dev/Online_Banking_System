@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("DashboardLayout.css");
 *{
     /* Default Font */
     font-family: 'Inter';
@@ -6,83 +7,77 @@
 }
 
 :root {
-    /* Color Styles */
-    --primary: hsla(0,0%,100%,1);
-    --secondary: hsla(30,100%,91%,1);
-    --tertiary: hsla(196,31%,49%,1);
-    --accent: hsla(189,56%,62%,1);
-    --dark: hsla(21,23%,41%,1);
-    --shade: hsla(0,0%,0%,0.2);
+  /* Color Styles */
+  --primary: hsla(0,0%,100%,1);
+  --secondary: hsla(30,100%,91%,1);
+  --tertiary: hsla(196,31%,49%,1);
+  --accent: hsla(189,56%,62%,1);
+  --dark: hsla(21,23%,41%,1);
+  --shade: hsla(0,0%,0%,0.2);
+  --black13: hsla(0, 0%, 13%, 1);
+  --black38:hsla(0, 0%, 38%, 1); 
+  /* Font Family */
+  --mainfont: 'Inter';
+  /* Font Size */
+  --big: 4.5rem; /* 72px / 16 */
+  --mainHead: 3rem; /* 48px / 16 */
+  --subHead: 2.25rem; /* 36px / 16 */
+  --subHead2: 1.75rem; /* 28px / 16 */
+  --subHead3: 1.5rem; /* 24px / 16 */
+  --paragraph: 1.25rem; /* 20px / 16 */
+  --text: 1rem; /* 16px / 16 */
+  --text2: 0.75rem; /* 12px / 16 */
+  /* Font Weights */
+  --thin: 100;
+  --extraLight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+  --black: 900;
+  /* General Use for Spacing, but can also use other */
+  --px1: 0.0625rem;
+  --px2: 0.125rem;
+  --px4: 0.25rem;
+  --px8: 0.5rem;
+  --px16: 1rem;
+  --px20: 1.25rem;
+  --px24: 1.5rem;
+  --px25: 1.5625rem;
+  --px32: 2rem;
+  /* Mainly Used For Buttons Height */
+  --px40: 2.5rem;
+  --px50: 3.125rem;
+  /* Heavy Padding or Margins */
+  --px72: 4.5rem;
+  --px80: 5rem;
 
-    /* Font Family */
-    --mainfont: 'Inter';
+  /* Use for Payment Buttons on Bills n Payment Page */
+  --px120: 7.5rem;
+  --px128: 8rem;
 
-    /* Font Size */
-    --big: 4.5rem;          /* 72px / 16 */
-    --mainHead: 3rem;       /* 48px / 16 */
-    --subHead: 2.25rem;     /* 36px / 16 */
-    --subHead2: 1.75rem;    /* 28px / 16 */
-    --subHead3: 1.5rem;     /* 24px / 16 */
-    --paragraph: 1.25rem;   /* 20px / 16 */
-    --text: 1rem;           /* 16px / 16 */
-    --text2: 0.75rem;       /* 12px / 16 */
-
-    /* Font Weights */
-    --thin: 100;
-    --extraLight: 200;
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --semiBold: 600;
-    --bold: 700;
-    --extraBold: 800;
-    --black: 900;
-
-    /* General Use for Spacing */
-    --px1: 0.0625rem;
-    --px2: 0.125rem;
-    --px4: 0.25rem;
-    --px8: 0.5rem;
-    --px16: 1rem;
-    --px20: 1.25rem;
-    --px24: 1.5rem;
-    --px25: 1.5625rem;
-    --px32: 2rem;
-
-    /* Mainly Used For Buttons Height */
-    --px40: 2.5rem;
-    --px50: 3.125rem;
-
-    /* Heavy Padding or Margins */
-    --px72: 4.5rem;
-    --px80: 5rem;
-    --px128: 8rem;
-
-    /* Mainly Used for Button Width*/
-    --px160: 10rem;
-    --px200: 12.5rem;
-    --px280: 17.5rem;
-
-    /* Used for Other Items */
-    --px440: 27.5rem;
-    --px480: 30rem;
+  /* Mainly Used for Button Width*/
+  --px160: 10rem;
+  --px200: 12.5rem;
+  --px280: 17.5rem;
+  /* Used for Other Items */
+  --px440: 27.5rem;
+  --px480: 30rem;
 }
 
 /* Global Element Changes */
-body{
-    margin: 0px;
-    padding: 0px;
-}
 
-b {
-    font-weight: var(--semiBold);
-}
+body{ margin: 0px; padding: 0px; }
+b{ font-weight: var(--semiBold); }
+body::-webkit-scrollbar{ display: none; }
 
-body::-webkit-scrollbar{
-    display: none;
-}
 /* Global custom class for items */
-.selectedBody {
+
+.removeMargin { margin: 0px; }
+
+.loginPageBody {
     margin: 0px;
     padding: 0px;
     height: 100vh;
@@ -97,8 +92,8 @@ body::-webkit-scrollbar{
     overflow: auto;
 }
 
-/* Link Button Styles*/
-.loginBtn {
+/* Link Tag Button Styles*/
+.navbarLoginButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,9 +107,16 @@ body::-webkit-scrollbar{
     text-align: center;
     font-size: var(--text );
     font-weight: var(--semiBold);
+    transition: all 0.2s ease-in-out;
 }
 
-.btnRndLink1 {
+.navbarLoginButton:hover { 
+  color: var(--secondary);
+  cursor: pointer; 
+  box-shadow: var(--secondary) 0px 0px 4px 1px;
+}
+
+.createAccountButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,9 +130,16 @@ body::-webkit-scrollbar{
     text-align: center;
     font-size: var(--paragraph);
     font-weight: var(--semiBold);
+    transition: all 0.2s ease-in-out;
 }
 
-.btnRndLink2 {
+.createAccountButton:hover {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  box-shadow: var(--secondary) 0px 0px 8px 1px;
+}
+
+.learnMoreButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,10 +153,16 @@ body::-webkit-scrollbar{
     text-align: center;
     font-size: var(--paragraph);
     font-weight: var(--bold);
+    transition: all 0.2s ease-in-out;
 }
 
-/* Button styles */
-.sqrLoginBtn {
+.learnMoreButton:hover {
+  box-shadow: var(--secondary) 0px 0px 8px 1px;
+}
+
+ /*Button Tag styles */
+
+.authenticationButton {
     width: var(--px160);
     height: var(--px40);
     color: var(--secondary);
@@ -156,9 +171,19 @@ body::-webkit-scrollbar{
     border: 1px solid var(--secondary);
     border-radius: var(--px8);
     background: none;
+    transition: all 0.2s ease-in-out;
 }
 
-.btnRnd1 {
+.authenticationButton:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  font-weight: var(--semiBold);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+  background-color: var(--secondary);
+}
+
+.dashboardSignInOutButton {
     padding: 0px var(--px20);
     width: var(--px280);
     height: var(--px50);
@@ -168,6 +193,15 @@ body::-webkit-scrollbar{
     border: none;
     border-radius: var(--px25);
     background-color: var(--tertiary);
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboardSignInOutButton:hover {
+  color: var(--dark);
+  box-shadow: var(--primary) 0px 0px 8px 1px;
+  background-color: var(--primary);
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .btnRnd2 {
@@ -182,198 +216,206 @@ body::-webkit-scrollbar{
     background-color: var(--secondary);
 }
 
-.deleteBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, red, darkred);
-    background-color: red;
-}
-
-.updateBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, blue, darkblue);
-    background-color: red;
-}
-
-.cancelBtn {
-    padding: 0px var(--px20);
-    width: var(--px200);
-    height: var(--px50);
-    color: white;
-    font-size: var(--paragraph);
-    font-weight: var(--bold);
-    border: none;
-    border-radius: var(--px8);
-    background: linear-gradient(to bottom, green, darkgreen);
-    background-color: red;
-}
 /* -- End of custom class -- */
 
-
 /* --- Login Page Start --- */
-/* 0. Navigation Bar */
-.navi {
-    display: flex;
-    box-sizing: border-box;
-    padding: var(--px4);
-    align-items: center;
-    border-bottom: 1px solid var(--secondary);
+/* 0. Small Navigation Bar appers after user log's in succssfuly */
+
+
+.smallNavigator {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  width: var(--px160);
+  border-radius: var(--px16);
+  background: hsla(30,100%,91%,0.1);
+  box-shadow: 0px 0px var(--px8) var(--shade);
+  backdrop-filter: blur(10px);
+  margin: 0px;
+  padding: var(--px8) 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.smallNavContainer:hover .smallNavigator {
+  opacity: 100;
+  max-height: 400px;
+}
+
+.smallNavigatorItems {
+  display: flex;
+  color: var(--secondary);
+  font-weight: var(--semiBold);
+  text-decoration: none;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding: var(--px8);
+  transition: all 0.2s ease;
+}
+
+.smallNavigatorIcons {
+  height: var(--px24);
+  padding-right: var(--px8);
+  transition: all 0.2s ease;
+}
+
+.smallNavigatorItems:hover {
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+/* Main Navigation Bar */
+.navigationContainer {
+  display: flex;
+  box-sizing: border-box;
+  padding: var(--px4);
+  align-items: center;
+  border-bottom: 1px solid var(--secondary);
 }
 
 /* Temprorary Used Text As Icon in nav bar*/
 .navIcon {
-    margin: 0px;
-    padding: 0px;
-    font-size: var(--subHead2); /* Adjust */
+  margin: 0px;
+  padding: 0px;
+  font-size: var(--subHead2); /* Adjust */
 }
 
-.navbar {
-    display: flex;
-    flex: 1;
-    gap: var(--px72);
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
-    box-sizing: border-box;
-    list-style: none;
-    position: relative;
+.navbarContents {
+  display: flex;
+  flex: 1;
+  gap: var(--px72);
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  box-sizing: border-box;
+  list-style: none;
+  position: relative;
 }
 
-.dropdown:hover .navDropdown {
-    opacity: 100;
-    max-height: var(--px440);
+.dropdownContainer:hover .dropdownInNavbar {
+  opacity: 100;
+  max-height: var(--px440);
+  pointer-events: auto;
 }
 
-.navItems{
-    margin: 0px;
-    padding: 0px;
-    color: var(--secondary);
-    font-size: var(--text);
-    font-weight: var(--light);
-    text-decoration: none;
-    box-sizing: border-box;
+.navbarItems{
+  margin: 0px;
+  padding: 0px;
+  color: var(--secondary);
+  font-size: var(--text);
+  font-weight: var(--light);
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.navDropdown {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    top: var(--px32);
-    column-gap: var(--px50);
-    row-gap: var(--px24);
-    padding: var(--px16);
-    border-radius: var(--px16);
-    background: hsla(30,100%,91%,0.1);
-    list-style: none;
-    box-sizing: border-box;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px var(--shade);
-    opacity: 0;
-    max-height: 0px;
-    overflow: hidden;
-    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+.dropdownInNavbar {
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  column-gap: var(--px50);
+  row-gap: var(--px24);
+  padding: var(--px16);
+  border-radius: var(--px16);
+  background: hsla(30,100%,91%,0.1);
+  list-style: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px var(--px8) var(--shade);
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.4s ease-in-out;
 }
 
-
-.navDropItems h2{
-    text-align: left;
-    margin: var(--px8) 0px;
-    padding: 0px;
-    font-size: var(--subHead3);
-    font-weight: var(--semiBold)
+.dropdownContents{
+  display: flex;
+  flex-direction: column;
 }
 
-.navDropItems{
-    display: flex;
-    flex-direction: column;
+.dropdownContents > h2 {
+  text-align: left;
+  margin: var(--px8) 0px;
+  padding: 0px;
+  font-size: var(--subHead3);
+  font-weight: var(--semiBold)
 }
 
-.navLinks
+.dropdownItems
 {
-    text-align: left;
-    text-decoration: none;
-    padding-left: var(--px16);
-    color: var(--secondary);
-    font-size: var(--text);
-    font-weight: var(--light)
+  text-align: left;
+  text-decoration: none;
+  padding-left: var(--px16);
+  color: var(--secondary);
+  font-size: var(--text);
+  font-weight: var(--light);
+  transition: all 0.2s ease;
 }
 
-.navbar li:last-child .navItems{
-    font-weight: var(--semiBold);
+.dropdownItems:hover {
+  color: var(--primary);
+  transform: scale(1.05);
+  text-decoration: underline;
 }
-
-/* Remove it once fixed*/
-.item {
-    flex: 1;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
 /* 1. Hero Section */
-.intro {
-    display: flex;
-    flex-direction: column;
-    /*border: 12px solid black;*/
-    height: 80vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.heroSection > p:nth-child(2) {
+  margin-bottom: var(--px8);
+}
+
+.heroSection > p:nth-child(3) {
+  margin-bottom: var(--px8);
+  font-size: var(--paragraph);
 }
 
 .introItems{
-    margin: 0px;
-    font-weight: var(--light);
-    font-size: var(--big);
-}
-
-.intro p:nth-child(2) {
-    margin-bottom: 8px;      
-}
-
-.intro p:nth-child(3){
-    margin-bottom: 8px;
-    font-size: var(--paragraph);
+  margin: 0px;
+  font-weight: var(--light);
+  font-size: var(--big);
 }
 
 /* 2. Dashboard Screen */
-.dashboard {
-    height: 100vh;
-    text-align: center;
-    box-sizing: border-box;
+.dashboardImageDisplay {
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.dashboard img {
-    margin: 0px;
-    padding: 0px;
-    height: 80%;
-    border-radius: 48px;
+.dashboardImage{
+  margin: 0px;
+  padding: 0px;
+  width: 70%;
+  box-shadow: var(--black38) 0px 0px 12px 0px;
+  border-radius: var(--px16);
 }
 
-.dashboard p{
-    font-size: var(--subHead);
-    font-weight: var(--light);
-    margin: 0px;
+.dashboardParagraph{
+  padding: var(--px16);
+  font-size: var(--subHead);
+  font-weight: var(--light);
+  margin: 0px;
 }
 
-
-/* Features Section */
-.features {
+/* 3. Features Section */
+.featuresSection {
     height: 100vh;
     padding: var(--px128);
     display: flex;
@@ -383,131 +425,249 @@ body::-webkit-scrollbar{
     box-sizing: border-box;
 }
 
-.featureItems{
+.featureContents{
     flex: 1;
 }
 
-.featureHead{
+.featureItemHeading{
     font-size: var(--big);
     font-weight: var(--light);
     margin: 0px;
 }
 
-.featParagrah{
-    font-size: var(--paragraph);
-    font-weight: var(--light);
-    text-align: left;
+.featureItemText {
+  font-size: var(--paragraph);
+  font-weight: var(--light);
+  text-align: left;
 }
 
-.doubleBtn{
+.featureItemImages {
+  width: 100%;
+  border-radius: var(--px24);
+  transition: all 0.2s ease-in-out;
+}
+
+.featureItemImages:hover {
+  transform: scale(1.01);
+  box-shadow: var(--black38) 0px 0px 12px 0px;
+}
+
+.featureSectionButtons{
     display: flex;
     gap: var(--px16);
 }
 
-.displayImages{
-    width: 100%;
-    border-radius: var(--px24);
+/* 4. Login Box in Login Page */
+.loginAuthenticationContainer {
+  display: flex;
+  opacity: 0%;
+  pointer-events: none;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Footer (not made yet) */
-
-.footerSec{
-    display: flex;
-    border-top: var(--px2) solid var(--secondary);
-/*    background-color: var(--tertiary);*/
-    align-items: center;
-    justify-content: center;
+.loginAuthenticationForm {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: left;
+  width: var(--px480);
+  height: var(--px440);
+  background: linear-gradient(transparent, var(--tertiary)), var(--shade);
+  background-blend-mode: multiply;
+  border: var(--px2) solid var(--secondary);
+  border-radius: var(--px8);
+  box-sizing: border-box;
 }
 
-.footerText{
-    color: black;
-    font-weight: var(--semiBold);
-    margin: 0px;
-    padding: var(--px8);
+.loginAuthenticationCloseContainer {
+  color: var(--secondary);
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.loginCloseButton {
+  position: absolute;
+  top: -0.4rem;
+  left: var(--px440);
+  width: var(--px20);
+  height: var(--px20);
+  padding: var(--px4);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: var(--px4);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.loginCloseButton:hover {
+  transform: scale(1.2);
+  box-shadow: var(--black38) 0px 0px 12px 0px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--dark);
+  font-weight: var(--semiBold);
+}
+
+.loginCenterHeading {
+  flex: 1;
+  padding: var(--px8);
+  text-align: center;
+  border-bottom: var(--px2) solid;
+}
+
+.loginAuthContents {
+  position: relative;
+  color: var(--secondary);
+  display: flex;
+  padding: 1rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.loginItemLinks {
+  display: contents;
+  margin: 0px 0px;
+  padding: 0px;
+  color: var(--secondary);
+  font-size: var(--text);
+  font-weight: var(--light);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.loginItemLinks:hover{
+  font-weight: var(--bold);
+  color: var(--primary);
+}
+.loginAuthError {
+  text-align: center;
+  align-self: center;
 }
 /* - End of Login Page - */
 
-/* --- Create Account Page --- */
+/* --- Create User Profile Page --- */
 
-.CUBody {
-    margin: 0px;
-    padding: 0px;
-    background-color: var(--secondary);
-}
-.accountCreateForm {
-    margin: 1% 20%;
-    padding: var(--px16);
-    background-color: var(--secondary);
-    border: 2px solid black;
-    border-radius: var(--px16);
+.displayError {
+  display: flex;
+  flex-wrap: nowrap;
+  color: red;
 }
 
-.userHeading{
+.createUserProfile {
+  margin: 0px;
+  padding: 0px;
+  min-width: 1280px;
+  background-color: var(--secondary);
+}
+
+.userProfileCreationForm {
+  margin: 1% 20%;
+  padding: var(--px16);
+  background-color: var(--secondary);
+  border: var(--px2) solid black;
+  border-radius: var(--px16);
+  box-shadow: var(--px2) var(--px2) black;
+}
+
+.userProfileMainHeading{
     padding-bottom: var(--px16);
-    border-bottom: 1px solid black;
+    border-bottom: var(--px4) solid black;
 }
 
-.userSection{
+.userInputContainer {
     border-bottom: var(--px2) solid black;
     padding-bottom: var(--px16);
     margin-bottom: var(--px16);
 }
 
-
-.userInnerSection {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.userProfileSubHeading {
+  padding-bottom: var(--px16);
+  border-bottom: 1px solid black;
 }
 
-.userContent {
+.userProfileInnerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.userProfileContent {
+    position: relative;
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: var(--px16);
+    margin-bottom: var(--px16);
+    padding-left: var(--px16);
     font-size: var(--text);
     font-weight: var(--semiBold);
 }
 
-.spanCol {
-    margin: 16px 0px;
-    padding: 0px;
-    grid-column: span 2;
-    border-bottom: 2px solid var(--secondary);
-}
-
-.span {
-    grid-column: span 2; 
-    font-size: var(--text); 
-    margin: 0px;
-    font-weight: var(--semiBold);
-}
-.formInput {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    padding: 0rem 2rem;
-    font-size: var(--paragraph);
-    font-weight: var(--light);
-}
-
-.inputEdit {
-    padding: 8px;
+.userInputField {
+    padding: var(--px8);
     color: black;
     background-color: var(--secondary);
     border: 1px solid var(--dark);
-    border-radius: 0.5rem;
+    border-radius: var(--px4);
     font-size: var(--text);
     font-weight: var(--bold);
 }
-
-.frmPad{
-    margin: 0rem 2rem;
-}
 /* - End of Create Account Page - */
 
+/* ---- Learn More Page ---- */
+
+.learnContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  transition : all 0.2s ease;
+}
+
+.learnMoreCards {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  background: hsla(0, 0%, 0%, 0.05);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(100px);
+  border-radius: var(--px8);
+  margin: var(--px8);
+  padding: var(--px16);
+  transition: all 0.2s ease-in-out;
+}
+
+.learnMoreText {
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.learnMoreCards:hover {
+  box-shadow: var(--shade) 0px 0px 8px 0px;
+}
+.learnMoreCards:hover .learnMoreText{
+  opacity: 100;
+  max-height: 120px;
+}
 /* --- Delete Account Page --- */
 
 .deleteAccount {
@@ -537,81 +697,3 @@ body::-webkit-scrollbar{
 
 /* Delete End */
 
-/* Login Box in Login Page */
-
-.loginBackground {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    position: fixed;
-    z-index: 1;
-}
-
-.loginBox {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    text-align: left;
-    width: var(--px480);
-    height: var(--px440);
-/*        background-color: var(--tertiary);*/
-    background: linear-gradient(transparent, var(--tertiary)), var(--shade);
-    background-blend-mode: multiply;
-    border: var(--px2) solid var(--secondary);
-    border-radius: 1rem;
-    box-sizing: border-box;
-}
-
-.loginItems {
-    color: var(--secondary);
-    display: flex;
-    padding: 1rem 2rem;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.loginButtons {
-    color: var(--secondary);
-    display: flex;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.closeBtn {
-    position: absolute;
-    left: var(--px440);
-    width: var(--px20);
-    height: var(--px20);
-    padding: var(--px4);
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
-    border-radius: var(--px20);
-    text-align: center;
-    text-decoration: none;
-}
-
-.headCenter {
-    flex: 1;
-    padding: var(--px8);
-    text-align: center;
-    border-bottom: 2px solid;
-}
-
-.loginLinks {
-    display:contents;
-    margin: 0px 0px;
-    padding: 0px;
-    color: var(--secondary);
-    font-size: var(--text);
-    font-weight: var(--light);
-    text-decoration: none;
-    box-sizing: border-box;
-}
