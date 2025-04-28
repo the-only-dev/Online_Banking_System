@@ -619,6 +619,46 @@ body::-webkit-scrollbar{ display: none; }
 }
 /* - End of Create Account Page - */
 
+/* ---- Learn More Page ---- */
+
+.learnContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  transition : all 0.2s ease;
+}
+
+.learnMoreCards {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  background: hsla(0, 0%, 0%, 0.05);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(100px);
+  border-radius: var(--px8);
+  margin: var(--px8);
+  padding: var(--px16);
+  transition: all 0.2s ease-in-out;
+}
+
+.learnMoreText {
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.learnMoreCards:hover {
+  box-shadow: var(--shade) 0px 0px 8px 0px;
+}
+.learnMoreCards:hover .learnMoreText{
+  opacity: 100;
+  max-height: 120px;
+}
 /* --- Delete Account Page --- */
 
 .deleteAccount {

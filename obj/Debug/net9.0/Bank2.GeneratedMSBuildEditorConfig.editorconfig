@@ -84,12 +84,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/DeleteAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGVBY2NvdW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/EditAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0QWNjb3VudC5jc2h0bWw=
+[C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/LearnMore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMZWFybk1vcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/\!Study Data/Visual Basic Practice/Bank2/Views/User/LoginPage.cshtml]

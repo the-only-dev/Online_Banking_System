@@ -1,14 +1,13 @@
 ﻿@model Bank2.Models.User
 @{
-	Context.Session.SetString("LogStatus","fauck");
+	ViewData["Title"] = "LoginPage";
+	Context.Session.SetString("LogStatus","else");
 	var username = Context.Session.GetString("Username");
 	var userid = Context.Session.GetInt32("ID");
-	ViewData["Title"] = "Login";
 }
 
 <html>
 <head>
-	<title></title>
 	<link rel="stylesheet" href="~/css/LoginPage.css" asp-append-version="true" />
 </head>
 <body class="loginPageBody">
@@ -53,8 +52,8 @@
 				<ul class="dropdownInNavbar">
 					<li class="dropdownContents">
 						<h2>Personal Account</h2>
-						<a class="dropdownItems" asp-action="">Open Savings Account</a>
-						<a class="dropdownItems" asp-action="">Open Current Account</a>
+						<a class="dropdownItems" asp-action="CreateUser">Open Savings Account</a>
+							<a class="dropdownItems" asp-action="CreateUser">Open Current Account</a>
 					</li>
 					<li class="dropdownContents">
 						<h2>Security & Support</h2>
@@ -79,8 +78,8 @@
 				<ul class="dropdownInNavbar">
 		 			<li class="dropdownContents">
 		 					<h2>Business Account</h2>
-		 					<a class="dropdownItems" asp-action="">Open Regular Current Account</a>
-		 					<a class="dropdownItems" asp-action="">Open Freelancer Current Account</a>
+							<a class="dropdownItems" asp-action="CreateUser">Open Regular Current Account</a>
+							<a class="dropdownItems" asp-action="CreateUser">Open Freelancer Current Account</a>
 		 			</li>
 		 			<li class="dropdownContents">
 		 					<h2>Security & Fraud Prevention</h2>
@@ -105,8 +104,8 @@
 					<ul class="dropdownInNavbar">
 						<li class="dropdownContents">
 		 				<h2>Commercial Account</h2>
-		 				<a class="dropdownItems"asp-action="">Open Corporate Current Account</a>
-		 				<a class="dropdownItems"asp-action="">Open Corporate Salary Account</a>
+							<a class="dropdownItems" asp-action="CreateUser">Open Corporate Current Account</a>
+							<a class="dropdownItems" asp-action="CreateUser">Open Corporate Salary Account</a>
 		 			</li>
 						<li class="dropdownContents">
 		 				<h2>Security & Support</h2> 
@@ -173,7 +172,7 @@
 				Now access and manage your accounts without coming to bank.<br />
 				Get easy access to all your needs on our web app.
 			</p>
-			<a asp-action="" class="learnMoreButton">Learn More</a>
+			<a asp-action="LearnMore" class="learnMoreButton">Learn More</a>
 		</div>
 		<div class="featureContents">
 			<img class="featureItemImages" src="~/rsc/ss.png" alt="Alternate Text" />
@@ -187,7 +186,7 @@
 				Now access and manage your accounts without coming to bank.<br />
 				Get easy access to all your needs on our web app.
 			</p>
-			<a asp-action="" class="learnMoreButton">Learn More</a>
+			<a asp-action="LearnMore" class="learnMoreButton">Learn More</a>
 		</div>
 		<div class="featureContents">
 			<img class="featureItemImages" src="~/rsc/ss.png" alt="Alternate Text" />
@@ -202,7 +201,7 @@
 				Open an account now for free.
 			</p>
 			<div class="featureSectionButtons">
-				<a asp-action="" class="learnMoreButton">Learn More</a>
+				<a asp-action="LearnMore" class="learnMoreButton">Learn More</a>
 				<a asp-action="CreateUser" class="createAccountButton createUser" style="display: flex;">Create Account</a>
 				<a asp-action="Dashboard" class="createAccountButton goToDashboard" style="display: none;">Dashboard</a>
 			</div>
@@ -223,6 +222,7 @@
 		const loginBtn = document.getElementById("navbarLoginBtn");
 		const navigator = document.getElementById("smallNavigator");
 		const user = document.getElementById("user");
+		const naviLinks = querySelectorAll("dropdownItems");
 
 		if (performance.getEntriesByType("navigation")[0].type === "back_forward") {
 			window.location.reload();

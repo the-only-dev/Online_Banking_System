@@ -10,7 +10,6 @@ namespace Bank2.Controllers
   public class UserController : BaseController
   {
   public UserController(BankContext context) : base(context) { }
-
     public IActionResult Logout()
     {
         HttpContext.Session.Clear(); // Remove all session data
@@ -28,6 +27,13 @@ namespace Bank2.Controllers
       }
       var account = await _context.Accounts.Where(x => x.UserId == userId.Value).ToListAsync();
       ViewData["Accounts"] = new SelectList(account, "Id", "AccountNo");
+      return View();
+    }
+
+
+    //Return to Learn More View
+    public IActionResult LearnMore()
+    {
       return View();
     }
 
@@ -62,6 +68,8 @@ namespace Bank2.Controllers
     //Return to Profile Page
     public async Task<IActionResult> Profile()
     {
+      HttpContext.Session.SetString("LogStatus", "dash");
+
       var userId = HttpContext.Session.GetInt32("UserId");
       if (userId == null)
       {

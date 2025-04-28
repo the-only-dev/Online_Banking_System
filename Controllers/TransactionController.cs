@@ -16,6 +16,7 @@ namespace Bank2.Controllers
 
     public async Task<IActionResult> Transactions()
     {
+      HttpContext.Session.SetString("LogStatus", "dash");
       var userId = HttpContext.Session.GetInt32("UserId");
       if (userId == null)
       {
