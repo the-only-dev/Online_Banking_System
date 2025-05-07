@@ -119,40 +119,47 @@ namespace Bank2.Controllers
     [HttpPost]
     public async Task<IActionResult> CreateUserAccount(User users)
     {
-      if (users != null)
+      try
       {
-        var isUsername = await _context.Users.AnyAsync(u => u.Username == users.Username);
-        var isEmail = await _context.Users.AnyAsync(u => u.Email == users.Email);
-        var isPhone = await _context.Users.AnyAsync(u => u.Phone == users.Phone);
-        if (isUsername)
+        if (users != null)
         {
-          ModelState.AddModelError("Username", "Username Already Exist");
+          var isUsername = await _context.Users.AnyAsync(u => u.Username == users.Username);
+          var isEmail = await _context.Users.AnyAsync(u => u.Email == users.Email);
+          var isPhone = await _context.Users.AnyAsync(u => u.Phone == users.Phone);
+          if (isUsername)
+          {
+            ModelState.AddModelError("Username", "Username Already Exist");
+          }
+          if (isEmail)
+          {
+            ModelState.AddModelError("Email", "Email Already Exist");
+          }
+          if (isPhone)
+          {
+            ModelState.AddModelError("Phone", "Phone Already Exist");
+          }
+          if(isUsername || isEmail || isPhone)
+          {
+            ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
+            return View("CreateUser", users);
+          }
         }
-        if (isEmail)
-        {
-          ModelState.AddModelError("Email", "Email Already Exist");
-        }
-        if (isPhone)
-        {
-          ModelState.AddModelError("Phone", "Phone Already Exist");
-        }
-        if(isUsername || isEmail || isPhone)
-        {
-          ViewData["Branches"] = new SelectList(_context.Branchs, "Id", "Name");
-          return View("CreateUser", users);
-        }
-      }
 
-      if (ModelState.IsValid)
-      {
-        users.Salt = GenerateSalt();
-        users.Password = GenerateHash256(users.Password + users.Salt);
-        _context.Users.Add(users);
-        await _context.SaveChangesAsync();
-        await CreateNewAccountAsync(users.Id, 0, users.CustomerType);
-        return RedirectToAction("LoginPage");
+        if (ModelState.IsValid)
+        {
+          users.Salt = GenerateSalt();
+          users.Password = GenerateHash256(users.Password + users.Salt);
+          _context.Users.Add(users);
+          await _context.SaveChangesAsync();
+          await CreateNewAccountAsync(users.Id, 0, users.CustomerType);
+          return RedirectToAction("LoginPage");
+        }
+        return View("CreateUser", users);
       }
-      return View("CreateUser", users);
+      catch (Exception e)
+      {
+        return View("CreateUser", users); 
+      }
     }
 
     //Used to update user profile

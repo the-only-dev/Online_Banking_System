@@ -81,7 +81,7 @@ namespace Bank2.Controllers
 
           var currentUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == userid.Value);
           var currentAccount = await _context.Accounts.FirstOrDefaultAsync(a => a.Id == data.fromAccount);
-          var receiver = await _context.Accounts.FirstOrDefaultAsync(x => x.AccountNo == data.toAccount);
+          var receiver = await _context.Accounts.FirstOrDefaultAsync(x => x.AccountNo.ToLower() == data.toAccount.ToLower());
 
           if (currentAccount == null || receiver == null)
               return NotFound("One or both accounts not found.");
