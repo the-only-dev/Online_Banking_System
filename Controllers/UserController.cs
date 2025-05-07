@@ -123,8 +123,8 @@ namespace Bank2.Controllers
       {
         if (users != null)
         {
-          var isUsername = await _context.Users.AnyAsync(u => u.Username == users.Username);
-          var isEmail = await _context.Users.AnyAsync(u => u.Email == users.Email);
+          var isUsername = await _context.Users.AnyAsync(u => u.Username.ToLower() == users.Username.ToLower());
+          var isEmail = await _context.Users.AnyAsync(u => u.Email.ToLower() == users.Email.ToLower());
           var isPhone = await _context.Users.AnyAsync(u => u.Phone == users.Phone);
           if (isUsername)
           {

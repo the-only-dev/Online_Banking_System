@@ -7,7 +7,7 @@
       <p>@Model.User.Branch.Name Branch</p>
       <p>@Model.Account[0].AccountNo</p>
     </div>
-    <p class="bankCardBalance">₹ @Model.Account[0].AccountBalance</p>
+    <p class="bankCardBalance">₹ @Model.Account[0].AccountBalance.ToString("F2")</p>
     <div class="bankCardContents">
       <p>Holder : @Model.User.Username</p>
     </div>
@@ -39,7 +39,7 @@
         <tr>
           <td>@tran.AccountNumber</td>
           <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Type</td>
-          <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">₹ @tran.Amount</td>
+          <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">₹ @tran.Amount.ToString("F2")</td>
           <td>@tran.Date</td>
         </tr>
       }

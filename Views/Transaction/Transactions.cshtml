@@ -30,7 +30,7 @@
             <tr>
               <td>@tran.AccountNumber</td>
               <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">@tran.Type</td>
-              <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">₹ @tran.Amount</td>
+              <td style="color:@(tran.Type == "Debit" ? "forestgreen" : "red")">₹ @tran.Amount.ToString("F2")</td>
               <td>@tran.Date</td>
               <td>@tran.Description</td>
             </tr>
