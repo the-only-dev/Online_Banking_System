@@ -4,14 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//string localIp = "192.168.29.212";
-//int port = 7251;
-//Hosting
-//builder.WebHost.UseUrls("https://192.168.29.212");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BankContext>(options =>
-//options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
