@@ -62,10 +62,10 @@
 		}
 
 		window.onload = () => { 
-			if(isHidden = sessionStorage.getItem("isHidden") === "true") {
+			if(isHidden == sessionStorage.getItem("isHidden") === "true") {
 				document.documentElement.classList.add("sidebar-hidden");
 			} else {
-				document.documentElement.classList.remove("sideba-hidden");
+				document.documentElement.classList.remove("sidebar-hidden");
 			}
 		}
 

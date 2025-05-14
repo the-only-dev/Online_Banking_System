@@ -5,9 +5,7 @@
 .sidebar-hidden .content { margin-left: 4.5%;}
 .sidebar-hidden .menuButton { left: 8px;}
 .sidebar-hidden .dashboardNavigationLinks span 
-{ pointer-events: none;width: 0; opacity: 0;}
-.sidebar-hidden #logoutIcon { display: flex;}
-.sidebar-hidden #signOutButton { display : none;}
+{ pointer-events: none; opacity: 0;}
 
 /* Normal CSS */
 .setBody{

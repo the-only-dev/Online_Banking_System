@@ -178,7 +178,6 @@ C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\scopedcss\Views\Shar
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\scopedcss\bundle\Bank2.styles.css
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\scopedcss\projectbundle\Bank2.bundle.scp.css
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\bernb2p045-x519iwvg4w.gz
-C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\tb43idqe4i-eka9bsfl2u.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\0rl5smtzn0-b9sayid5wm.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\hscg6wqxgq-61n19gt1b8.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\gununwqe24-xtxxf3hu2r.gz
@@ -260,3 +259,4 @@ C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.genruntimeconf
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\ref\Bank2.dll
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\e108juxnei-taeu6cah51.gz
+C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\tb43idqe4i-u68nsteok9.gz
