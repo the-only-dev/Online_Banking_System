@@ -481,20 +481,20 @@
       "PackagePath": "staticwebassets\\rsc\\dashboard.png"
     },
     {
-      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
-      "PackagePath": "staticwebassets\\rsc\\phobe.png"
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
+      "PackagePath": "staticwebassets\\rsc\\nofee.jpeg"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "PackagePath": "staticwebassets\\rsc\\online_bank.jpeg"
+    },
+    {
+      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "PackagePath": "staticwebassets\\rsc\\select_card.jpeg"
     },
     {
       "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\ss.png",
       "PackagePath": "staticwebassets\\rsc\\ss.png"
-    },
-    {
-      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "PackagePath": "staticwebassets\\rsc\\temp.png"
-    },
-    {
-      "Id": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "PackagePath": "staticwebassets\\rsc\\wuwu1.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Bank2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

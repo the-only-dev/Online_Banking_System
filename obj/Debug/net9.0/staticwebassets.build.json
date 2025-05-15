@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wLQvo9xq/1eVS9/liGsb7yt2i1akTOnYjQ6hYt36EH4=",
+  "Hash": "ylMJhiNZcy4JQQB/ZzlQfTd4KMx1DATJESNC8TDExFI=",
   "Source": "Bank2",
   "BasePath": "_content/Bank2",
   "Mode": "Default",
@@ -3965,12 +3965,12 @@
       "OriginalItemSpec": "wwwroot\\rsc\\dashboard-clipped.png"
     },
     {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
       "SourceId": "Bank2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
       "BasePath": "_content/Bank2",
-      "RelativePath": "rsc/phobe#[.{fingerprint}]?.png",
+      "RelativePath": "rsc/nofee#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3979,11 +3979,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dreczp11mk",
-      "Integrity": "uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0=",
+      "Fingerprint": "z0df48ju5y",
+      "Integrity": "s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rsc\\phobe.png"
+      "OriginalItemSpec": "wwwroot\\rsc\\nofee.jpeg"
+    },
+    {
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "SourceId": "Bank2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
+      "BasePath": "_content/Bank2",
+      "RelativePath": "rsc/online_bank#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1p94zdyml9",
+      "Integrity": "FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rsc\\online_bank.jpeg"
+    },
+    {
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "SourceId": "Bank2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
+      "BasePath": "_content/Bank2",
+      "RelativePath": "rsc/select_card#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h9j6xt2q5y",
+      "Integrity": "+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rsc\\select_card.jpeg"
     },
     {
       "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\ss.png",
@@ -4005,48 +4047,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\rsc\\ss.png"
-    },
-    {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "SourceId": "Bank2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
-      "BasePath": "_content/Bank2",
-      "RelativePath": "rsc/temp#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gkxadgnutg",
-      "Integrity": "kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rsc\\temp.png"
-    },
-    {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "SourceId": "Bank2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
-      "BasePath": "_content/Bank2",
-      "RelativePath": "rsc/wuwu1#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8ctwdo9z4u",
-      "Integrity": "iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rsc\\wuwu1.png"
     }
   ],
   "Endpoints": [
@@ -4969,7 +4969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:59:25 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5022,7 +5022,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:59:25 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5059,7 +5059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:59:25 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5106,7 +5106,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:59:25 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5167,7 +5167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:59:25 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5212,7 +5212,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:59:25 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -28445,8 +28445,8 @@
       ]
     },
     {
-      "Route": "rsc/phobe.dreczp11mk.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
+      "Route": "rsc/nofee.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -28455,64 +28455,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2345005"
+          "Value": "101491"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0=\""
+          "Value": "\"s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 11:25:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dreczp11mk"
-        },
-        {
-          "Name": "label",
-          "Value": "rsc/phobe.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/phobe.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2345005"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 11:25:57 GMT"
+          "Value": "Thu, 15 May 2025 10:22:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -28522,7 +28477,216 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0="
+          "Value": "sha256-s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/nofee.z0df48ju5y.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "101491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:22:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z0df48ju5y"
+        },
+        {
+          "Name": "label",
+          "Value": "rsc/nofee.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/online_bank.1p94zdyml9.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1p94zdyml9"
+        },
+        {
+          "Name": "label",
+          "Value": "rsc/online_bank.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/online_bank.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/select_card.h9j6xt2q5y.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9j6xt2q5y"
+        },
+        {
+          "Name": "label",
+          "Value": "rsc/select_card.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/select_card.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8="
         }
       ]
     },
@@ -28605,170 +28769,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-RFoUlVwgaLwjzrQf1degRwDVS4l/HG6cO5Zn62RdasQ="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/temp.gkxadgnutg.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "523292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 28 Sep 2024 16:23:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gkxadgnutg"
-        },
-        {
-          "Name": "label",
-          "Value": "rsc/temp.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/temp.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "523292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 28 Sep 2024 16:23:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/wuwu1.8ctwdo9z4u.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "519974"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 20 Jul 2024 10:23:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8ctwdo9z4u"
-        },
-        {
-          "Name": "label",
-          "Value": "rsc/wuwu1.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/wuwu1.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "519974"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 20 Jul 2024 10:23:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4="
         }
       ]
     }

@@ -47,7 +47,7 @@ namespace Bank2.Controllers
       return PartialView("partialTransaction", sharedInfo);
     }
 
-    public async Task<IActionResult> Payment()
+    public async Task<IActionResult> PaymentScreen()
     {
       try
       {
@@ -121,7 +121,7 @@ namespace Bank2.Controllers
 
           await _context.SaveChangesAsync();
           await transaction.CommitAsync();
-          return RedirectToAction("Payment", "Transaction");
+          return RedirectToAction("PaymentScreen", "Transaction");
         }
         catch (Exception e)
         {

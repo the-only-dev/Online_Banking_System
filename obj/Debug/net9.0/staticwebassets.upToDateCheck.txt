@@ -182,7 +182,7 @@ wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.j
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\rsc\dashboard.png
 wwwroot\rsc\dashboard-clipped.png
-wwwroot\rsc\phobe.png
+wwwroot\rsc\nofee.jpeg
+wwwroot\rsc\online_bank.jpeg
+wwwroot\rsc\select_card.jpeg
 wwwroot\rsc\ss.png
-wwwroot\rsc\temp.png
-wwwroot\rsc\wuwu1.png
