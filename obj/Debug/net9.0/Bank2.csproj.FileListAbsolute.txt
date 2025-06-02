@@ -257,6 +257,6 @@ C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\refint\Bank2.dll
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.pdb
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\Bank2.genruntimeconfig.cache
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\ref\Bank2.dll
-C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\e108juxnei-taeu6cah51.gz
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\compressed\tb43idqe4i-u68nsteok9.gz
+C:\!Study Data\Visual Basic Practice\Bank2\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

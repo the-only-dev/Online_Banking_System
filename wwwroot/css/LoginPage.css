@@ -92,6 +92,12 @@ body::-webkit-scrollbar{ display: none; }
     overflow: auto;
 }
 
+.displayError {
+  display: flex;
+  flex-wrap: nowrap;
+  color: red;
+}
+
 /* Link Tag Button Styles*/
 .navbarLoginButton {
     display: flex;
@@ -559,13 +565,6 @@ body::-webkit-scrollbar{ display: none; }
 /* - End of Login Page - */
 
 /* --- Create User Profile Page --- */
-
-.displayError {
-  display: flex;
-  flex-wrap: nowrap;
-  color: red;
-}
-
 .createUserProfile {
   margin: 0px;
   padding: 0px;

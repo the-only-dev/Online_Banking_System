@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+7cvHCiZ7FYZytZCnGPEWB18MihD0/UVblG1/H1t63w=",
+  "Hash": "RKRQ9+9GEfZcCrL1gr37HXsM4KM4BerKC5fSufKE+is=",
   "Source": "Bank2",
   "BasePath": "_content/Bank2",
   "Mode": "Default",
@@ -500,12 +500,12 @@
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-49kj86fhw9.gz",
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-taeu6cah51.gz",
       "SourceId": "Bank2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/Bank2",
-      "RelativePath": "css/LoginPage#[.{fingerprint=49kj86fhw9}]?.css.gz",
+      "RelativePath": "css/LoginPage#[.{fingerprint=taeu6cah51}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -514,8 +514,8 @@
       "RelatedAsset": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qvts5gb4j5",
-      "Integrity": "Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0=",
+      "Fingerprint": "ta6tkfb9vt",
+      "Integrity": "2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css"
@@ -1235,12 +1235,12 @@
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-eka9bsfl2u.gz",
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-u68nsteok9.gz",
       "SourceId": "Bank2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/Bank2",
-      "RelativePath": "css/DashboardLayout#[.{fingerprint=eka9bsfl2u}]?.css.gz",
+      "RelativePath": "css/DashboardLayout#[.{fingerprint=u68nsteok9}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1249,8 +1249,8 @@
       "RelatedAsset": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\DashboardLayout.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hzadzj04xv",
-      "Integrity": "I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY=",
+      "Fingerprint": "0ztiu9pyjj",
+      "Integrity": "xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\DashboardLayout.css"
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "eka9bsfl2u",
-      "Integrity": "Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM=",
+      "Fingerprint": "u68nsteok9",
+      "Integrity": "ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\DashboardLayout.css"
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "49kj86fhw9",
-      "Integrity": "uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU=",
+      "Fingerprint": "taeu6cah51",
+      "Integrity": "5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\LoginPage.css"
@@ -3965,12 +3965,12 @@
       "OriginalItemSpec": "wwwroot\\rsc\\dashboard-clipped.png"
     },
     {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
       "SourceId": "Bank2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
       "BasePath": "_content/Bank2",
-      "RelativePath": "rsc/phobe#[.{fingerprint}]?.png",
+      "RelativePath": "rsc/nofee#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3979,11 +3979,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dreczp11mk",
-      "Integrity": "uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0=",
+      "Fingerprint": "z0df48ju5y",
+      "Integrity": "s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rsc\\phobe.png"
+      "OriginalItemSpec": "wwwroot\\rsc\\nofee.jpeg"
+    },
+    {
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "SourceId": "Bank2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
+      "BasePath": "_content/Bank2",
+      "RelativePath": "rsc/online_bank#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1p94zdyml9",
+      "Integrity": "FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rsc\\online_bank.jpeg"
+    },
+    {
+      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "SourceId": "Bank2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
+      "BasePath": "_content/Bank2",
+      "RelativePath": "rsc/select_card#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h9j6xt2q5y",
+      "Integrity": "+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rsc\\select_card.jpeg"
     },
     {
       "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\ss.png",
@@ -4005,48 +4047,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\rsc\\ss.png"
-    },
-    {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "SourceId": "Bank2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
-      "BasePath": "_content/Bank2",
-      "RelativePath": "rsc/temp#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gkxadgnutg",
-      "Integrity": "kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rsc\\temp.png"
-    },
-    {
-      "Identity": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "SourceId": "Bank2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\",
-      "BasePath": "_content/Bank2",
-      "RelativePath": "rsc/wuwu1#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8ctwdo9z4u",
-      "Integrity": "iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rsc\\wuwu1.png"
     }
   ],
   "Endpoints": [
@@ -4946,12 +4946,12 @@
     },
     {
       "Route": "css/DashboardLayout.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-eka9bsfl2u.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-u68nsteok9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001490312966"
+          "Quality": "0.001560062402"
         }
       ],
       "ResponseHeaders": [
@@ -4961,15 +4961,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "670"
+          "Value": "640"
         },
         {
           "Name": "ETag",
-          "Value": "\"I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY=\""
+          "Value": "\"xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 08:55:50 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4989,13 +4989,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM=\""
+          "Value": "W/\"ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM="
+          "Value": "sha256-ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY="
         }
       ]
     },
@@ -5010,7 +5010,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1838"
+          "Value": "1731"
         },
         {
           "Name": "Content-Type",
@@ -5018,11 +5018,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM=\""
+          "Value": "\"ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 08:55:50 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5032,13 +5032,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM="
+          "Value": "sha256-ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY="
         }
       ]
     },
     {
       "Route": "css/DashboardLayout.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-eka9bsfl2u.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-u68nsteok9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5047,7 +5047,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "670"
+          "Value": "640"
         },
         {
           "Name": "Content-Type",
@@ -5055,11 +5055,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY=\""
+          "Value": "\"xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 08:55:50 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5077,18 +5077,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY="
+          "Value": "sha256-xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI="
         }
       ]
     },
     {
-      "Route": "css/DashboardLayout.eka9bsfl2u.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-eka9bsfl2u.gz",
+      "Route": "css/DashboardLayout.u68nsteok9.css",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-u68nsteok9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001490312966"
+          "Quality": "0.001560062402"
         }
       ],
       "ResponseHeaders": [
@@ -5098,15 +5098,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "670"
+          "Value": "640"
         },
         {
           "Name": "ETag",
-          "Value": "\"I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY=\""
+          "Value": "\"xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 08:55:50 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5126,13 +5126,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM=\""
+          "Value": "W/\"ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eka9bsfl2u"
+          "Value": "u68nsteok9"
         },
         {
           "Name": "label",
@@ -5140,12 +5140,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM="
+          "Value": "sha256-ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY="
         }
       ]
     },
     {
-      "Route": "css/DashboardLayout.eka9bsfl2u.css",
+      "Route": "css/DashboardLayout.u68nsteok9.css",
       "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\DashboardLayout.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5155,7 +5155,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1838"
+          "Value": "1731"
         },
         {
           "Name": "Content-Type",
@@ -5163,11 +5163,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM=\""
+          "Value": "\"ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 08:55:50 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5177,7 +5177,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eka9bsfl2u"
+          "Value": "u68nsteok9"
         },
         {
           "Name": "label",
@@ -5185,13 +5185,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qld+N2X2/xmRi+pnOtF782+NACYw2wlYli6fF4POmnM="
+          "Value": "sha256-ymb8nXSqVvuxVIeY3gvylugTfnwLbUm1Rq6iKINzBBY="
         }
       ]
     },
     {
-      "Route": "css/DashboardLayout.eka9bsfl2u.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-eka9bsfl2u.gz",
+      "Route": "css/DashboardLayout.u68nsteok9.css.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\tb43idqe4i-u68nsteok9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5200,7 +5200,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "670"
+          "Value": "640"
         },
         {
           "Name": "Content-Type",
@@ -5208,11 +5208,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY=\""
+          "Value": "\"xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 08:55:50 GMT"
+          "Value": "Wed, 14 May 2025 09:00:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5230,7 +5230,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eka9bsfl2u"
+          "Value": "u68nsteok9"
         },
         {
           "Name": "label",
@@ -5238,18 +5238,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-I1jFIAUnrm7wu+R0kj8+4g5wtSnSWum9/lSthBGw6UY="
+          "Value": "sha256-xOV1/oQ25DCrU3nMIsECUrVj88fIbd4lJoLYMi+bqfI="
         }
       ]
     },
     {
-      "Route": "css/LoginPage.49kj86fhw9.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-49kj86fhw9.gz",
+      "Route": "css/LoginPage.css",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-taeu6cah51.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000305343511"
+          "Quality": "0.000299401198"
         }
       ],
       "ResponseHeaders": [
@@ -5259,19 +5259,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3274"
+          "Value": "3339"
         },
         {
           "Name": "ETag",
-          "Value": "\"Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0=\""
+          "Value": "\"2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 11:32:52 GMT"
+          "Value": "Wed, 07 May 2025 10:08:02 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5287,26 +5287,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU=\""
+          "Value": "W/\"5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "49kj86fhw9"
-        },
-        {
-          "Name": "label",
-          "Value": "css/LoginPage.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU="
+          "Value": "sha256-5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE="
         }
       ]
     },
     {
-      "Route": "css/LoginPage.49kj86fhw9.css",
+      "Route": "css/LoginPage.css",
       "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5316,7 +5308,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15499"
+          "Value": "15877"
         },
         {
           "Name": "Content-Type",
@@ -5324,11 +5316,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU=\""
+          "Value": "\"5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 11:32:52 GMT"
+          "Value": "Wed, 07 May 2025 10:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.css.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-taeu6cah51.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.taeu6cah51.css",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-taeu6cah51.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000299401198"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3339"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:08:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "taeu6cah51"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginPage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.taeu6cah51.css",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15877"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:08:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5338,7 +5475,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "49kj86fhw9"
+          "Value": "taeu6cah51"
         },
         {
           "Name": "label",
@@ -5346,13 +5483,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU="
+          "Value": "sha256-5fkQViojLuZWORaqXYiiHg8BZoyWgoUgjpysZSETStE="
         }
       ]
     },
     {
-      "Route": "css/LoginPage.49kj86fhw9.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-49kj86fhw9.gz",
+      "Route": "css/LoginPage.taeu6cah51.css.gz",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-taeu6cah51.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5361,7 +5498,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3274"
+          "Value": "3339"
         },
         {
           "Name": "Content-Type",
@@ -5369,11 +5506,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0=\""
+          "Value": "\"2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 11:32:52 GMT"
+          "Value": "Wed, 07 May 2025 10:08:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5391,7 +5528,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "49kj86fhw9"
+          "Value": "taeu6cah51"
         },
         {
           "Name": "label",
@@ -5399,144 +5536,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0="
-        }
-      ]
-    },
-    {
-      "Route": "css/LoginPage.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-49kj86fhw9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000305343511"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3274"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 11:32:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU="
-        }
-      ]
-    },
-    {
-      "Route": "css/LoginPage.css",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\css\\LoginPage.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15499"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 11:32:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uAI9hMkFcnWusQEh9bKobQHU6lEBlgx3POdlqzw9NoU="
-        }
-      ]
-    },
-    {
-      "Route": "css/LoginPage.css.gz",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\obj\\Release\\net9.0\\compressed\\e108juxnei-49kj86fhw9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3274"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 11:32:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Rps0YCsc4IZSKd/CW3k3ZF6KkVDtJUQsOxxGje2O4n0="
+          "Value": "sha256-2xqyHZcesbGAqoN1En/WCS8noZSprLy1x4EQv8wx4mc="
         }
       ]
     },
@@ -28445,8 +28445,8 @@
       ]
     },
     {
-      "Route": "rsc/phobe.dreczp11mk.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
+      "Route": "rsc/nofee.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -28455,64 +28455,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2345005"
+          "Value": "101491"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0=\""
+          "Value": "\"s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 11:25:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dreczp11mk"
-        },
-        {
-          "Name": "label",
-          "Value": "rsc/phobe.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/phobe.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\phobe.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2345005"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 11:25:57 GMT"
+          "Value": "Thu, 15 May 2025 10:22:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -28522,7 +28477,216 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uSzXSMmNM1MUXNZVBLuvuSqqeICDMg6Rtv5LJKNJIt0="
+          "Value": "sha256-s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/nofee.z0df48ju5y.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\nofee.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "101491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:22:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z0df48ju5y"
+        },
+        {
+          "Name": "label",
+          "Value": "rsc/nofee.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s0OtHVMY+NAgiteHs/EgnyCD9Igat/hBSE2OnQgGj8Y="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/online_bank.1p94zdyml9.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1p94zdyml9"
+        },
+        {
+          "Name": "label",
+          "Value": "rsc/online_bank.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/online_bank.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\online_bank.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQHRkxM2VsAoU45KBqoDqomueYKwU2cj4mn85AtZsyw="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/select_card.h9j6xt2q5y.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9j6xt2q5y"
+        },
+        {
+          "Name": "label",
+          "Value": "rsc/select_card.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8="
+        }
+      ]
+    },
+    {
+      "Route": "rsc/select_card.jpeg",
+      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\select_card.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 10:15:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+2N7HxZnNVSdtQQQRM53osHGGu1dD0LZSwmQcr/uNi8="
         }
       ]
     },
@@ -28605,170 +28769,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-RFoUlVwgaLwjzrQf1degRwDVS4l/HG6cO5Zn62RdasQ="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/temp.gkxadgnutg.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "523292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 28 Sep 2024 16:23:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gkxadgnutg"
-        },
-        {
-          "Name": "label",
-          "Value": "rsc/temp.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/temp.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\temp.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "523292"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 28 Sep 2024 16:23:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kNq93DmibgjL42KdFEOwxgwwCmMyIiJPsNikMxT00Ik="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/wuwu1.8ctwdo9z4u.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "519974"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 20 Jul 2024 10:23:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8ctwdo9z4u"
-        },
-        {
-          "Name": "label",
-          "Value": "rsc/wuwu1.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4="
-        }
-      ]
-    },
-    {
-      "Route": "rsc/wuwu1.png",
-      "AssetFile": "C:\\!Study Data\\Visual Basic Practice\\Bank2\\wwwroot\\rsc\\wuwu1.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "519974"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 20 Jul 2024 10:23:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iDnqDFEDTzkqLdJCvylXCCLVm5zuFvR5UN0hA8Bavx4="
         }
       ]
     }

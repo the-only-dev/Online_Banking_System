@@ -47,24 +47,20 @@ namespace Bank2.Controllers
       return PartialView("partialTransaction", sharedInfo);
     }
 
-    public async Task<IActionResult> PaymentScreen()
+
+    public async Task getAccountsAsync()
     {
-      try
+      var userid = HttpContext.Session.GetInt32("UserId");
+      if (userid.HasValue)
       {
-        var userid = HttpContext.Session.GetInt32("UserId");
-        if (!userid.HasValue)
-        {
-          return RedirectToAction("LoginPage", "User");
-        }
         var account = await _context.Accounts.Where(x => x.UserId == userid.Value).ToListAsync();
         ViewData["Accounts"] = new SelectList(account, "Id", "AccountNo");
-        var sharedInfo = await getSharedDataAsync(userid);
-        return View(sharedInfo);
       }
-      catch(Exception e)
-      {
-        return View(e.Message);
-      }
+    }
+    public async Task<IActionResult> PaymentScreen()
+    {
+      await getAccountsAsync();
+      return View();
     }
 
     [Route("/Transaction/Pay")]
@@ -83,50 +79,65 @@ namespace Bank2.Controllers
           var currentAccount = await _context.Accounts.FirstOrDefaultAsync(a => a.Id == data.fromAccount);
           var receiver = await _context.Accounts.FirstOrDefaultAsync(x => x.AccountNo.ToLower() == data.toAccount.ToLower());
 
-          if (currentAccount == null || receiver == null)
-              return NotFound("One or both accounts not found.");
-
-          if (currentAccount.AccountBalance < data.amount)
-              return BadRequest("Insufficient balance.");
-
-          //Senders Transaction
-          var paymentFrom = new Transactions();
-          paymentFrom.Date = DateTime.Now;
-          paymentFrom.AccountId = currentAccount.Id;
-          paymentFrom.AccountNumber = currentAccount.AccountNo;
-          paymentFrom.Type = "Credit";
-          paymentFrom.Amount = data.amount;
-          paymentFrom.Description = " --- No Description ---";
-          if (data.description != null)
+          if (currentUser == null || receiver == null)
           {
-              paymentFrom.Description = data.description;
+            ModelState.AddModelError("toAccount", "Account Don't Exist");
           }
-          currentAccount.AccountBalance -= data.amount;
 
-          paymentFrom.Balance = currentAccount.AccountBalance;
-          _context.Transactions.Add(paymentFrom);
+          if ((currentAccount != null && receiver != null) && currentAccount.AccountBalance < data.amount)
+          {
+            ModelState.AddModelError("amount", "Insufficient Balance");
+          }
 
-          //Receiver Transaction
-          var paymentTo = new Transactions();
-          paymentTo.Date = DateTime.Now;
-          paymentTo.AccountId = receiver.Id;
-          paymentTo.AccountNumber = receiver.AccountNo;
-          paymentTo.Type = "Debit";
-          paymentTo.Amount = data.amount;
-          paymentTo.Description = paymentFrom.Description;
-          receiver.AccountBalance += data.amount;
+          if (data.amount <= 0 && receiver != null)
+          {
+            ModelState.AddModelError("amount", "Amount Must be more than 0");
+          }
+          
+          if(data.amount <= currentAccount.AccountBalance && receiver != null)
+          {
+            //Senders Transaction
+            var paymentFrom = new Transactions();
+            paymentFrom.Date = DateTime.Now;
+            paymentFrom.AccountId = currentAccount.Id;
+            paymentFrom.AccountNumber = currentAccount.AccountNo;
+            paymentFrom.Type = "Credit";
+            paymentFrom.Amount = data.amount;
+            paymentFrom.Description = " --- No Description ---";
+            if (data.description != null)
+            {
+              paymentFrom.Description = data.description;
+            }
+            currentAccount.AccountBalance -= data.amount;
 
-          paymentTo.Balance = receiver.AccountBalance;
-          _context.Transactions.Add(paymentTo);
+            paymentFrom.Balance = currentAccount.AccountBalance;
+            _context.Transactions.Add(paymentFrom);
 
-          await _context.SaveChangesAsync();
-          await transaction.CommitAsync();
-          return RedirectToAction("PaymentScreen", "Transaction");
+            //Receiver Transaction
+            var paymentTo = new Transactions();
+            paymentTo.Date = DateTime.Now;
+            paymentTo.AccountId = receiver.Id;
+            paymentTo.AccountNumber = receiver.AccountNo;
+            paymentTo.Type = "Debit";
+            paymentTo.Amount = data.amount;
+            paymentTo.Description = paymentFrom.Description;
+            receiver.AccountBalance += data.amount;
+
+            paymentTo.Balance = receiver.AccountBalance;
+            _context.Transactions.Add(paymentTo);
+
+            await _context.SaveChangesAsync();
+            await transaction.CommitAsync();
+            ModelState.AddModelError("amount", "Payment Success.");
+          }
+          await getAccountsAsync();
+          return View("PaymentScreen");
         }
         catch (Exception e)
         {
           await transaction.RollbackAsync();
-          return View(e.Message);
+          await getAccountsAsync();
+          return View("PaymentScreen");
         }
       }
     }

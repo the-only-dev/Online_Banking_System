@@ -258,5 +258,5 @@ C:\!Study Data\Visual Basic Practice\Bank2\bin\Release\net9.0\runtimes\win-arm64
 C:\!Study Data\Visual Basic Practice\Bank2\bin\Release\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\!Study Data\Visual Basic Practice\Bank2\bin\Release\net9.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\!Study Data\Visual Basic Practice\Bank2\obj\Release\net9.0\compressed\bernb2p045-x519iwvg4w.gz
-C:\!Study Data\Visual Basic Practice\Bank2\obj\Release\net9.0\compressed\tb43idqe4i-eka9bsfl2u.gz
-C:\!Study Data\Visual Basic Practice\Bank2\obj\Release\net9.0\compressed\e108juxnei-49kj86fhw9.gz
+C:\!Study Data\Visual Basic Practice\Bank2\obj\Release\net9.0\compressed\tb43idqe4i-u68nsteok9.gz
+C:\!Study Data\Visual Basic Practice\Bank2\obj\Release\net9.0\compressed\e108juxnei-taeu6cah51.gz
